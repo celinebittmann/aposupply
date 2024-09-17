@@ -9,7 +9,6 @@ $sql = "SELECT * FROM produkte";
 $andi = $dbh->query($sql);
 
 ?>
-
 <!doctype html>
 <html lang="de">
   <head>
