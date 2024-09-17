@@ -16,7 +16,7 @@
     // ist man bereits eingeloggt? 
     if(!isLoggedIn()) 
     { 
-     header('Location: login.php'); 
+     header('Location:  login.php'); 
     exit(); 
     }
     
