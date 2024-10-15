@@ -13,7 +13,7 @@
           <a class="nav-link" href="templates/team.php">Team</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
             Kategorien
           </a>
           <ul class="dropdown-menu">
@@ -25,6 +25,7 @@
        
       </ul>
       <ul class="navbar nav">
+        
       <li>  
         <?php 
         if(isLoggedIn()):?> 
@@ -36,14 +37,31 @@
               <button class="btn btn-danger">Logout</button> 
             </a>   
       </li> 
+      
       <?php endif;?>
 
       <?php 
         if(!isLoggedIn()):?> 
       <li>
-          <a button class="btn btn-success" href="templates/login.php">Login</button> </a>
+        <div class="dropdown">
+          <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg> Login</button>
+
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="templates/login.php">Login</a></li>
+    <li><a class="dropdown-item" href="#">Action two</a></li>
+    <li><a class="dropdown-item" href="#">Action three</a></li>
+  </ul>
+</div>
+
+
+
+
           &nbsp;
           <a button class="btn btn-secondary" href="templates/registrieren.php">Registrieren</button> </a>
+          &nbsp;
+          
       </li>
       <?php endif;?>
       <li><a class="nav-link" href="templates/korb.php"> Warenkorb(<?= $korbzahl?>)</a>
