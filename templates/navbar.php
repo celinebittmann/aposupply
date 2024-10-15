@@ -56,6 +56,7 @@
 
       </li>
 
+      
         &nbsp;
          <a button class="btn btn-secondary" href="templates/registrieren.php">Registrieren</button> </a>
         &nbsp;
