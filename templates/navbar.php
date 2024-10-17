@@ -47,7 +47,7 @@
               <button class="btn btn-danger">Logout</button> 
             </a>   
       </li> 
-      
+
       <?php endif;?>
 
       <?php 
