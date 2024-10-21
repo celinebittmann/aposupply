@@ -57,8 +57,8 @@ ini_set('display_errors','On');
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Mit der App kann man die Medikamente, die Sie besitzen, verwalten. Sie können immer den aktuellen Stand ansehen. Außerdem 
-        ist es möglich, die leeren Medikamente online oder in der Apotheke in Ihrer Nähe nachzkaufen.
+      <div class="accordion-body">Mit der App können Sie Ihre Medikamente verwalten und jederzeit den aktuellen Stand ansehen. Sollte es einmal dazu kommen, dass eine Packung leer wird,
+        so können Sie immer über unsere Website oder in der Apotheke in Ihrer Nähe, die benötigten Medikamente nachkaufen.
       </div>
     </div>
   </div>
