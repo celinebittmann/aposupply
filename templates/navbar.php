@@ -75,9 +75,7 @@
           
         <?php endif;?>
 
-        <li>
-          <a class="nav-link" href="templates/korb.php"> Warenkorb(<?= $korbzahl?>)</a>
-        </li>
+       
       </ul>
     </div>
     </div>
