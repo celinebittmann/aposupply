@@ -22,7 +22,7 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
 
-    <br><br>
+    <br>
     <h1>Team</h1>
 
     
