@@ -23,7 +23,7 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
 
-    <br><br>
+    <br>
     <h1>Q&A</h1>
 
     <h6>Hier finden Sie Antworten zu verschiedenen Fragen!</h6>
