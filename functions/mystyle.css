@@ -1,0 +1,99 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+body{
+    height: -70%;
+    /* font-size: 1.2rem; */
+    background-color: #def6fa;
+    
+    
+}
+
+footer{
+    margin-top: 10rem;
+    height: 350px;
+}
+
+.welle{
+    background: rgb(170,241,248);
+    background: linear-gradient(90deg, rgba(170,241,248,1) 23%, rgba(137,138,138,1) 100%);
+    margin-bottom: -3rem;
+}
+
+.page-header{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: -3rem;
+}
+
+.firmenlogos{
+    margin-top: -3.5rem;
+
+}
+
+.weniger{
+    margin-top: -4rem;
+}
+
+
+
+/* ab jetzt für ul */
+.listemitarbeiter{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.listemitarbeiter ul{
+    list-style: none;
+}
+
+.listemitarbeiter ul li{
+    background-image: url(../img/illustrationen/check2-circle.svg);
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.neutral{
+        text-decoration: none;
+        color: black;
+}
+
+.fleischkonsum{
+    margin-left: 3rem;
+}
+
+.bild{
+    width: 30rem;
+    height: 20rem;
+}
+
+.rot{
+    color: red;
+   
+}
+
+.braun{
+    color:brown;
+    text-align: center;
+
+}
+
+.accordion{
+    margin-left: 15em;
+    margin-right: 15rem;
+    
+}
+
+
