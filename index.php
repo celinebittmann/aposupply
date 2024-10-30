@@ -3,7 +3,6 @@ error_reporting(-1);
 ini_set('display_errors','On'); 
 
 // session_start();
-
 ?>
 
 <!doctype html>
@@ -21,10 +20,34 @@ ini_set('display_errors','On');
     require "templates/navbar.php";
     ?>
     <div class="container">
-    <br><br>
+    <br>
     <h1>Willkommen</h1>
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
-</html>
+  
+  <!-- Hintergrundfarbe & -verlauf -->
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
+    background-size: 200% 200%;
+    animation: gradientMove 12s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+</style>
+  </html>

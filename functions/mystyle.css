@@ -12,13 +12,12 @@
 
 
 body{
-    height: -70%;
+    /* height: -70%; */
     /* font-size: 1.2rem; */
-    background-color: #def6fa;
-    
-    
+    background-color: #d7f8fe;    
 }
 
+/* 
 footer{
     margin-top: 10rem;
     height: 350px;
@@ -49,12 +48,12 @@ footer{
 
 
 /* ab jetzt für ul */
-.listemitarbeiter{
+/* .listemitarbeiter{
     margin-top: 2rem;
     font-size: 1.2rem;
-}
+} */
 
-.listemitarbeiter ul{
+/* .listemitarbeiter ul{
     list-style: none;
 }
 
@@ -94,6 +93,6 @@ footer{
     margin-left: 15em;
     margin-right: 15rem;
     
-}
+} */
 
 
