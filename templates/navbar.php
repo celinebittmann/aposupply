@@ -33,50 +33,16 @@
         <li class="nav-item">
           <a class="nav-link" href="templates/kontakt.php">Kontaktiere uns!</a>
         </li>
-       
       </ul>
-      <ul class="navbar nav">
-        
-      <li>  
-        <?php 
-        if(isLoggedIn()):?> 
-            <a class="nav-link">Du bist eingeloggt als:&nbsp; <?php echo $_SESSION['email'] ?>&nbsp;&nbsp; 
-            </a> 
-        </li> 
-        <li> 
-            <a href="templates/logout.php">  
-              <button class="btn btn-danger">Logout</button> 
-            </a>   
-      </li> 
-
-      <?php endif;?>
-
-      <?php 
-        if(!isLoggedIn()):?> 
-      <li>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg></button>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="templates/login.php">Login</a></li>
-            <!-- <li><span class="dropdown-item-text">Du bist noch nicht angemeldet?</span></li> -->
-            <!-- <li><a class="dropdown-item" href="templates/registrieren.php">Hier registrieren!</a></li> GEHT NICHT WEGEN DATENBANK-->
-          </ul>
-        </div>
-
-      </li>
-
-      
-        &nbsp;
-         <a button class="btn btn-" href="templates/registrieren.php">Registrieren</button> </a>
-        &nbsp;
-
-        
-          
-        <?php endif;?>
-
-       
+             <ul class="navbar nav">
+  <li>
+    <a href="templates/video.php" class="btn btn-secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4z"/>
+      </svg>
+    </a>
+  </li>
+</ul>                
       </ul>
     </div>
     </div>

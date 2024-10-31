@@ -41,9 +41,9 @@ ini_set('display_errors','On');
   <div class="row align-items-center">
     <div class="col-md-3">
       <div class="card" style="width: 19rem;">
-      <img src="assets/img/logoapo.png" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
+      <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
         <div class="card-body">
-          <h5>hefh</h5>
+          <h5>Ohne Apo-Supply</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ ini_set('display_errors','On');
       <div class="card" style="width: 19rem;">
         <img src="assets/img/logoapo.png" class="card-img-top" alt="Logo Apo-Supply">
         <div class="card-body">
-        <h5>hefh</h5>
+        <h5>Unsere App</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
@@ -75,10 +75,10 @@ ini_set('display_errors','On');
 
     <div class="col-md-3">
       <div class="card" style="width: 19rem;">
-      <img src="assets/img/logoapo.png" class="card-img-top" alt="geordneter und übersichtlicher Apothekenschrank">
+      <img src="assets/img/" class="card-img-top" alt="geordneter und übersichtlicher Apothekenschrank">
         <div class="card-body">
-        <h5>hefh</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5>Mit Apo-Supply</h5>
+          <p class="card-text">Bild von Medikamentenverwaltung von App</p>
         </div>
       </div>
     </div>
