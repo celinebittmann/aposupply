@@ -29,14 +29,18 @@ ini_set('display_errors','On');
     </div>
     <br>
     <div class="container">
-  <p>Die automatische Benachrichtigung und Nachbestellungsfunktion sorgen dafür, dass der Nutzer nie ohne seine wichtigen Medikamente dasteht, 
-  und ermöglichen eine reibungslose Versorgung. Die Einsicht auf den Vorrat jederzeit und überall hilft, Überkäufe zu vermeiden und unnötige Verschwendung 
-  zu reduzieren. Diese Funktionen tragen nicht nur zur Bequemlichkeit bei, sondern auch zur effektiven Nutzung von Ressourcen und zum Umweltschutz durch die 
+      <p>"Nachhaltigkeit bedeutet, 
+        die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."</p>
+  <p>Antibiotika können Algen und Cyanobakterien schädigen, wodurch das Nahrungsnetz und Ökosysteme aus dem Gleichgewicht geraten. Medikamente im Grundwasser erschweren 
+    zudem die Trinkwassergewinnung. Obwohl die gemessenen Konzentrationen unter therapeutisch wirksamen Dosen liegen, 
+    sind Wasserlebewesen ständig einer Mischung dieser Stoffe ausgesetzt. Die Aufnahme erfolgt über Haut, Nahrung und Schleimhäute, wodurch Wirkstoffe 
+    in den Organen gespeichert werden. Dies kann Organschäden, Verhaltensänderungen oder Fortpflanzungsstörungen verursachen, mit erheblichen Folgen für das Ökosystem.
+   </p>
+   <p>Um diese Ökosysteme nun zu schützen, hilft die Einsicht auf den Vorrat Überkäufe zu vermeiden und unnötige Verschwendung zu reduzieren. 
+    Diese Funktionen tragen nicht nur zur Bequemlichkeit bei, sondern auch zur effektiven Nutzung von Ressourcen und zum Umweltschutz durch die 
   Minimierung von Medikamentenabfall.</p>
   </div>
   <br><br>
-
-
 <div class="container">
   <div class="row align-items-center">
     <div class="col-md-3">
@@ -75,7 +79,7 @@ ini_set('display_errors','On');
 
     <div class="col-md-3">
       <div class="card" style="width: 19rem;">
-      <img src="assets/img/" class="card-img-top" alt="geordneter und übersichtlicher Apothekenschrank">
+      <img src="assets/img/" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
         <h5>Mit Apo-Supply</h5>
           <p class="card-text">Bild von Medikamentenverwaltung von App</p>
