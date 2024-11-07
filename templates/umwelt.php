@@ -29,14 +29,16 @@ ini_set('display_errors','On');
     </div>
     <br>
     <div class="container">
-      <p>"Nachhaltigkeit bedeutet, 
-        die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."</p>
-  <p>Antibiotika können Algen und Cyanobakterien schädigen, wodurch das Nahrungsnetz und Ökosysteme aus dem Gleichgewicht geraten. Medikamente im Grundwasser erschweren 
+        <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
+    "Nachhaltigkeit bedeutet, 
+    die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."
+</p>
+  <p style="text-align: justify;">Antibiotika können Algen und Cyanobakterien schädigen, wodurch das Nahrungsnetz und Ökosysteme aus dem Gleichgewicht geraten. Medikamente im Grundwasser erschweren 
     zudem die Trinkwassergewinnung. Obwohl die gemessenen Konzentrationen unter therapeutisch wirksamen Dosen liegen, 
     sind Wasserlebewesen ständig einer Mischung dieser Stoffe ausgesetzt. Die Aufnahme erfolgt über Haut, Nahrung und Schleimhäute, wodurch Wirkstoffe 
     in den Organen gespeichert werden. Dies kann Organschäden, Verhaltensänderungen oder Fortpflanzungsstörungen verursachen, mit erheblichen Folgen für das Ökosystem.
    </p>
-   <p>Um diese Ökosysteme nun zu schützen, hilft die Einsicht auf den Vorrat Überkäufe zu vermeiden und unnötige Verschwendung zu reduzieren. 
+   <p style="text-align: justify;">Um diese Ökosysteme nun zu schützen, hilft die Einsicht auf den Vorrat, Überkäufe zu vermeiden und unnötige Verschwendung zu reduzieren. 
     Diese Funktionen tragen nicht nur zur Bequemlichkeit bei, sondern auch zur effektiven Nutzung von Ressourcen und zum Umweltschutz durch die 
   Minimierung von Medikamentenabfall.</p>
   </div>
