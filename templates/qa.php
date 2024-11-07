@@ -47,7 +47,11 @@ ini_set('display_errors','On');
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
           <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
         </svg>
-    <!-- <br><a href="team.php">Hier gehts zur App! ???????? </a> --> 
+          <a class="nav-link linkapp icon-link-hover" href="app.php">Hier geht's zur App! 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </a>
       </div>
     </div>
   </div>
@@ -153,6 +157,12 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.linkapp{
+  text-decoration: underline;
+  color: #00aaff;
+  
 }
 </style>
 
