@@ -36,33 +36,39 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
    </p>
   </div>
   <br><br>
-  
 
-  <div class="container text-center">
+
+
+<div class="container text-center">
   <div class="row">
-    <div class="col">
-      1 of 2
-      <img src="assets/img/celi1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank" style="width: 30%; height: auto;">
+    <div class="col position-relative">
+      <div class="overlay">
+        <a href="https://github.com/celinebittmann" target="_blank">
+          <img src="assets/img/github_logo.jpg" alt="GitHub Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+          GitHub - Celine Bittmann
+        </a>
+      </div>
+      <img src="assets/img/celi2.jpg" class="img-small animated-slide-in img-hover-zoom" alt="Bild von Celine">
     </div>
-    <div class="col">
-      2 of 2
-      <img src="assets/img/anja.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank" style="width: 30%; height: auto;">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
+    <div class="col position-relative">
+      <div class="overlay">
+        <a href="https://github.com/celinebittmann" target="_blank">
+          <img src="assets/img/github_logo.jpg" alt="GitHub Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+          GitHub - Anja Brüstl
+        </a>
+      </div>
+      <img src="assets/img/celi1.jpg" class="img-small animated-slide-in img-hover-zoom" alt="Bild von Anja">
     </div>
   </div>
 </div>
+
+
 
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+
   <!-- Hintergrundfarbe & -verlauf -->
   <style>
 body {
@@ -85,6 +91,70 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+
+.img-small {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-slide-in {
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start von links */
+        opacity: 0; /* Unsichtbar zu Beginn */
+    }
+    100% {
+        transform: translateX(0); /* Endposition */
+        opacity: 1; /* Voll sichtbar */
+    }
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.1); /* Vergrößert das Bild beim Hover */
+}
+
+.position-relative {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: -40px; /* Platziert das Overlay oberhalb des Bildes */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none; /* Standardmäßig ausgeblendet */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Stellt sicher, dass das Overlay über dem Bild bleibt */
+}
+
+.position-relative:hover .overlay {
+    display: block; /* Zeigt das Overlay an, wenn die Maus über dem Bild ist */
+}
+
+.overlay a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.overlay img {
+    vertical-align: middle;
+}
+
+
 </style>
+
+
 
 </html>

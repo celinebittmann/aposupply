@@ -17,6 +17,70 @@ body{
     background-color: #d7f8fe;    
 }
 
+.img-small {
+    width: 30%;
+    height: auto;
+}
+
+.animated-slide-in {
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start von links */
+        opacity: 0; /* Unsichtbar zu Beginn */
+    }
+    100% {
+        transform: translateX(0); /* Endposition */
+        opacity: 1; /* Voll sichtbar */
+    }
+}
+
+.img-hover-zoom {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.1); /* Vergrößert das Bild beim Hover */
+}
+
+.position-relative {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: -30px; /* Platziert das Overlay oberhalb des Bildes */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none; /* Standardmäßig ausgeblendet */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.position-relative:hover .overlay {
+    display: block; /* Zeigt das Overlay an, wenn die Maus über dem Bild ist */
+}
+
+.overlay a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.overlay img {
+    vertical-align: middle;
+}
+
+
+
+
 /* 
 footer{
     margin-top: 10rem;
