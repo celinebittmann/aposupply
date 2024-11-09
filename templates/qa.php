@@ -27,8 +27,9 @@ ini_set('display_errors','On');
     <br>
     <h1>Q&A</h1>
 
-    <h6>Hier finden Sie Antworten zu verschiedenen Fragen!</h6>
     <br><br>
+    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
+    <br>
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -47,7 +48,7 @@ ini_set('display_errors','On');
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
           <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
         </svg>
-          <a class="nav-link linkapp icon-link-hover" href="app.php">Hier geht's zur App! 
+          <a class="nav-link link icon-link-hover" href="app.php">Hier geht's zur App! 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
             </svg>
@@ -90,11 +91,11 @@ ini_set('display_errors','On');
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Frage
+        Wie kann ich Sie kontaktieren?
       </button>
     </h2>
     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Antwort</div>
+      <div class="accordion-body">Besuchen Sie unsere <a href="templates/kontakt.php" class="link">Kontaktseite</a>  Kontaktseite für alle wichtigen Informationen. Nutzen Sie unser Formular, um uns direkt eine Nachricht zu senden!</div>
     </div>
   </div>
   <div class="accordion-item">
@@ -159,7 +160,7 @@ body {
     }
 }
 
-.linkapp{
+.link{
   text-decoration: underline;
   color: #00aaff;
   
