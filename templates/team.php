@@ -31,13 +31,11 @@ ini_set('display_errors','On');
         <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
         Wir sind wir!
 </p>
-  <p style="text-align: justify;">Die starke Arbeitsdynamik, die sich dank ihrer unterschiedlichen Persönlichkeiten und Fachkenntnisse in den letzten Jahren entwickelt hat, schafft eine produktive Arbeitsumgebung. Sie sind dadurch in der Lage, Herausforderungen gemeinsam anzugehen, Entscheidungen zu treffen und effektiv zu kommunizieren, was für den Erfolg ihres Unternehmens von entscheidender Bedeutung ist.
-Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unternehmen. Anja und Celine haben eine gemeinsame Vision für APO-SUPPLY sind durchaus bereit, zusätzliche Arbeit und Opfer zu bringen, die für den Aufbau eines erfolgreichen Unternehmens, wie dieses es werden wird, erforderlich sind. 
+  <p style="text-align: justify;">Die starke Arbeitsdynamik, die sich zwischen Anja & Celine dank ihrer unterschiedlichen Persönlichkeiten in den letzten Jahren entwickelt hat, schafft eine produktive Arbeitsumgebung. Sie sind dadurch in der Lage, Herausforderungen gemeinsam anzugehen, Entscheidungen zu treffen und effektiv zu kommunizieren, was für den Erfolg von Apo-Supply von entscheidender Bedeutung ist.
+Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unternehmen. Sie haben eine gemeinsame Vision für APO-SUPPLY sind durchaus bereit, zusätzliche Arbeit und Opfer zu bringen, die für den Aufbau eines erfolgreichen Unternehmens, wie dieses es werden wird, erforderlich sind. 
    </p>
   </div>
   <br><br>
-
-
 
 <div class="container text-center">
   <div class="row">
@@ -48,7 +46,9 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
           GitHub - Celine Bittmann
         </a>
       </div>
-      <img src="assets/img/celi2.jpg" class="img-small animated-slide-in img-hover-zoom" alt="Bild von Celine">
+      <img src="assets/img/celi2.jpg" class="img-small animated-slide-in-left img-hover-zoom" alt="Bild von Celine">
+      <h3 style="margin-top: 15px;">Celine Bittmann</h3>
+      <p>Innovative Denkerin und passionierte Entwicklerin.</p>
     </div>
     <div class="col position-relative">
       <div class="overlay">
@@ -57,13 +57,12 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
           GitHub - Anja Brüstl
         </a>
       </div>
-      <img src="assets/img/celi1.jpg" class="img-small animated-slide-in img-hover-zoom" alt="Bild von Anja">
+      <img src="assets/img/celi1.jpg" class="img-small animated-slide-in-right img-hover-zoom" alt="Bild von Anja">
+      <h3 style="margin-top: 15px;">Anja Brüstl</h3>
+      <p>Kreative Planerin mit einem Gespür für Details.</p>
     </div>
   </div>
 </div>
-
-
-
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -94,25 +93,39 @@ body {
 
 
 
-
 .img-small {
     width: 30%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
-.animated-slide-in {
-    animation: slideIn 2s ease-out;
+.animated-slide-in-left {
+    animation: slideInLeft 2s ease-out;
 }
 
-@keyframes slideIn {
+.animated-slide-in-right {
+    animation: slideInRight 2s ease-out;
+}
+
+@keyframes slideInLeft {
     0% {
-        transform: translateX(-100%); /* Start von links */
-        opacity: 0; /* Unsichtbar zu Beginn */
+        transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0); /* Endposition */
-        opacity: 1; /* Voll sichtbar */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
