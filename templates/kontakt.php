@@ -85,7 +85,7 @@ ini_set('display_errors','On');
 <div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card"> 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2640.080498525776!2d16.567565!3d48.570007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d23601a955245%3A0xeca4453950a6cafb!2sBundeshandelsakademie%20und%20Bundeshandelsschule!5e0!3m2!1sde!2sat!4v1730705553427!5m2!1sde!2sat" width="636" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2640.080498525776!2d16.567565!3d48.570007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d23601a955245%3A0xeca4453950a6cafb!2sBundeshandelsakademie%20und%20Bundeshandelsschule!5e0!3m2!1sde!2sat!4v1730705553427!5m2!1sde!2sat" width="636" height="538" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>  
   </div>  <!-- ende col -->
 
@@ -96,6 +96,7 @@ ini_set('display_errors','On');
           <br>
 
       <!-- Formular -->
+  <form  action="templates/nachricht_senden.php" method="post">
       <div class="input-group mb-3">
         <span class="input-group-text">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -103,10 +104,10 @@ ini_set('display_errors','On');
         </svg>
 
         </span>
-        <form class="form-floating">
-          <input type="text" class="form-control" id="floatingInputValue" placeholder="0">
-          <label for="floatingInputValue">Vor- und Nachname</label>
-        </form>
+        <div class="form-floating">
+          <input type="text" name="name" class="form-control" id="nn" placeholder="0" required>
+          <label for="nn">Vor- und Nachname</label>
+      </div>
       </div>
       <br>
 
@@ -118,10 +119,10 @@ ini_set('display_errors','On');
           </svg>
 
         </span>
-        <form class="form-floating">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@test.com">
-          <label for="floatingInputValue">E-Mail</label>
-        </form>
+        <div class="form-floating">
+          <input type="email" name="email" class="form-control" id="mail" placeholder="name@test.com" required>
+          <label for="mail">E-Mail</label>
+      </div>
       </div>
       <br>
 
@@ -131,10 +132,10 @@ ini_set('display_errors','On');
             <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
           </svg>
         </span>
-        <form class="form-floating">
-          <input type="text" class="form-control" id="floatingInputValue" placeholder="0" >
-          <label for="floatingInputValue">Betreff</label>
-        </form>
+        <div class="form-floating">
+          <input type="text" name="betreff" class="form-control" id="betreff" placeholder="0" required>
+          <label for="betreff">Betreff</label>
+      </div>
       </div>
       <br>
 
@@ -144,32 +145,14 @@ ini_set('display_errors','On');
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
           </svg>
         </span>
-        <form class="form-floating">
-          <textarea class="form-control" placeholder="Schreibe eine Nachricht!" id="floatingTextarea2" style="height: 120px"></textarea>
-          <label for="floatingTextarea2">Nachricht</label>
-        </form>
+        <div class="form-floating">
+          <textarea class="form-control" name="message" placeholder="Schreibe eine Nachricht!" id="message" style="height: 120px"></textarea>
+          <label for="message">Nachricht</label>
       </div>
-      <br>
-
-
-
-
-<!--  nachricht senden Eberhart fragen!!     Formular mit nachricht_senden verknüpft ??
-
-      <form action="nachricht_senden.php" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">E-Mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Nachricht:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Nachricht senden">
-        <button class="btn btn-primary d-grid gap-2 col-6 mx-auto" type="submit" name="login-button"  width="100">Nachricht senden</button>
-    </form> -->
-
+      </div>
+    
+        <button class="btn btn-primary d-grid gap-2 col-6 mx-auto senden" type="submit" name="mail-button" width="200">Nachricht senden</button>
+  </form> 
 
 
 
@@ -229,13 +212,16 @@ body {
     transform: translateY(-5px);
 }
 
+.senden{
+  background-color: #00AAFF;
+  border: none;
+}
+
 </style>
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
-</svg>
+
 <!-- Icon für senden Button?? -->
 
 

@@ -2,11 +2,12 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
+    $betreff = htmlspecialchars($_POST['betreff']);
     $message = htmlspecialchars($_POST['message']);
 
     $to = "brustl.anja@gmail.com"; // Ersetze dies durch deine E-Mail-Adresse
     $subject = "Neue Nachricht von Apo-Supply";
-    $body = "Name: $name\nE-Mail: $email\nNachricht:\n$message";
+    $body = "Name: $name\n E-Mail: $email\nNachricht:\n$message";
 
     $headers = "From: $email";
 

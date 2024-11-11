@@ -129,8 +129,14 @@ ini_set('display_errors','On');
     </div>
   </div>
 </div>
+<br><br>
 
-<br><br><br><br><br><br><br><br><br><br>
+<p>Wir hoffen, dass wir Ihnen behilflich sein konnten, wenn nicht, schreiben Sie uns <a href="templates/kontakt.php" class="link">hier</a> eine Nachricht.</p>
+
+
+
+
+<br><br><br><br><br><br><br><br>
 
     
 
