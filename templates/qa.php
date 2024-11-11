@@ -27,7 +27,7 @@ ini_set('display_errors','On');
     <br>
     <h1>Q&A</h1>
 
-    <br><br>
+    <br>
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
     <br>
 

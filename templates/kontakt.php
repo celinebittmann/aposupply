@@ -26,7 +26,7 @@ ini_set('display_errors','On');
 
     <br>
     <h1>Kontaktiere uns!</h1>
-    <br><br><br>
+    <br>
     
   
   <div class="row">
