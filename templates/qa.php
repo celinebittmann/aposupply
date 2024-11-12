@@ -26,10 +26,24 @@ ini_set('display_errors','On');
 
     <br>
     <h1>Q&A</h1>
+    <br>
 
-    <br>
-    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
-    <br>
+<div class="row">
+  <div class="col-7">
+    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Ihre Fragen, unsere Antworten - hier entlang!</p>
+    <p>Wir haben für Sie die Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien zusammengestellt. Wenn Sie darüber hinaus noch weitere Fragen haben, zögern Sie bitte nicht, uns direkt zu kontaktieren.</p>
+  </div>
+
+  <div class="col-1">
+  </div>
+
+  <div class="col-3">
+    <img src="assets/img/qa_bild.png" width="300" height="200" alt="Frau mit Medikamenten">
+  </div>
+
+</div>
+
+
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -63,7 +77,7 @@ ini_set('display_errors','On');
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Die App ist nur am Mobilgerät verfügbar! Eine genauere Anleitung finden Sie hier!</div>
+      <div class="accordion-body">Die App ist nur am Mobilgerät verfügbar! Eine genauere Anleitung finden Sie <a class="link" href="app.php">hier!</a></div> 
     </div>
   </div>
   <div class="accordion-item">

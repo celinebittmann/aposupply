@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $betreff = htmlspecialchars($_POST['betreff']);
     $message = htmlspecialchars($_POST['message']);
 
-    $to = "brustl.anja@gmail.com"; // Ersetze dies durch deine E-Mail-Adresse
+    $to = "service@aposupply.digbizmistelbach.info"; 
     $subject = "Neue Nachricht von Apo-Supply";
     $body = "Name: $name\n E-Mail: $email\nNachricht:\n$message";
 
