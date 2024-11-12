@@ -70,6 +70,9 @@ $andi = $dbh->query($sql);
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<br><br>
+<h4>Lizenzpakete</h4>
+
 
 
 

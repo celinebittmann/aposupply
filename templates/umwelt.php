@@ -26,22 +26,27 @@ ini_set('display_errors','On');
     <br>
     <div class="container">
     <h1>Nachhaltigkeit</h1>
-    </div>
-    <br>
-    <div class="container">
-        <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
-    "Nachhaltigkeit bedeutet, 
-    die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."
-</p>
-  <p style="text-align: justify;">Antibiotika können Algen und Cyanobakterien schädigen, wodurch das Nahrungsnetz und Ökosysteme aus dem Gleichgewicht geraten. Medikamente im Grundwasser erschweren 
-    zudem die Trinkwassergewinnung. Obwohl die gemessenen Konzentrationen unter therapeutisch wirksamen Dosen liegen, 
-    sind Wasserlebewesen ständig einer Mischung dieser Stoffe ausgesetzt. Die Aufnahme erfolgt über Haut, Nahrung und Schleimhäute, wodurch Wirkstoffe 
-    in den Organen gespeichert werden. Dies kann Organschäden, Verhaltensänderungen oder Fortpflanzungsstörungen verursachen, mit erheblichen Folgen für das Ökosystem.
-   </p>
-   <p style="text-align: justify;">Um diese Ökosysteme nun zu schützen, hilft die Einsicht auf den Vorrat, Überkäufe zu vermeiden und unnötige Verschwendung zu reduzieren. 
-    Diese Funktionen tragen nicht nur zur Bequemlichkeit bei, sondern auch zur effektiven Nutzung von Ressourcen und zum Umweltschutz durch die 
-  Minimierung von Medikamentenabfall.</p>
+
+    <div class="container d-flex align-items-center">
+  <div class="flex-grow-1" style="margin-right: 20px;">
+    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
+      "Nachhaltigkeit bedeutet, die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."
+    </p>
+    <p style="text-align: justify;">
+      Antibiotika können Algen und Cyanobakterien schädigen, wodurch das Nahrungsnetz und Ökosysteme aus dem Gleichgewicht geraten. Medikamente im Grundwasser erschweren 
+      zudem die Trinkwassergewinnung. Obwohl die gemessenen Konzentrationen unter therapeutisch wirksamen Dosen liegen, sind Wasserlebewesen ständig einer Mischung dieser Stoffe ausgesetzt. Die Aufnahme erfolgt über Haut, Nahrung und Schleimhäute, wodurch Wirkstoffe 
+      in den Organen gespeichert werden. Dies kann Organschäden, Verhaltensänderungen oder Fortpflanzungsstörungen verursachen, mit erheblichen Folgen für das Ökosystem.
+    </p>
+    <p style="text-align: justify;">
+      Um diese Ökosysteme nun zu schützen, hilft die Einsicht auf den Vorrat, Überkäufe zu vermeiden und unnötige Verschwendung zu reduzieren. Diese Funktionen tragen nicht nur zur Bequemlichkeit bei, sondern auch zur effektiven Nutzung von Ressourcen und zum Umweltschutz durch die Minimierung von Medikamentenabfall.
+    </p>
   </div>
+  <div class="image-container" style="position: relative;">
+    <img id="clickableImage" src="assets/img/umwelt.png" alt="Umweltbild" style="width: 300px; height: auto; border-radius: 10px; cursor: pointer;">
+  </div>
+</div>
+
+
   <br><br>
 <div class="container">
   <div class="row align-items-center">
@@ -186,4 +191,64 @@ body {
     }
 }
 </style>
+
+   <!-- Herzen bei Bild -->
+<style>
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    animation: floatUp 2s ease-out forwards;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .heart::after {
+    top: 0;
+    left: -10px;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('clickableImage').addEventListener('click', function (event) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    document.querySelector('.image-container').appendChild(heart);
+
+    // Positioniere das Herz am Klickpunkt
+    heart.style.left = `${event.offsetX}px`;
+    heart.style.top = `${event.offsetY}px`;
+
+    // Entferne das Herz nach der Animation
+    setTimeout(() => {
+      heart.remove();
+    }, 2000);
+  });
+</script>
   </html>

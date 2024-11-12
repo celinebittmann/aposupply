@@ -52,7 +52,7 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
     </div>
     <div class="col position-relative">
       <div class="overlay">
-        <a href="https://github.com/celinebittmann" target="_blank">
+        <a href="https://github.com/anjabruestl" target="_blank">
           <img src="assets/img/github_logo.jpg" alt="GitHub Icon" style="width: 16px; height: 16px; margin-right: 5px;">
           GitHub - Anja Brüstl
         </a>
