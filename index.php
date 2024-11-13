@@ -45,76 +45,37 @@ ini_set('display_errors','On');
 </div>
 
 
+<!-- <div class="numbers">
+            <div class="numbers-header">
+                <p class="numbers-heading">globale Vernichtung - zuverlässige Vorhersagen
+                jahrelange Datenerfassung</p>
+            </div>
+            <div class="number-container">
+                <div class="Laender-container">
+                    <span class="material-symbols-outlined size">language</span>
+                    <span class="number-Laender num" data-val="193">0</span>
+                    <p class="Laender-text">Länder</p>
+                </div>
+                <div class="vorhersage-container">
+                    <span class="material-symbols-outlined size">update</span>
+                    <span class="number-vorhersage num" data-val="7">0</span>
+                    <p class="vorhersage-text">Tage Vorhersage</p>
+                </div>
+                <div class="historie-container">
+                    <span class="material-symbols-outlined size">calendar_month</span>
+                    <span class="number-historie num" data-val="17">0</span>
+                    <p class="historie-text">Jahre historische Daten</p>
+                </div>
+            </div>
+           </div>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+ -->
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Counter???
-     
-      <div class="elementor-element elementor-element-554a111 e-con-full e-flex e-con e-child" data-id="554a111" data-element_type="container">
-				<div class="elementor-element elementor-element-e489b09 elementor-widget elementor-widget-counter" data-id="e489b09" data-element_type="widget" data-widget_type="counter.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.23.0 - 25-07-2024 */
-.elementor-counter{display:flex;justify-content:center;align-items:stretch;flex-direction:column-reverse}.elementor-counter .elementor-counter-number{flex-grow:var(--counter-number-grow,0)}.elementor-counter .elementor-counter-number-wrapper{flex:1;display:flex;font-size:69px;font-weight:600;line-height:1;text-align:center}.elementor-counter .elementor-counter-number-prefix{text-align:end;flex-grow:var(--counter-prefix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-number-suffix{text-align:start;flex-grow:var(--counter-suffix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-title{flex:1;display:flex;justify-content:center;align-items:center;margin:0;padding:0;font-size:19px;font-weight:400;line-height:2.5}</style>		<div class="elementor-counter">
-			<div class="elementor-counter-title">Personen</div>			<div class="elementor-counter-number-wrapper">
-				<span class="elementor-counter-number-prefix"></span>
-				<span class="elementor-counter-number" data-duration="2000" data-to-value="200" data-from-value="0" data-delimiter=",">200</span>
-				<span class="elementor-counter-number-suffix"></span>
-			</div>
-		</div>
-				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-c89c006 e-con-full e-flex e-con e-child" data-id="c89c006" data-element_type="container">
-				<div class="elementor-element elementor-element-40fbf58 elementor-widget elementor-widget-counter" data-id="40fbf58" data-element_type="widget" data-widget_type="counter.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-counter">
-			<div class="elementor-counter-title">Personen</div>			<div class="elementor-counter-number-wrapper">
-				<span class="elementor-counter-number-prefix"></span>
-				<span class="elementor-counter-number" data-duration="1000" data-to-value="21" data-from-value="0" data-delimiter=",">0</span>
-				<span class="elementor-counter-number-suffix"></span>
-			</div>
-		</div>
-				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-cb42e6a e-con-full e-flex e-con e-child" data-id="cb42e6a" data-element_type="container">
-				<div class="elementor-element elementor-element-c8c1952 elementor-widget elementor-widget-counter" data-id="c8c1952" data-element_type="widget" data-widget_type="counter.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-counter">
-			<div class="elementor-counter-title">Personen</div>			<div class="elementor-counter-number-wrapper">
-				<span class="elementor-counter-number-prefix"></span>
-				<span class="elementor-counter-number" data-duration="1200" data-to-value="35" data-from-value="0" data-delimiter=",">0</span>
-				<span class="elementor-counter-number-suffix"></span>
-			</div>
-		</div>
-				</div>
-				</div>
-				</div> -->
 
 
 
@@ -165,5 +126,94 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+/* .numbers {
+  display: grid;
+  justify-items: center;
+  margin: 2rem auto;
+}
+
+.numbers-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 75%;
+}
+
+.numbers-heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.number-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem; /* Abstand zwischen den Elementen 
+}
+
+.Laender-container, .vorhersage-container, .historie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  width: 12vw;
+}
+
+
+
+.size{
+  font-size: 150px !important;
+  margin-bottom: 0.5rem;
+}
+
+
+.number-Laender, .number-vorhersage, .number-historie {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  color: orange; /* Orange Farbe fÃ¼r Zahlen 
+}
+
+.Laender-text, .vorhersage-text, .historie-text {
+  font-size: 1.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .number-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
   </html>
