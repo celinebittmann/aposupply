@@ -28,6 +28,8 @@ ini_set('display_errors','On');
     <h1>Q&A</h1>
     <br>
 
+
+
 <div class="row">
   <div class="col-7">
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Ihre Fragen, unsere Antworten - hier entlang!</p>
@@ -37,9 +39,12 @@ ini_set('display_errors','On');
   <div class="col-1">
   </div>
 
-  <div class="col-3">
-    <img src="assets/img/qa_bild.png" width="300" height="200" alt="Frau mit Medikamenten">
+  <div class="col-3 image-container" style="position: relative;">
+    <img id="clickableImage" src="assets/img/qa_bild.png" width="300" height="200" style="width: 300px; height: auto; border-radius: 10px; cursor: pointer;" alt="Frau mit Medikamenten">
   </div>
+
+
+  
 
 </div>
 
@@ -48,7 +53,7 @@ ini_set('display_errors','On');
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed" style="" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Wie downloadet man die App?
       </button>
     </h2>
@@ -70,6 +75,10 @@ ini_set('display_errors','On');
       </div>
     </div>
   </div>
+  
+
+
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -109,7 +118,7 @@ ini_set('display_errors','On');
       </button>
     </h2>
     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Besuchen Sie unsere <a href="templates/kontakt.php" class="link">Kontaktseite</a>  Kontaktseite für alle wichtigen Informationen. Nutzen Sie unser Formular, um uns direkt eine Nachricht zu senden!</div>
+      <div class="accordion-body">Besuchen Sie unsere <a href="templates/kontakt.php" class="link">Kontaktseite</a> für alle wichtigen Informationen. Nutzen Sie unser Formular, um uns direkt eine Nachricht zu senden!</div>
     </div>
   </div>
   <div class="accordion-item">
@@ -145,18 +154,25 @@ ini_set('display_errors','On');
 </div>
 <br><br>
 
+
 <p>Wir hoffen, dass wir Ihnen behilflich sein konnten, wenn nicht, schreiben Sie uns <a href="templates/kontakt.php" class="link">hier</a> eine Nachricht.</p>
 
 
 
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 
     
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+
+  <?php
+    include "footer.php";
+  ?>
+
+
   <!-- Hintergrundfarbe & -verlauf -->
   <style>
 body {
@@ -185,6 +201,40 @@ body {
   color: #00aaff;
   
 }
+
+/* Verzögerungseffekt */
+.accordion-body {
+  animation: sweep .7s ease-in-out;}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -20px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+
+.accordion-button{
+  background-color: rgba(0,170,255,0.1);
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 </html>

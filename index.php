@@ -21,8 +21,9 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
     <br>
-    <h1>Willkommen</h1>
+    <h1>Willkommen bei Apo-Supply!</h1>
     <br>
+
 
 <div class="row">
   <div class="col-6">
@@ -43,6 +44,15 @@ ini_set('display_errors','On');
 
 
 </div>
+
+
+
+
+<br><br><br><br><br>
+
+
+
+
 
 
 <!-- <div class="numbers">
@@ -74,27 +84,24 @@ ini_set('display_errors','On');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <!-- 
+<div class="tabs">
+	<details name="tab" >
+		<summary> Registerkarten</summary>
+		<div class="content">
+		</div>
+	</details>
+	<details name="tab">
+		<summary> Standardverhalten</summary>
+		<div class="content">
+		</div>
+	</details>
+	<details name="tab" open>
+		<summary> Barrierefreiheit </summary>
+		<div class="content">
+		</div>
+	</details>
+</div> -->
 
 
 
@@ -103,6 +110,15 @@ ini_set('display_errors','On');
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+
+
+
+  <?php
+    include "templates/footer.php";
+  ?>
+
+
+
   
   <!-- Hintergrundfarbe & -verlauf -->
   <style>
@@ -126,6 +142,38 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+.tabs details {
+	display: inline-block;
+}
+
+.tabs summary {
+	background-color: lightgrey;
+	border: thin solid black;
+	border-bottom: none;
+	border-radius: 0.5em 0.5em 0 0;
+	font-weight: bold;
+	height: 1.5em;
+	width: 10em;
+	padding: 0.5em 0.5em 10px;
+}
+
+.tabs .content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: white;
+	border: thin solid #ccc;
+	padding: .5em;
+}
+
+
+
+
+
+
 
 
 

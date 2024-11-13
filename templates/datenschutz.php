@@ -11,7 +11,7 @@ ini_set('display_errors','On');
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Impressum
+    <title>Datenschutzerklärung
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="../functions/mystyle.css"rel="stylesheet">
@@ -25,38 +25,63 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1>Impressum</h1>
+    <h1>Datenschutzerklärung</h1>
     <br>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <h2 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 700;">Diplomarbeit: Apo-Supply</h2>
-<h3>Erstellt von:</h3>
-    <p class="design">Celine Bittmann</p>
-    <p class="design">Anja Brüstl</p>
-
- 
-    <p style="text-align: justify;">Diese Diplomarbeit wird ausschließlich für akademische Zwecke angefertigt. Aktuell liegt keine Intention zur Erzielung von Gewinnen vor, und es werden keine Umsätze generiert. 
-    Ziel der Arbeit ist es, Kenntnisse zu vertiefen und wissenschaftliche Methoden anzuwenden. Jegliche wirtschaftliche Verwertung oder kommerzielle Nutzung steht derzeit nicht im Fokus und ist nicht beabsichtigt. 
-    Die Ausarbeitung dient lediglich der Vertiefung des Fachwissens und der akademischen Weiterentwicklung der Verfasserinnen.</p> 
+<h5>Letzte Aktualisierung:</h5>
+    <p class="design">xx.xx.2025</p>
     <br>
 
+    <h3>Einführung:</h3>
+      <p style="text-align: justify;">Ihr Apo-Supply Team nimmt den Schutz Ihrer persönlichen Daten sehr ernst. 
+        Diese Datenschutzerklärung zeigt, wie wir Ihre personenbezogenen Daten verwalten, wie wir sie verwenden und schhützen.</p>
+      <br>
+
+
+    <h3>Ihre Daten:</h3>
+      <p>Wir verwalten ausschließlich die Informationen, die Sie uns beim Registrierungsprozess in der App oder bei der Kommunikation mit uns zur Verfügung stellen. 
+        Dazu gehören Name, E-Mail Adresse, gegebenenfalls Wohnort und andere persönliche Daten. 
+        Ihre Daten werden für unsere Dienste, Verbesserungen der App oder Website oder für die Kommunikation verwendet.</p>
+      <br>
+
+    <h3>Datenschutz:</h3>
+      <p>Wir ergreifen geeignete Sicherheitsvorkehrungen, um Ihre Daten vor unbefugtem Zugriff und Missbräuchen zu schützen. 
+        Sie haben das Recht, Informationen über Ihre gespeicherten Daten anzufordern, Korrekturen vorzunehmen, die Daten löschen zu lassen oder die Verarbeitung einzuschränken.</p>
+      <br>
 
     <h3>Kontakt:</h3>
-      <p class="design">E-Mail: service@aposupply.digbizmistelbach.info <br>
-      Telefon: 02572/2305-350</p>
-    <br>
-
-
-    <h3>Rechtliche Hinweise:</h3>
-      <h4 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 550;">Inhaltlich verantwortlich:</h4>
-        <h6 class="design">Celine Bittmann
-        <br>Straße , 2170 Poysdorf</h6>
-        <h6 class="design">Anja Brüstl
-        <br>Obere Kellergasse 75, 2132 Hörersdorf</h6>
-        <br>
-
-    <h3>Haftungsausschluss:</h3>
-      <p style="text-align: justify;">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="#">service@aposupply.digbizmistelbach.info</a></p>
+      <br>
 
 
       <br><br><br><br>
@@ -105,6 +130,10 @@ h3{
 
 }
 
-
+.link{
+  text-decoration: underline;
+  color: #00aaff;
+  
+}
 
 </style>
