@@ -57,7 +57,7 @@ ini_set('display_errors','On');
 
 
 
-<h2 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 700;">Diplomarbeit: Apo-Supply</h2>
+<h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
 <h5>Letzte Aktualisierung:</h5>
     <p class="design">xx.xx.2025</p>
     <br>
@@ -82,7 +82,7 @@ ini_set('display_errors','On');
     <h3>Kontakt:</h3>
       <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="#">service@aposupply.digbizmistelbach.info</a></p>
       <br>
-
+<!-- Link so machen dass outlook aufgeht -->
 
       <br><br><br><br>
 
@@ -125,15 +125,51 @@ h3{
   font-style: italic;
 }
 
+/* Unterstrichene Texte */
 .design:hover{
   text-decoration:underline;
 
 }
 
+
+/* Links */
 .link{
-  text-decoration: underline;
+  text-decoration: none;
   color: #00aaff;
   
+}
+
+.link:hover{
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #000000;
+  
+}
+
+
+
+@keyframes example {
+  0%   {letter-spacing:1px;}
+  25%  {letter-spacing:1.3px;}
+  50%  {letter-spacing:1.6px;}
+  75%  {letter-spacing:2px;}
+  100% {letter-spacing:2.1px;}
+}
+
+.DAschrift{
+font-style: italic; 
+letter-spacing: 1px; 
+font-weight: 700;
+}
+
+.DAschrift:hover{
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  letter-spacing: 2.1px;
 }
 
 </style>

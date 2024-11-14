@@ -25,38 +25,35 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1>AGB</h1>
+    <h1>Allgemeine Geschäftsbedingungen</h1>
     <br>
 
 
-<h2 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 700;">Diplomarbeit: Apo-Supply</h2>
-<h3>Erstellt von:</h3>
-    <p class="design">Celine Bittmann</p>
-    <p class="design">Anja Brüstl</p>
-
- 
-    <p style="text-align: justify;">Diese Diplomarbeit wird ausschließlich für akademische Zwecke angefertigt. Aktuell liegt keine Intention zur Erzielung von Gewinnen vor, und es werden keine Umsätze generiert. 
-    Ziel der Arbeit ist es, Kenntnisse zu vertiefen und wissenschaftliche Methoden anzuwenden. Jegliche wirtschaftliche Verwertung oder kommerzielle Nutzung steht derzeit nicht im Fokus und ist nicht beabsichtigt. 
-    Die Ausarbeitung dient lediglich der Vertiefung des Fachwissens und der akademischen Weiterentwicklung der Verfasserinnen.</p> 
+<h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
+<h5>Letzte Aktualisierung:</h5>
+    <p class="design">xx.xx.2025</p>
     <br>
 
+    <h3>Geltungsbereich:</h3>
+      <p  style="text-align: justify;">Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen die angeboten werden.</p>
+    <br>
+
+
+    <h3>Haftungsbeschränkung:</h3>
+      <p style="text-align: justify;">Apo-Supply übernimmt keine Haftung für indirekte Schäden, die durch die Nutzung der Dienstleistung entstehen. 
+        Darüber hinaus haftet Apo-Supply nicht für Schäden, die durch Benutzer verursacht werden. 
+        Die Nutzung von Apo-Supply erfolgt auf eigenes Risiko des Nutzers. 
+        Der Nutzer trägt die volle Verantwortung für alle Schäden, die durch seine Nutzung von Apo-Supply entstehen.</p>
+    <br>
+
+    <h3>Änderungen der AGB:</h3>
+      <p style="text-align: justify;">Apo-Supply behält sich das Recht vor, die Allgemeinen Geschäftsbedingungen jederzeit zu ändern.
+        Die geänderten Bedingungen werden auf dieser Seite bekannt gegeben.</p>
+    <br>
 
     <h3>Kontakt:</h3>
-      <p class="design">E-Mail: service@aposupply.digbizmistelbach.info <br>
-      Telefon: 02572/2305-350</p>
-    <br>
-
-
-    <h3>Rechtliche Hinweise:</h3>
-      <h4 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 550;">Inhaltlich verantwortlich:</h4>
-        <h6 class="design">Celine Bittmann
-        <br>Straße , 2170 Poysdorf</h6>
-        <h6 class="design">Anja Brüstl
-        <br>Obere Kellergasse 75, 2132 Hörersdorf</h6>
-        <br>
-
-    <h3>Haftungsausschluss:</h3>
-      <p style="text-align: justify;">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="#">service@aposupply.digbizmistelbach.info</a></p>
+      <br>
 
 
       <br><br><br><br>
@@ -105,6 +102,44 @@ h3{
 
 }
 
+.link{
+  text-decoration: none;
+  color: #00aaff;
+  
+}
 
+.link:hover{
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #000000;
+  
+}
+
+
+
+
+@keyframes example {
+  0%   {letter-spacing:1px;}
+  25%  {letter-spacing:1.3px;}
+  50%  {letter-spacing:1.6px;}
+  75%  {letter-spacing:2px;}
+  100% {letter-spacing:2.1px;}
+}
+
+.DAschrift{
+font-style: italic; 
+letter-spacing: 1px; 
+font-weight: 700;
+}
+
+.DAschrift:hover{
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  letter-spacing: 2.1px;
+}
 
 </style>
