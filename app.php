@@ -16,7 +16,7 @@ $andi = $dbh->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unsere App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="functions/mystyle.css"rel="stylesheet">
+    <link href="../functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <?php
@@ -72,6 +72,63 @@ $andi = $dbh->query($sql);
 </div>
 <br><br>
 <h4>Lizenzpakete</h4>
+<br><br>
+
+
+<div class="container">
+  <div class="row">
+    <!-- Card 1: Standard License -->
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Standard License</h5>
+          <p class="card-text">Ideal for individuals or small teams. Includes core features and basic support.</p>
+          <ul>
+            <li>1 user</li>
+            <li>Basic support</li>
+            <li>Access to standard features</li>
+          </ul>
+          <p class="price">Price: $10/month</p>
+          <a href="#" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Premium License -->
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Premium License</h5>
+          <p class="card-text">Great for growing teams and advanced use. Includes premium features and priority support.</p>
+          <ul>
+            <li>Up to 5 users</li>
+            <li>Priority support</li>
+            <li>Access to premium features</li>
+          </ul>
+          <p class="price">Price: $30/month</p>
+          <a href="#" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: 3 Monate Gratis Angebot -->
+    <div class="col-md-4">
+      <div class="card border-success" style="width: 18rem; border: 2px solid green;">
+        <div class="card-body">
+          <h5 class="card-title text-success">Special License - 3 Monate Gratis!</h5>
+          <p class="card-text">Genießen Sie 3 Monate kostenlose Nutzung mit allen Premium-Funktionen und unbegrenztem Zugang.</p>
+          <ul>
+            <li>Unbegrenzte Benutzer</li>
+            <li>24/7 Premium-Support</li>
+            <li>Voller Zugriff auf alle Funktionen</li>
+          </ul>
+          <p class="price text-success">Preis: $50/Monat nach den ersten 3 kostenlosen Monaten</p>
+          <a href="#" class="btn btn-success">Select</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

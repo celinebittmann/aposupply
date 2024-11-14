@@ -13,7 +13,7 @@ ini_set('display_errors','On');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nachhaltigkeit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="../functions/mystyle.css"rel="stylesheet">
+    <link href="../functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
     <base href="/aposupply/">
 
   </head>
@@ -51,7 +51,7 @@ ini_set('display_errors','On');
     <div class="container">
   <div class="row align-items-center">
     <div class="col-md-3">
-      <div class="card" id="clickableCard" style="width: 20rem; height: 28rem; cursor: pointer;">
+      <div class="card" id="clickableCard" style="width: 21rem; height: 33rem; cursor: pointer;">
         <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
         <div class="card-body">
           <h5>Ohne Apo-Supply</h5>
@@ -70,7 +70,7 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" id="clickableCard2" style="width: 20rem; height: 28rem; cursor: pointer;">
+      <div class="card" id="clickableCard2" style="width: 21rem; height: 33rem; cursor: pointer;">
         <img src="assets/img/logoapo.png" class="card-img-top" alt="Logo Apo-Supply">
         <div class="card-body">
         <h5>Unsere App</h5>
@@ -92,7 +92,7 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" id="clickableCard3" style="width: 20rem; height: 28rem; cursor: pointer;">
+      <div class="card" id="clickableCard3" style="width: 21rem; height: 33rem; cursor: pointer;">
       <img src="assets/img/logoapo.png" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
         <h5>Mit Apo-Supply</h5>
@@ -405,7 +405,6 @@ body {
     }
   }
 </style>
-
 <script>
   document.getElementById('clickableCard3').addEventListener('click', function (event) {
     const happy = document.createElement('div');
@@ -422,8 +421,9 @@ body {
       happy.remove();
     }, 2000);
   });
-</script>
+  </script>
 
 
+<script src="../index.js"></script>
 
   </html>
