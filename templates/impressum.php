@@ -50,14 +50,13 @@ ini_set('display_errors','On');
     <h3>Rechtliche Hinweise:</h3>
       <h4 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 550;">Inhaltlich verantwortlich:</h4>
         <h6 class="design">Celine Bittmann
-        <br>Straße , 2170 Poysdorf</h6>
+        <br>Millenniumsstraße 40 , 2170 Poysdorf</h6>
         <h6 class="design">Anja Brüstl
         <br>Obere Kellergasse 75, 2132 Hörersdorf</h6>
         <br>
 
     <h3>Haftungsausschluss:</h3>
       <p style="text-align: justify;">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
-
 
       <br><br><br><br>
 

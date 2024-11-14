@@ -48,14 +48,16 @@ ini_set('display_errors','On');
 
 
   <br><br>
-<div class="container">
+    <div class="container">
   <div class="row align-items-center">
     <div class="col-md-3">
-      <div class="card" style="width: 19rem;">
-      <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
+      <div class="card" id="clickableCard" style="width: 20rem; height: 28rem; cursor: pointer;">
+        <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
         <div class="card-body">
           <h5>Ohne Apo-Supply</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+            Viele Haushalte verfügen über einen sogenannten „Apothekenschrank“. Häufig ist dieser jedoch überfüllt, 
+            da Medikamente doppelt vorhanden sind oder nach Ablauf ihres Verfalldatums schlichtweg vergessen werden und weiterhin darin verbleiben.</p>
         </div>
       </div>
     </div>
@@ -68,11 +70,16 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 19rem;">
+      <div class="card" id="clickableCard2" style="width: 20rem; height: 28rem; cursor: pointer;">
         <img src="assets/img/logoapo.png" class="card-img-top" alt="Logo Apo-Supply">
         <div class="card-body">
         <h5>Unsere App</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+     Die App „Apo-Supply“ kann ganz einfach und kostenfrei in Ihrem App Store bzw. Play Store installiert werden.
+     Für weitere Details besuchen Sie die <a href="app.php" style="color: darkblue; font-weight: bold;">
+     Infoseite der App</a> oder laden Sie sie direkt <a href="test.php" style="color: darkblue; font-weight: bold;">hier</a> herunter.
+      </p>
+
         </div>
       </div>
     </div>
@@ -85,28 +92,24 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 19rem;">
-      <img src="assets/img/" class="card-img-top" alt="Screenshot App">
+      <div class="card" id="clickableCard3" style="width: 20rem; height: 28rem; cursor: pointer;">
+      <img src="assets/img/logoapo.png" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
         <h5>Mit Apo-Supply</h5>
-          <p class="card-text">Bild von Medikamentenverwaltung von App</p>
+          <p class="card-text">
+            Unsere App bietet Ihnen einen umfassenden Überblick über Ihre Medikamente und benachrichtigt Sie automatisch, wenn der Vorrat zur Neige geht 
+          und hilft Ihnen beim Nachbestellen</p>
         </div>
       </div>
+     
     </div>
- 
+
+    
 
 
   <style>
-    /* Container für die Karten, navbar funktioniert dann aber nicht */
-    /* .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    } */
-
-    
-    /* Karten-Animation */
+    /*Cards*/
+     /* Karten-Animation */
     .card {
       transition: transform 0.5s ease, opacity 0.5s ease;
       opacity: 0;
@@ -144,22 +147,22 @@ ini_set('display_errors','On');
 
 
   <script>
-    // Warte, bis das DOM vollständig geladen ist
+    // Warte, bis vollständig geladen ist
     document.addEventListener("DOMContentLoaded", function() {
-      // Füge die Klasse 'visible' hinzu, um Animation zu starten
+      //Klasse 'visible' hinzufügen, um Animation zu starten
       const cards = document.querySelectorAll('.card');
       const arrows = document.querySelectorAll('.bi-caret-right-fill');
 
       cards.forEach((card, index) => {
         setTimeout(() => {
           card.classList.add('visible');
-        }, index * 300); // Verzögerung zwischen den Karten
+        }, index * 300); // Verzögerung zwischen  Karten
       });
 
       arrows.forEach((arrow, index) => {
         setTimeout(() => {
           arrow.classList.add('visible');
-        }, (index + 1) * 300); // Verzögerung für die Pfeile
+        }, (index + 1) * 300); // Verzögerung für Pfeile
       });
     });
   </script>
@@ -169,12 +172,11 @@ ini_set('display_errors','On');
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
-
+<br><br><br><br>
   <?php
     include "footer.php";
   ?>
   
-
   
     <!-- Hintergrundfarbe & -verlauf -->
   <style>
@@ -199,6 +201,8 @@ body {
     }
 }
 </style>
+
+
 
    <!-- Herzen bei Bild -->
 <style>
@@ -253,10 +257,173 @@ body {
     heart.style.left = `${event.offsetX}px`;
     heart.style.top = `${event.offsetY}px`;
 
-    // Entferne das Herz nach der Animation
+    // Entferne  Herz nach  Animation
     setTimeout(() => {
       heart.remove();
     }, 2000);
   });
 </script>
+
+
+<!-- traurigen Smileys -->
+<style>
+  .sad-smiley {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    animation: floatUp 2s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('clickableCard').addEventListener('click', function (event) {
+    const smiley = document.createElement('div');
+    smiley.classList.add('sad-smiley');
+    smiley.textContent = '😢☹️';
+    document.body.appendChild(smiley);
+
+    // Positioniere den Smiley am Klickpunkt relativ zum Viewport
+    smiley.style.left = `${event.pageX}px`;
+    smiley.style.top = `${event.pageY}px`;
+
+    // Entfernt Smiley nach  Animation
+    setTimeout(() => {
+      smiley.remove();
+    }, 2000);
+  });
+</script>
+
+<style>
+  .sad-smiley {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    animation: floatUp 2s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('clickableCard').addEventListener('click', function (event) {
+    const smiley = document.createElement('div');
+    smiley.classList.add('sad-smiley');
+    smiley.textContent = '😧😢☹️';
+    document.body.appendChild(smiley);
+
+    // Positioniere den Smiley am Klickpunkt relativ zum Viewport
+    smiley.style.left = `${event.pageX}px`;
+    smiley.style.top = `${event.pageY}px`;
+
+    // Entfernt Smiley nach  Animation
+    setTimeout(() => {
+      smiley.remove();
+    }, 2000);
+  });
+</script>
+
+<!-- Daumen nach oben, verschiedene Farben -->
+<style>
+  .daumen {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    animation: floatUp 2s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('clickableCard2').addEventListener('click', function (event) {
+    const daumen = document.createElement('div');
+    daumen.classList.add('daumen');
+    daumen.textContent = '👍🏼👍🏽👍🏿';
+    document.body.appendChild(daumen);
+
+    // Positioniere den Daumen am Klickpunkt relativ zum Viewport
+    daumen.style.left = `${event.pageX}px`;
+    daumen.style.top = `${event.pageY}px`;
+
+    // Entfernt Daumen nach  Animation
+    setTimeout(() => {
+      daumen.remove();
+    }, 2000);
+  });
+</script>
+
+<!-- glückliches Gesicht -->
+<style>
+  .happy {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    animation: floatUp 2s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('clickableCard3').addEventListener('click', function (event) {
+    const happy = document.createElement('div');
+    happy.classList.add('happy');
+    happy.textContent = '😀😍😊';
+    document.body.appendChild(happy);
+
+    // Positioniere den Daumen am Klickpunkt relativ zum Viewport
+    happy.style.left = `${event.pageX}px`;
+    happy.style.top = `${event.pageY}px`;
+
+    // Entfernt Daumen nach  Animation
+    setTimeout(() => {
+      happy.remove();
+    }, 2000);
+  });
+</script>
+
+
+
   </html>
