@@ -29,23 +29,18 @@ ini_set('display_errors','On');
     <br>
 
 
-<h2 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 700;">Diplomarbeit: Apo-Supply</h2>
+<h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
 <h3>Erstellt von:</h3>
     <p class="design">Celine Bittmann</p>
     <p class="design">Anja Brüstl</p>
 
  
-    <p style="text-align: justify;">Diese Diplomarbeit wird ausschließlich für akademische Zwecke angefertigt. Aktuell liegt keine Intention zur Erzielung von Gewinnen vor, und es werden keine Umsätze generiert. 
-    Ziel der Arbeit ist es, Kenntnisse zu vertiefen und wissenschaftliche Methoden anzuwenden. Jegliche wirtschaftliche Verwertung oder kommerzielle Nutzung steht derzeit nicht im Fokus und ist nicht beabsichtigt. 
-    Die Ausarbeitung dient lediglich der Vertiefung des Fachwissens und der akademischen Weiterentwicklung der Verfasserinnen.</p> 
+    <p style="text-align: justify;">Diese Diplomarbeit wird ausschließlich für akademische Zwecke angefertigt. 
+      Aktuell liegt keine Intention zur Erzielung von Gewinnen vor, und es werden keine Umsätze generiert. 
+      Ziel der Arbeit ist es, Kenntnisse zu vertiefen und wissenschaftliche Methoden anzuwenden. 
+      Jegliche wirtschaftliche Verwertung oder kommerzielle Nutzung steht derzeit nicht im Fokus und ist nicht beabsichtigt. 
+      Die Ausarbeitung dient lediglich der Vertiefung des Fachwissens und der akademischen Weiterentwicklung der Verfasserinnen.</p> 
     <br>
-
-
-    <h3>Kontakt:</h3>
-      <p class="design">E-Mail: service@aposupply.digbizmistelbach.info <br>
-      Telefon: 02572/2305-350</p>
-    <br>
-
 
     <h3>Rechtliche Hinweise:</h3>
       <h4 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 550;">Inhaltlich verantwortlich:</h4>
@@ -56,7 +51,13 @@ ini_set('display_errors','On');
         <br>
 
     <h3>Haftungsausschluss:</h3>
-      <p style="text-align: justify;">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      <p style="text-align: justify;">Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. 
+        Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      <br>
+
+    <h3>Kontakt:</h3>
+      <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="#">service@aposupply.digbizmistelbach.info</a></p>
+      <br>
 
       <br><br><br><br>
 
@@ -102,6 +103,45 @@ h3{
 .design:hover{
   text-decoration:underline;
 
+}
+
+.link{
+  text-decoration: none;
+  color: #00aaff;
+  
+}
+
+.link:hover{
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #000000;
+  
+}
+
+
+/* farbverlauf*/
+@keyframes example {
+  0%   {letter-spacing:1px;}
+  25%  {letter-spacing:1.3px;}
+  50%  {letter-spacing:1.6px;}
+  75%  {letter-spacing:2px;}
+  100% {letter-spacing:2.1px;}
+}
+
+.DAschrift{
+font-style: italic; 
+letter-spacing: 1px; 
+font-weight: 700;
+}
+
+.DAschrift:hover{
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  letter-spacing: 2.1px;
 }
 
 

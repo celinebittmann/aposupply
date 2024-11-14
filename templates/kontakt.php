@@ -236,7 +236,10 @@ body {
 .senden{
   background-color: #00AAFF;
   border: none;
+  border-radius: 1px;
 }
+
+
 
 </style>
 

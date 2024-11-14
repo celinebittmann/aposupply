@@ -39,7 +39,7 @@ ini_set('display_errors','On');
   </div>
 
   <div class="col-4">
-    <img src="assets/img/startseite_frau.png" width="450" height="450" alt="Frau mit Medikamenten">
+    <img src="assets/img/startseite_frau.png" width="400" height="400" alt="Frau mit Medikamenten">
   </div>
 
 

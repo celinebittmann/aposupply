@@ -21,20 +21,18 @@
     <div class="row center">
 
       <div class="col-3">
-        <h5>Wichtige Links</h5>
+        <h5 class="ueberschrift_klein">Wichtige Links</h5>
         <br>
-        <p><a class="link" href="templates/impressum.php">Impressum</a></p>
-        <p><a class="link" href="templates/agb.php">AGB</a></p>
-        <p><a class="link" href="templates/datenschutz.php">Datenschutz</a></p>
-        <p><a class="link" href="templates/???.php">...</a></p>
+        <p><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
+        <p><a class="link_footer" href="templates/agb.php">AGB</a></p>
+        <p><a class="link_footer" href="templates/datenschutz.php">Datenschutz</a></p>
       </div>
 
 <div class="col-1">
 </div>
 
-
       <div class="col-3">
-        <h4>Apo-Supply</h4>
+        <h4 class="ueberschrift">Apo-Supply</h4>
         <br>
         <p>Edmund-Freibauer-Promenade 1</p>
         <p>2132 Mistelbach</p>
@@ -46,12 +44,12 @@
 </div>
 
       <div class="col-3">
-        <h5>Weitere Links</h5>
+        <h5 class="ueberschrift_klein">Weitere Links</h5>
         <br>
-        <p><a class="link" href="templates/kontakt.php">Kontakt</a></p>
-        <p><a class="link" href="templates/team.php">Über uns</a></p>
-        <p><a class="link" href="templates/qa.php">Q&A</a></p>
-        <p><a class="link" href="templates/app.php">App</a></p>
+        <p><a class="link_footer" href="templates/kontakt.php">Kontakt</a></p>
+        <p><a class="link_footer" href="templates/team.php">Über uns</a></p>
+        <p><a class="link_footer" href="templates/qa.php">Q&A</a></p>
+        <p><a class="link_footer" href="templates/app.php">App</a></p>
       </div>
 
     </div>
@@ -72,22 +70,84 @@ footer{
   text-align: center;
 }
 
-h4{
-  font-weight: 700;
-}
-
-
-.link{
+/* Links im Footer */
+.link_footer{
   text-decoration: none;
   color: white;
   
 }
 
-.link:hover{
+.link_footer:hover{
   text-decoration: underline;
   color: #00aaff;
   
 }
+
+
+/* farbverlauf bei schriften */
+@keyframes example_footer {
+  0%   {color:#d7f8fe;}
+  25%  {color:#6ae8fe;}
+  50%  {color:#00aaff;}
+  75%  {color:#6ae8fe;}
+  100% {color:#d7f8fe;}
+}
+
+
+
+/* Apo schrift in der mitte */
+.ueberschrift{
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  
+}
+
+.ueberschrift:hover{
+  text-decoration: none;
+  color: #00aaff;
+  letter-spacing: 3px;
+
+  position: relative;
+  background-color: #202731;
+  animation-name: example_footer;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  
+}
+
+
+/* Links schrift auf beiden seiten */
+.ueberschrift_klein{
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.ueberschrift_klein:hover{
+  text-decoration: none;
+  color: #00aaff;
+  letter-spacing: 2px;
+
+  position: relative;
+  background-color: #202731;
+  animation-name: example_footer;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 </style>
