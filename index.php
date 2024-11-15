@@ -12,13 +12,15 @@ ini_set('display_errors','On');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apo-Supply</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- 
+    
     <link href="functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <?php
     require(__DIR__ . '/includes.php');
     require "templates/navbar.php";
+    include "index.js";
+    
     ?>
     <div class="container">
     <br>
@@ -34,6 +36,10 @@ ini_set('display_errors','On');
       Wir sind bestrebt, Ihnen eine benutzerfreundliche und informative Plattform zu bieten. Unser motiviertes Team arbeitet kontinuierlich daran, 
       Ihnen die bestmöglichen Informationen zur Verfügung zu stellen und Ihre Fragen kompetent zu beantworten.
     </p>
+    <br>
+    <p style="text-align: justify;">Dank der vielen ehrlichen Antworten unsere Umfrage, konnten wir eine erfolgreiche Website und App gestalten, die den Personen bei der 
+      Medikamentenverwaltung helfen soll. 
+    </p>
   </div>
 
   <div class="col-1">
@@ -42,9 +48,93 @@ ini_set('display_errors','On');
   <div class="col-4">
     <img src="assets/img/startseite_frau.png" width="400" height="400" alt="Frau mit Medikamenten">
   </div>
+</div>
 
+
+<br>
+
+
+
+<!-- laufende nummer eberhart fragen -->
+<div class="counter-container">
+  <div class="row">
+    <div class="col-2">
+      <div id="counter-number" class="number">0</div>
+      <div id="label-number" class="label">followers</div>
+    </div>
+  
+    <div class="col-1"></div>
+
+    <div class="col-2">
+      <div id="counter-number" class="number">0</div>
+      <div id="label-number" class="label">followers</div>
+    </div>
+
+    <div class="col-1"></div>
+
+    <div class="col-2">
+      <div id="counter-number" class="number">0</div>
+      <div id="label-number" class="label">followers</div>
+    </div>
+
+    <div class="col-1"></div>
+
+    <div class="col-2">
+      <div id="counter-number" class="number">0</div>
+      <div id="label-number" class="label">followers</div>
+    </div>
+  </div>
+</div>
+
+
+
+<br><br>
+
+<!-- Infobox -->
+<div class="card" style="background-color: #fff;">
+  <div class="card-header" style="font-size: 40px; font-weight: 700; text-align: center;">
+    Unser Service
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Aktueller Lagerbestand</h4><p class="text_card">In unserer App können Sie sich jederzeit den aktuellen Bestand Ihrer Medikamente ansehen!</p></button>
+      </div>
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Erinnerungen</h4><p class="text_card">Sie erhalten immer Benachrichtigungen, sobald Sie ein Medikament zu sich nehmen müssen.</p></button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Mobile App</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy um Ihren Medikamentenbestand immer dabei zu haben.</p></button>
+      </div>
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Nachbestellen</h4><p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p></button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Nachhaltigkeit</h4><p class="text_card">Da Sie mit unserer App Ihren Datenstand online haben, werden übermaßige Käufe vermieden.</p></button>
+      </div>
+      <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">??</h4><p class="text_card">??</p></button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,160C672,160,768,128,864,128C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,160C672,160,768,128,864,128C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
 
 
@@ -53,62 +143,8 @@ ini_set('display_errors','On');
 
 
 
-
-
-
-<!-- <div class="numbers">
-            <div class="numbers-header">
-                <p class="numbers-heading">globale Vernichtung - zuverlässige Vorhersagen
-                jahrelange Datenerfassung</p>
-            </div>
-            <div class="number-container">
-                <div class="Laender-container">
-                    <span class="material-symbols-outlined size">language</span>
-                    <span class="number-Laender num" data-val="193">0</span>
-                    <p class="Laender-text">Länder</p>
-                </div>
-                <div class="vorhersage-container">
-                    <span class="material-symbols-outlined size">update</span>
-                    <span class="number-vorhersage num" data-val="7">0</span>
-                    <p class="vorhersage-text">Tage Vorhersage</p>
-                </div>
-                <div class="historie-container">
-                    <span class="material-symbols-outlined size">calendar_month</span>
-                    <span class="number-historie num" data-val="17">0</span>
-                    <p class="historie-text">Jahre historische Daten</p>
-                </div>
-            </div>
-           </div>
-           <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            
- -->
-
-
-
- <!-- 
-<div class="tabs">
-	<details name="tab" >
-		<summary> Registerkarten</summary>
-		<div class="content">
-		</div>
-	</details>
-	<details name="tab">
-		<summary> Standardverhalten</summary>
-		<div class="content">
-		</div>
-	</details>
-	<details name="tab" open>
-		<summary> Barrierefreiheit </summary>
-		<div class="content">
-		</div>
-	</details>
-</div> -->
-
-
-
-
-
-</div>
+    <script src="index.js"></script>
+    <script src="index copy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
@@ -144,121 +180,53 @@ body {
     }
 }
 
-
-
-.tabs details {
-	display: inline-block;
+ 
+/* laufende Nummern */
+*{
+  font-family: sans-serif;
 }
 
-.tabs summary {
-	background-color: lightgrey;
-	border: thin solid black;
-	border-bottom: none;
-	border-radius: 0.5em 0.5em 0 0;
-	font-weight: bold;
-	height: 1.5em;
-	width: 10em;
-	padding: 0.5em 0.5em 10px;
-}
-
-.tabs .content {
-	position: absolute;
-	left: 0;
-	right: 0;
-	background: white;
-	border: thin solid #ccc;
-	padding: .5em;
-}
-
-
-
-
-
-
-
-
-
-/* .numbers {
-  display: grid;
-  justify-items: center;
-  margin: 2rem auto;
-}
-
-.numbers-header {
-  margin-bottom: 2rem;
+.counter-container{
+  margin: 60px;
   text-align: center;
-  width: 75%;
 }
 
-.numbers-heading {
-  font-size: 3rem;
-  font-weight: bold;
+.counter-container .number{
+  font-size: 100px;
 }
 
-.number-container {
-  display: flex;
-  justify-content: center;
-  gap: 4rem; /* Abstand zwischen den Elementen 
+.counter-container .num{
+  font-size: 100px;
 }
 
-.Laender-container, .vorhersage-container, .historie-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  width: 12vw;
+.counter-container .label{
+  font-size: 52px;
+  margin-top: -30px;
 }
 
 
 
-.size{
-  font-size: 150px !important;
-  margin-bottom: 0.5rem;
-}
-
-
-.number-Laender, .number-vorhersage, .number-historie {
-  font-size: 4rem;
+/* Service card */
+.ueberschrift_card{
+  text-align: left;
   font-weight: 700;
-  margin: 0;
-  color: orange; /* Orange Farbe fÃ¼r Zahlen 
+  font-size: 25px;
 }
 
-.Laender-text, .vorhersage-text, .historie-text {
-  font-size: 1.9rem;
-  margin: 0;
-  text-align: center;
+.text_card{
+  text-align: left;
+  font-size: 18px;
 }
 
-@media (max-width: 768px) {
-  .number-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-} 
-*/
+.btn{
+  background-color: rgba(0,170,255,0.2);
+}
 
+.btn:hover{
+  background-color: rgba(0,170,255,0.3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+}
 
 
 
