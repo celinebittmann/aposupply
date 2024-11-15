@@ -22,19 +22,23 @@ ini_set('display_errors','On');
     require "navbar.php";
     ?>
     <div class="container">
-
+    <div class="container d-flex align-items-center">
+    <div class="flex-grow-1" style="margin-right: 20px;">
     <br>
     <h1>Team</h1>
-</div>
     <br>
-    <div class="container">
         <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
-        Wir sind wir!
-</p>
+        Wir sind wir!</p>
   <p style="text-align: justify;">Die starke Arbeitsdynamik, die sich zwischen Anja & Celine dank ihrer unterschiedlichen Persönlichkeiten in den letzten Jahren entwickelt hat, schafft eine produktive Arbeitsumgebung. Sie sind dadurch in der Lage, Herausforderungen gemeinsam anzugehen, Entscheidungen zu treffen und effektiv zu kommunizieren, was für den Erfolg von Apo-Supply von entscheidender Bedeutung ist.
-Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unternehmen. Sie haben eine gemeinsame Vision für APO-SUPPLY sind durchaus bereit, zusätzliche Arbeit und Opfer zu bringen, die für den Aufbau eines erfolgreichen Unternehmens, wie dieses es werden wird, erforderlich sind. 
+Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unternehmen. Sie haben eine gemeinsame Vision für Apo-Supply sind durchaus bereit, zusätzliche Arbeit und Opfer zu bringen, die für den Aufbau eines erfolgreichen Unternehmens, wie dieses es werden wird, erforderlich sind. 
    </p>
   </div>
+  <div class="image-container" style="position: relative;">
+    <img id="clickableImage" src="assets/img/puzzle.png" alt="Umweltbild" style="width: 300px; height: auto; border-radius: 10px; cursor: pointer;">
+  </div>
+</div>
+</div>
+
   <br><br>
 
 <div class="container text-center">
@@ -48,7 +52,7 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
       </div>
       <img src="assets/img/celi2.jpg" class="img-small animated-slide-in-left img-hover-zoom" alt="Bild von Celine">
       <h3 style="margin-top: 15px;">Celine Bittmann</h3>
-      <p>Innovative Denkerin und passionierte Entwicklerin.</p>
+      <p>Aufgaben im Rahmen des Projekts "Apo-Supply": Scrum Master, Website, Datenbank, App-Fronted</p>
     </div>
     <div class="col position-relative">
       <div class="overlay">
@@ -59,11 +63,11 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
       </div>
       <img src="assets/img/celi1.jpg" class="img-small animated-slide-in-right img-hover-zoom" alt="Bild von Anja">
       <h3 style="margin-top: 15px;">Anja Brüstl</h3>
-      <p>Kreative Planerin mit einem Gespür für Details.</p>
+      <p>Aufgaben im Rahmen des Projekts "Apo-Supply": Website, App-Backend, Werbevideo</p>
     </div>
   </div>
 </div>
-
+<br><br>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
@@ -71,8 +75,6 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
   <?php
     include "footer.php";
   ?>
-
-
 
 
   <!-- Hintergrundfarbe & -verlauf -->
@@ -174,6 +176,36 @@ body {
 
 
 </style>
+
+
+<style>
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-10deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-10deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-10deg); }
+    80% { transform: translate(-1px, -1px) rotate(10deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    95% { transform: translate(1px, -2px) rotate(-10deg); }
+    100% { transform: translate(1px, -2px) rotate(0deg); }
+    /*schaut irgenwie abgehakt aus, ändern!*/
+  }
+
+  #clickableImage {
+    animation: shake 2s;
+    animation-iteration-count: 1;
+  }
+</style>
+
+<script>
+  window.onload = function() {
+    document.getElementById("clickableImage").style.animation = "shake 2s";
+  };
+</script>
 
 
 

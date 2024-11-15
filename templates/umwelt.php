@@ -25,10 +25,10 @@ ini_set('display_errors','On');
 
     <br>
     <div class="container">
-    <h1>Nachhaltigkeit</h1>
-
     <div class="container d-flex align-items-center">
-  <div class="flex-grow-1" style="margin-right: 20px;">
+    <div class="flex-grow-1" style="margin-right: 20px;">
+    <h1>Nachhaltigkeit</h1>
+    <br>
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
       "Nachhaltigkeit bedeutet, die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."
     </p>
@@ -93,7 +93,7 @@ ini_set('display_errors','On');
 
     <div class="col-md-3">
       <div class="card" id="clickableCard3" style="width: 21rem; height: 33rem; cursor: pointer;">
-      <img src="assets/img/logoapo.png" class="card-img-top" alt="Screenshot App">
+      <img src="assets/img/bild_app.png" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
         <h5>Mit Apo-Supply</h5>
           <p class="card-text">

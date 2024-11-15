@@ -1,6 +1,7 @@
 <!-- <div class="container"> -->
-<nav class="navbar navbar-expand-lg navbar bg-white border-bottom border-body" data-bs-theme="black">
-  
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar bg-white solid black border-body" data-bs-theme="black" style="border-bottom: 2.5px solid black;"> <!-- Linie unten -->
+
   <div class="container-fluid">
     <a class="navbar-brand offset-1" href="index.php"><img src="assets/img/logoapo.png" height="50" width="auto"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,16 +12,6 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="app.php">Unsere App</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-            Kategorien
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="templates/trikots.php">Trikots</a></li>
-            <li><a class="dropdown-item" href="templates/schuhe.php">Schuhe</a></li>
-            <li><a class="dropdown-item" href="templates/hosen.php">Hosen</a></li>
-          </ul>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="templates/umwelt.php">Nachhaltigkeit</a>
         </li>
