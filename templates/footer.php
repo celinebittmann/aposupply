@@ -16,11 +16,13 @@
 
 
 <footer>
-  <div class="container">
+<div class="container">
   <br><br>
     <div class="row center">
+      <div class="col-1">
+      </div>
 
-      <div class="col-3">
+      <div class="col-2">
         <h5 class="ueberschrift_klein">Wichtige Links</h5>
         <br>
         <p><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
@@ -28,8 +30,8 @@
         <p><a class="link_footer" href="templates/datenschutz.php">Datenschutz</a></p>
       </div>
 
-<div class="col-1">
-</div>
+  <div class="col-1">
+  </div>
 
       <div class="col-3">
         <h4 class="ueberschrift">Apo-Supply</h4>
@@ -38,12 +40,13 @@
         <p>2132 Mistelbach</p>
         <p>02572/2305-350</p>
         <p>service@aposupply.digbizmistelbach.info</p>
+        <br><br>
       </div>
 
-<div class="col-1">
-</div>
+  <div class="col-1">
+  </div>
 
-      <div class="col-3">
+      <div class="col-2">
         <h5 class="ueberschrift_klein">Weitere Links</h5>
         <br>
         <p><a class="link_footer" href="templates/kontakt.php">Kontakt</a></p>
@@ -52,9 +55,23 @@
         <p><a class="link_footer" href="templates/app.php">App</a></p>
       </div>
 
+   </div> <!-- Ende row -->
+
+</div> <!-- Ende container -->
+
+  <div class="row copy ">
+    <div class="col-3">
     </div>
-  </div>
-  <br><br>
+
+    <div class="col-2">
+    </div>
+
+    <div class="col-3">
+      <p class="copyright"><br>© 2025 Apo-Supply. Alle Rechte vorbehalten.</p>
+    </div>
+  
+    </div>
+
 </footer>
 
 
@@ -68,6 +85,8 @@ footer{
 
 .center{
   text-align: center;
+  /* vertical-align: middle; */
+  
 }
 
 /* Links im Footer */
@@ -139,10 +158,14 @@ footer{
 }
 
 
+.copyright{
+  font-size: 13px;
+}
 
 
-
-
+.copy{
+  background-color: black;
+}
 
 
 

@@ -12,14 +12,14 @@ ini_set('display_errors','On');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apo-Supply</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+
     <link href="functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <?php
     require(__DIR__ . '/includes.php');
     require "templates/navbar.php";
-    include "index.js";
+
     
     ?>
     <div class="container">
@@ -50,45 +50,51 @@ ini_set('display_errors','On');
   </div>
 </div>
 
+</div> <!-- ende container -->
 
-<br>
+<!-- Wellen -->
+<div class="wellen">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,160L48,158C96,156,192,152,288,160C384,168,480,190,576,190C672,190,768,160,864,160C960,160,1056,190,1152,195C1248,200,1344,180,1392,170L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,160L40,162.7C80,165,160,170,240,160C320,150,400,120,480,115C560,110,640,130,720,135C800,140,880,130,960,135C1040,140,1120,155,1200,160C1280,165,1360,165,1400,165L1440,165L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" transform="scale(1, -1) translate(0, -320)"></path>
+  </svg>
+
+</div>
 
 
+
+<div class="container">
 
 <!-- laufende nummer eberhart fragen -->
 <div class="counter-container">
   <div class="row">
-    <div class="col-2">
+    <div class="col-3">
       <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">followers</div>
+      <div id="label-number" class="label">Befragte</div>
     </div>
   
     <div class="col-1"></div>
 
-    <div class="col-2">
+    <div class="col-3">
       <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">followers</div>
+      <div id="label-number" class="label">Altersgruppen</div>
     </div>
 
-    <div class="col-1"></div>
+    <div class="col-2"></div>
 
-    <div class="col-2">
+    <div class="col-3">
       <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">followers</div>
+      <div id="label-number" class="label">Promotoren</div>
     </div>
 
-    <div class="col-1"></div>
-
-    <div class="col-2">
-      <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">followers</div>
-    </div>
   </div>
 </div>
 
 
 
-<br><br>
 
 <!-- Infobox -->
 <div class="card" style="background-color: #fff;">
@@ -127,14 +133,24 @@ ini_set('display_errors','On');
       </div>
     </div>
 
-  </div>
-</div>
-
-</div>
+  </div> 
+ </div> <!-- ende row -->
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,160C672,160,768,128,864,128C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,160C672,160,768,128,864,128C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </div> <!-- ende container -->
 
 
 
@@ -144,7 +160,6 @@ ini_set('display_errors','On');
 
 
     <script src="index.js"></script>
-    <script src="index copy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
@@ -211,6 +226,8 @@ body {
   text-align: left;
   font-weight: 700;
   font-size: 25px;
+  
+
 }
 
 .text_card{
@@ -218,19 +235,34 @@ body {
   font-size: 18px;
 }
 
-.btn{
+.title{
   background-color: rgba(0,170,255,0.2);
+  height: 110px; width: 620px;
+
+  
 }
 
-.btn:hover{
+.title:hover{
   background-color: rgba(0,170,255,0.3);
 
- 
 }
 
 
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transform: translateY(10%);
+  transition: transform 1s ease-in;
+}
 
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+/* Wellen */
+.wellen{
+  margin: -100px;
+}
 
 </style>
   </html>
