@@ -73,27 +73,28 @@ ini_set('display_errors','On');
 <div class="counter-container">
   <div class="row">
     <div class="col-3">
-      <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">Befragte</div>
+      <div class="number counter1">0</div>
+      <div class="label">Befragte</div>
     </div>
-  
+
     <div class="col-1"></div>
 
     <div class="col-3">
-      <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">Altersgruppen</div>
+      <div class="number counter2">0</div>
+      <div class="label">Altersgruppen</div>
     </div>
 
     <div class="col-2"></div>
 
     <div class="col-3">
-      <div id="counter-number" class="number">0</div>
-      <div id="label-number" class="label">Promotoren</div>
+      <div class="number counter3">0</div>
+      <div class="label">Promotoren</div>
     </div>
-
   </div>
 </div>
 
+
+<br><br><br><br><br><br>
 
 
 
@@ -199,9 +200,6 @@ body {
   font-size: 100px;
 }
 
-.counter-container .num{
-  font-size: 100px;
-}
 
 .counter-container .label{
   font-size: 52px;
@@ -237,7 +235,7 @@ body {
 
 .card {
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  transform: translateY(10%);
+  transform: translateY(20%);
   transition: transform 1s ease-in;
 }
 
@@ -248,8 +246,14 @@ body {
 
 /* Wellen */
 .wellen{
-  margin: -100px;
+  margin-top: -150px;
+  margin-bottom: -500px;
 }
+
+
+
+
+
 
 </style>
   </html>
