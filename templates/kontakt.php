@@ -17,6 +17,7 @@ ini_set('display_errors','On');
     <link href="../functions/mystyle.css"rel="stylesheet">
     <base href="/aposupply/">
 </head>
+<br><br><br>
   <body>
     <?php
      require __DIR__.'/../includes.php'; 

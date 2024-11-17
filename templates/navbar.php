@@ -1,7 +1,5 @@
 <!-- <div class="container"> -->
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar bg-white solid black border-body" data-bs-theme="black" style="border-bottom: 2.5px solid black;"> <!-- Linie unten -->
-
+<nav class="navbar navbar-expand-lg navbar bg-white fixed-top solid black border-body" data-bs-theme="black" style="border-bottom: 2.5px solid black;"> <!-- Linie unten -->
   <div class="container-fluid">
     <a class="navbar-brand offset-1" href="index.php"><img src="assets/img/logoapo.png" height="50" width="auto"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,19 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="app.php">Unsere App</a>
+          <a class="nav-link me-4" aria-current="page" href="app.php">Unsere App</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="templates/umwelt.php">Nachhaltigkeit</a>
+          <a class="nav-link me-4" href="templates/umwelt.php">Nachhaltigkeit</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="templates/team.php">Über uns</a>
+          <a class="nav-link me-4" href="templates/team.php">Über uns</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="templates/qa.php">Q&A</a>
+          <a class="nav-link me-4" href="templates/qa.php">Q&A</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="templates/kontakt.php">Kontaktiere uns!</a>
+          <a class="nav-link me-4" href="templates/kontakt.php">Kontaktiere uns!</a>
         </li>
       </ul>
              <ul class="navbar nav">
@@ -40,3 +38,7 @@
   </div>
   <a class="navbar-brand offset-1"></a>
 </nav>
+
+
+
+

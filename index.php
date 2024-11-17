@@ -15,6 +15,7 @@ ini_set('display_errors','On');
 
     <link href="functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
   </head>
+  <br><br><br>
   <body>
     <?php
     require(__DIR__ . '/includes.php');
@@ -115,7 +116,7 @@ ini_set('display_errors','On');
 
     <div class="row">
       <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Mobile App</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy um Ihren Medikamentenbestand immer dabei zu haben.</p></button>
+        <button class="btn title"><h4 class="ueberschrift_card">Mobile App</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer dabei zu haben.</p></button>
       </div>
       <div class="col-6">
         <button class="btn title"><h4 class="ueberschrift_card">Nachbestellen</h4><p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p></button>
