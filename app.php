@@ -28,52 +28,159 @@ $andi = $dbh->query($sql);
 
     <br>
     <h1>Unsere App</h1>
-    <br> <br>
-
-    
+    <br>
 
 
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <!-- Anfnag Box -->
+<div class="card" style="background-color: #f5f5f5;">
+  <div class="card-header" style="font-size: 40px; font-weight: 700; text-align: center;">
+    Unser Service
+    <p style="text-align: center; font-size: 16px; color: #555;">
+      Diese Dienste können Sie nach Anmeldung auf unserer App nutzen!
+    </p>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="assets/img/logoapo.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-6 text-center">
+        <div class="icon-circle mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
+          </svg>
+        </div>
+        <button class="btn title">
+          <h4 class="ueberschrift_card">Lagerbestand</h4>
+          <p class="text_card">In unserer App können Sie sich jederzeit den aktuellen Bestand Ihrer Medikamente ansehen!</p>
+        </button>
+      </div>
+      <div class="col-6 text-center">
+        <div class="icon-circle mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+            <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+          </svg>
+        </div>
+        <button class="btn title">
+          <h4 class="ueberschrift_card">Erinnerungen</h4>
+          <p class="text_card">Sie erhalten immer Benachrichtigungen, sobald Sie ein Medikament zu sich nehmen müssen.</p>
+        </button>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+    <br>
+    <div class="row">
+      <div class="col-6 text-center">
+        <div class="icon-circle mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>          
+        </div>
+        <button class="btn title">
+          <h4 class="ueberschrift_card">Empfehlungen</h4>
+          <p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer und überall dabei zu haben.</p>
+        </button>
+      </div>
+      <div class="col-6 text-center">
+        <div class="icon-circle mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+            <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+          </svg>
+        </div>
+        <button class="btn title">
+          <h4 class="ueberschrift_card">Nachbestellen</h4>
+          <p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p>
+        </button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br><br>
+    <br>
+  </div> 
+</div> <!-- Ende Box -->
+
+
+<style>
+.icon-circle {
+  display: inline-block;
+  /*Icon*/ padding: 20px;
+  background-color: rgba(0,170,255,0.2);
+  border-radius: 50%; 
+  /* Größe Kreis: */
+  width: 70px; 
+  height: 70px;
+}
+
+.card-header {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+
+.ueberschrift_card{
+  text-align: left;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text_card{
+  text-align: left;
+  font-size: 18px;
+}
+
+.title{
+  background-color: rgba(0,170,255,0.2);
+  height: 110px; width: 620px;
+
+  
+}
+
+.title:hover{
+  background-color: rgba(0,170,255,0.3);
+
+}
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transform: translateY(10%);
+  transition: transform 1s ease-in;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+<script>
+
+// card einfliegen lassen
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const card = document.querySelector('.card');
+
+    function checkVisibility() {
+        const cardPosition = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardPosition < windowHeight && cardPosition > 0) {
+            card.classList.add('visible');
+        } 
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility); // Überprüfung bei Änderung der Fenstergröße
+
+    // Initialer Check, falls die Karte von Anfang an im Sichtbereich ist
+    checkVisibility();
+});
+</script>
+
+
+
+<br><br><br>
 <h4>Lizenzpakete</h4>
-<br><br>
+<br>
 
 
 <div class="container">

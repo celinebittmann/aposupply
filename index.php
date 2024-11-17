@@ -100,13 +100,14 @@ ini_set('display_errors','On');
 <!-- Infobox -->
 <div class="card" style="background-color: #fff;">
   <div class="card-header" style="font-size: 40px; font-weight: 700; text-align: center;">
-    Unser Service
+    Ihre Vorteile
   </div>
   <div class="card-body">
     <div class="row">
-      <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Aktueller Lagerbestand</h4><p class="text_card">In unserer App können Sie sich jederzeit den aktuellen Bestand Ihrer Medikamente ansehen!</p></button>
+    <div class="col-6">
+        <button class="btn title"><h4 class="ueberschrift_card">Mobilität</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer und überall dabei zu haben.</p></button>
       </div>
+      
       <div class="col-6">
         <button class="btn title"><h4 class="ueberschrift_card">Erinnerungen</h4><p class="text_card">Sie erhalten immer Benachrichtigungen, sobald Sie ein Medikament zu sich nehmen müssen.</p></button>
       </div>
@@ -115,28 +116,15 @@ ini_set('display_errors','On');
     <br>
 
     <div class="row">
-      <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Mobile App</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer dabei zu haben.</p></button>
-      </div>
-      <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Nachbestellen</h4><p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p></button>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-      <div class="col-6">
+    <div class="col-6">
         <button class="btn title"><h4 class="ueberschrift_card">Nachhaltigkeit</h4><p class="text_card">Da Sie mit unserer App Ihren Datenstand online haben, werden übermaßige Käufe vermieden.</p></button>
       </div>
       <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">??</h4><p class="text_card">??</p></button>
+        <button class="btn title"><h4 class="ueberschrift_card">Zeitersparnis</h4><p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p></button>
       </div>
     </div>
-
   </div> 
  </div> <!-- ende row -->
-
 
 
 
@@ -222,13 +210,11 @@ body {
 
 
 
-/* Service card */
+/* Vorteile card */
 .ueberschrift_card{
   text-align: left;
   font-weight: 700;
   font-size: 25px;
-  
-
 }
 
 .text_card{
