@@ -73,25 +73,28 @@ ini_set('display_errors','On');
 <div class="counter-container">
   <div class="row">
     <div class="col-3">
-      <div class="number counter1">0</div>
+      <div class="number">0</div>
       <div class="label">Befragte</div>
     </div>
 
     <div class="col-1"></div>
 
     <div class="col-3">
-      <div class="number counter2">0</div>
+      <div class="number">0</div>
       <div class="label">Altersgruppen</div>
     </div>
 
     <div class="col-2"></div>
 
     <div class="col-3">
-      <div class="number counter3">0</div>
+      <div class="number">0</div>
       <div class="label">Promotoren</div>
     </div>
   </div>
 </div>
+
+
+
 
 
 <br><br><br><br><br><br>
@@ -141,6 +144,58 @@ ini_set('display_errors','On');
 
 
  </div> <!-- ende container -->
+
+
+<!-- Cookies -->
+ <!-- <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Cookies</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+  </div>
+</div> -->
+
+
+
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const offcanvasBottom = document.getElementById('offcanvasBottom');
+    const offcanvasInstance = new bootstrap.Offcanvas(offcanvasBottom);
+
+    // Überprüfen, ob der Offcanvas-Status in localStorage gespeichert ist
+    if (!localStorage.getItem('offcanvasDisplayed')) {
+      // Offcanvas anzeigen
+      offcanvasInstance.show();
+
+      // Event-Listener hinzufügen, um den Status zu speichern, wenn das Offcanvas geschlossen wird
+      offcanvasBottom.addEventListener('hidden.bs.offcanvas', function () {
+        localStorage.setItem('offcanvasDisplayed', 'true');
+      });
+    }
+  });
+</script> --> 
+
+
+
+
+
+
+
 
 
 
