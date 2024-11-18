@@ -69,7 +69,7 @@ ini_set('display_errors','On');
 
 <div class="container">
 
-<!-- laufende nummer eberhart fragen -->
+<!-- laufende nummer -->
 <div class="counter-container">
   <div class="row">
     <div class="col-3">
@@ -147,32 +147,33 @@ ini_set('display_errors','On');
 
 
 <!-- Cookies -->
- <!-- <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Cookies</h5>
+    <div class="container">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Unsere Verwendung von Cookies</h5>
+    </div>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body small">
-    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
-  </div>
-</div> -->
-
-
-
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    ...
-  </div>
+  <div class="container">
+    <div class="offcanvas-body small">
+      <p>Wir verwenden Cookies, um die Funktionalität unserer Plattform sicherzustellen und Ihre Erfahrung zu verbessern.</p>
+      <h4>Notwendige Cookies</h4>
+      <p>Diese Cookies sind unerlässlich für die grundlegenden Funktionen unserer Website, wie das Einloggen oder das Speichern Ihrer Datenschutzeinstellungen. 
+        Ohne sie kann die Website nicht richtig funktionieren.</p>
+      <h4>Einstellungen</h4>
+      <p>Sie können Ihren Browser so einstellen, dass er Cookies blockiert oder Sie darüber benachrichtigt. 
+        Bitte beachten Sie, dass einige Teile der Plattform dann möglicherweise nicht mehr funktionieren.</p>
+      <p>Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>
+    </div>
+  </div><!-- Ende container cookies  -->
+  <br><br>
 </div>
 
- 
+
+
+<!--  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-<!-- <script>
+ <script> 
   document.addEventListener("DOMContentLoaded", function() {
     const offcanvasBottom = document.getElementById('offcanvasBottom');
     const offcanvasInstance = new bootstrap.Offcanvas(offcanvasBottom);
@@ -287,7 +288,6 @@ body {
 
 }
 
-
 .card {
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
   transform: translateY(20%);
@@ -299,6 +299,8 @@ body {
     transform: translateY(0);
 }
 
+
+
 /* Wellen */
 .wellen{
   margin-top: -150px;
@@ -307,7 +309,12 @@ body {
 
 
 
+/* Cookies */
+.offcanvas-custom-height {
+      height: 100px; 
+    }
 
+/* Eberhart fragen wie man es höher macht */
 
 
 </style>

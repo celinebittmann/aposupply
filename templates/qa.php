@@ -54,7 +54,7 @@ ini_set('display_errors','On');
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed focus-ring focus-ring-info" style="" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Wie downloadet man die App?
       </button>
     </h2>
@@ -219,7 +219,12 @@ body {
   font-weight: 600;
 }
 
-
+.accordion-button:not(.collapsed){
+  background-color: rgba(0,170,255,0.3);
+  font-size: 12.5pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 
 
