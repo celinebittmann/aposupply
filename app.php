@@ -50,7 +50,7 @@ $andi = $dbh->query($sql);
         </div>
         <button class="btn title">
           <h4 class="ueberschrift_card">Lagerbestand</h4>
-          <p class="text_card">In unserer App können Sie sich jederzeit den aktuellen Bestand Ihrer Medikamente ansehen!</p>
+          <p class="text_card">In unserer App können Sie sich jederzeit den aktuellen Bestand Ihrer Medikamente ansehen.</p>
         </button>
       </div>
       <div class="col-6 text-center">
@@ -76,7 +76,7 @@ $andi = $dbh->query($sql);
         </div>
         <button class="btn title">
           <h4 class="ueberschrift_card">Empfehlungen</h4>
-          <p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer und überall dabei zu haben.</p>
+          <p class="text_card">Falls Sie unsicher sind, welches Medikament das beste Preis-Leistungs-Verhältnis hat – Empfehlungen in unserer App helfen.</p>
         </button>
       </div>
       <div class="col-6 text-center">
@@ -87,7 +87,7 @@ $andi = $dbh->query($sql);
         </div>
         <button class="btn title">
           <h4 class="ueberschrift_card">Nachbestellen</h4>
-          <p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p>
+          <p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig etwas nachkaufen zu können.</p>
         </button>
       </div>
     </div>
@@ -178,38 +178,37 @@ $andi = $dbh->query($sql);
 
 
 
-<br><br><br>
-<h4>Lizenzpakete</h4>
-<br>
-
+<br><br><br><br>
 
 <div class="container">
+<h3>Lizenzpakete</h3>
+<br>
   <div class="row">
-    <!-- Card 1: Standard License -->
+    <!-- Card 1: Standard -->
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
         <div class="card-body">
-          <h5 class="card-title">Standard License</h5>
-          <p class="card-text">Ideal for individuals or small teams. Includes core features and basic support.</p>
+          <h5 class="card-title">Einzel-User</h5>
+          <p class="card-text">Dieses Abonnement ist ideal für </p>
           <ul>
-            <li>1 user</li>
-            <li>Basic support</li>
-            <li>Access to standard features</li>
+            <li>1 User</li>
+            <li>Standard</li>
+            <li>Keine zusätzlichen Kosten</li>
           </ul>
-          <p class="price">Price: $10/month</p>
+          <p class="price">Price: Gratis</p>
           <a href="#" class="btn btn-primary">Select</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 2: Premium License -->
+    <!-- Card 2: Familienpackage -->
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
         <div class="card-body">
-          <h5 class="card-title">Premium License</h5>
-          <p class="card-text">Great for growing teams and advanced use. Includes premium features and priority support.</p>
+          <h5 class="card-title">Family Package</h5>
+          <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren</p>
           <ul>
-            <li>Up to 5 users</li>
+            <li>bis zu 5 Users</li>
             <li>Priority support</li>
             <li>Access to premium features</li>
           </ul>
@@ -221,22 +220,95 @@ $andi = $dbh->query($sql);
 
     <!-- Card 3: 3 Monate Gratis Angebot -->
     <div class="col-md-4">
-      <div class="card border-success" style="width: 18rem; border: 2px solid green;">
+   
+      <div class="card border-info" style="width: 18rem; height: 30rem; cursor: pointer border: 2px solid green;">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+    Angebot
+    <span class="visually-hidden">unread messages</span>
+</span>
         <div class="card-body">
-          <h5 class="card-title text-success">Special License - 3 Monate Gratis!</h5>
+          <h5 class="card-title text-info">Special License - 3 Monate Gratis!</h5>
           <p class="card-text">Genießen Sie 3 Monate kostenlose Nutzung mit allen Premium-Funktionen und unbegrenztem Zugang.</p>
           <ul>
             <li>Unbegrenzte Benutzer</li>
             <li>24/7 Premium-Support</li>
             <li>Voller Zugriff auf alle Funktionen</li>
           </ul>
-          <p class="price text-success">Preis: $50/Monat nach den ersten 3 kostenlosen Monaten</p>
-          <a href="#" class="btn btn-success">Select</a>
+          <p class="price text-info">Preis: $50/Monat nach den ersten 3 kostenlosen Monaten</p>
+          <a href="#" class="btn btn-info">Select</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<br><br>
+    
+
+
+  <style>
+    /*Cards*/
+     /* Karten-Animation */
+    .card {
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    /* Pfeil-Animation */
+    .bi-caret-right-fill {
+      transition: transform 0.5s ease;
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    /* Sichtbar, sobald sie geladen werden */
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bi-caret-right-fill.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Füge beim Hover einen Zoom-Effekt hinzu */
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Pfeil-Animation beim Hover */
+    .bi-caret-right-fill:hover {
+      transform: translateX(10px);
+    }
+  </style>
+
+
+  <script>
+    // Warte, bis vollständig geladen ist
+    document.addEventListener("DOMContentLoaded", function() {
+      //Klasse 'visible' hinzufügen, um Animation zu starten
+      const cards = document.querySelectorAll('.card');
+      const arrows = document.querySelectorAll('.bi-caret-right-fill');
+
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('visible');
+        }, index * 300); // Verzögerung zwischen  Karten
+      });
+
+      arrows.forEach((arrow, index) => {
+        setTimeout(() => {
+          arrow.classList.add('visible');
+        }, (index + 1) * 300); // Verzögerung für Pfeile
+      });
+    });
+  </script>
+
+
+
 <br><br><br>
 
 </div>
