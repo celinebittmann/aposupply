@@ -92,7 +92,13 @@ $andi = $dbh->query($sql);
       </div>
     </div>
     <br>
+    <div class="card-header" style="font-size: 16px; font-weight: 700; text-align: center; color: #555;">
+    <p>Hier geht es zu unserer App 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+</svg></p>
   </div> 
+   </div> 
 </div> <!-- Ende Box -->
 
 
@@ -128,17 +134,6 @@ $andi = $dbh->query($sql);
   font-size: 18px;
 }
 
-.title{
-  background-color: rgba(0,170,255,0.2);
-  height: 110px; width: 620px;
-
-  
-}
-
-.title:hover{
-  background-color: rgba(0,170,255,0.3);
-
-}
 
 
 .card {
@@ -177,11 +172,12 @@ $andi = $dbh->query($sql);
 </script>
 
 
-
 <br><br><br><br>
 
 <div class="container">
 <h3>Lizenzpakete</h3>
+<h5>Um Ihr Paket zu aktivieren, bekommen Sie nach der Registrierung einen Code an ihre E-Mail zugeschickt, welcher einmalig gilt.</h5>
+<h5>kursiv: Aktivierung muss auf der App erfolgen, diese Website dient nur zum Informationsaustausch!</h5>
 <br>
   <div class="row">
     <!-- Card 1: Standard -->
@@ -189,14 +185,15 @@ $andi = $dbh->query($sql);
       <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
         <div class="card-body">
           <h5 class="card-title">Einzel-User</h5>
-          <p class="card-text">Dieses Abonnement ist ideal für </p>
+          <p class="card-text">Dieses Abonnement ist ideal für Einzelnutzer & zum Kennenlernen der App.</p>
           <ul>
             <li>1 User</li>
             <li>Standard</li>
             <li>Keine zusätzlichen Kosten</li>
+            <li>bis zu 20 Medikamente verwalten</li>
           </ul>
-          <p class="price">Price: Gratis</p>
-          <a href="#" class="btn btn-primary">Select</a>
+          <p>Preis: € 0,00</p>
+          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
       </div>
     </div>
@@ -206,14 +203,15 @@ $andi = $dbh->query($sql);
       <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
         <div class="card-body">
           <h5 class="card-title">Family Package</h5>
-          <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren</p>
+          <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren Personen</p>
           <ul>
-            <li>bis zu 5 Users</li>
-            <li>Priority support</li>
-            <li>Access to premium features</li>
+            <li>bis zu 5 User</li>
+            <li>bester Support</li>
+            <li>Medikament-Empfehlungen</li>
+            <li>bis zu 50 Medikamente verwalten</li>
           </ul>
-          <p class="price">Price: $30/month</p>
-          <a href="#" class="btn btn-primary">Select</a>
+          <p>Preis: €14,99/Monat</p>
+          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
       </div>
     </div>
@@ -222,20 +220,22 @@ $andi = $dbh->query($sql);
     <div class="col-md-4">
    
       <div class="card border-info" style="width: 18rem; height: 30rem; cursor: pointer border: 2px solid green;">
-      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
     Angebot
     <span class="visually-hidden">unread messages</span>
 </span>
         <div class="card-body">
-          <h5 class="card-title text-info">Special License - 3 Monate Gratis!</h5>
+          <h5 class="card-title text-info">Premium Package</h5>
+          <h5 class="card-title text-info">3 Monate Gratis!</h5>
           <p class="card-text">Genießen Sie 3 Monate kostenlose Nutzung mit allen Premium-Funktionen und unbegrenztem Zugang.</p>
           <ul>
             <li>Unbegrenzte Benutzer</li>
             <li>24/7 Premium-Support</li>
             <li>Voller Zugriff auf alle Funktionen</li>
+            <li>unendlich viele Medikamente verwalten</li>
           </ul>
-          <p class="price text-info">Preis: $50/Monat nach den ersten 3 kostenlosen Monaten</p>
-          <a href="#" class="btn btn-info">Select</a>
+          <p>Preis: €29,99/Monat nach den ersten 3 kostenlosen Monaten</p>
+          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
       </div>
     </div>
@@ -244,8 +244,6 @@ $andi = $dbh->query($sql);
 
 
 <br><br>
-    
-
 
   <style>
     /*Cards*/
