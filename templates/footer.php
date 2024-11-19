@@ -19,10 +19,8 @@
 <div class="container">
   <br><br>
     <div class="row center">
-      <div class="col-1">
-      </div>
 
-      <div class="col-2">
+      <div class="col-4">
         <h5 class="ueberschrift_klein">Wichtige Links</h5>
         <br>
         <p><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
@@ -30,10 +28,7 @@
         <p><a class="link_footer" href="templates/datenschutz.php">Datenschutz</a></p>
       </div>
 
-  <div class="col-1">
-  </div>
-
-      <div class="col-3">
+      <div class="col-4">
         <h4 class="ueberschrift">Apo-Supply</h4>
         <br>
         <p>Edmund-Freibauer-Promenade 1</p>
@@ -43,10 +38,7 @@
         <br><br>
       </div>
 
-  <div class="col-1">
-  </div>
-
-      <div class="col-2">
+      <div class="col-4">
         <h5 class="ueberschrift_klein">Weitere Links</h5>
         <br>
         <p><a class="link_footer" href="templates/kontakt.php">Kontakt</a></p>

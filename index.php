@@ -68,37 +68,96 @@ ini_set('display_errors','On');
 
 
 <div class="container">
+<br>
+
 
 <!-- laufende nummer -->
-<div class="counter-container">
-  <div class="row">
-    <div class="col-3">
-      <div class="number">0</div>
-      <div class="label">Befragte</div>
-    </div>
-
-    <div class="col-1"></div>
-
-    <div class="col-3">
-      <div class="number">0</div>
-      <div class="label">Altersgruppen</div>
-    </div>
-
-    <div class="col-2"></div>
-
-    <div class="col-3">
-      <div class="number">0</div>
-      <div class="label">Promotoren</div>
-    </div>
+  <div class="counters">
+    <div class="counter" data-target="1">0</div>   
+    <div class="counter" data-target="49">0</div>
+    <div class="counter" data-target="6">0</div>
   </div>
+
+
+  <div class="row umfrage">   
+    <div class="col-4">
+      <p>Umfrage</p>
+    </div>  
+
+    <div class="col-4">
+      <p>Befragte</p>
+    </div> 
+
+    <div class="col-4">
+      <p>Altersgruppen</p>
+    </div> 
+  </div><!-- Ende row unfrage text -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.counter');
+            const totalAnimationTime = 3000; // Gesamtzeit der Animation in Millisekunden (30 Sekunden)
+
+            function animateCounter(counter, startTime) {
+                const target = +counter.getAttribute('data-target');
+                const duration = totalAnimationTime;
+                const startValue = 0;
+
+                function updateCount(timestamp) {
+                    const elapsedTime = timestamp - startTime;
+                    const progress = Math.min(elapsedTime / duration, 1);
+                    const count = startValue + (target - startValue) * progress;
+
+                    counter.innerText = Math.floor(count);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                }
+
+                requestAnimationFrame(updateCount);
+            }
+
+            function handleScroll() {
+                counters.forEach(counter => {
+                    const rect = counter.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0 && !counter.classList.contains('started')) {
+                        counter.classList.add('started');
+                        const startTime = performance.now();
+                        animateCounter(counter, startTime);
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            // Überprüfen, ob der Counter bereits beim Laden der Seite im Viewport ist
+            handleScroll();
+        });
+    </script>
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
+
+
+<!-- weitere Details zur Umfrage -->
+<div class="row" >
+  <div class="col-12" style="text-align: center;">
+    <h3 class="infos_umfrage">Weitere Infos zu unserer Umfrage finden Sie hier:</h3>
+    <br><br>
+    <a href="templates/umfrage.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">weitere Informationen</a>
+
+  </div> 
+ 
 </div>
 
 
-
-
-
-<br><br><br><br><br><br>
-
+<br><br><br><br>
 
 
 <!-- Infobox -->
@@ -140,14 +199,11 @@ ini_set('display_errors','On');
 
 
 
-
-
-
  </div> <!-- ende container -->
 
 
 <!-- Cookies -->
-<div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<!-- <div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
     <div class="container">
       <h5 class="offcanvas-title" id="offcanvasBottomLabel">Unsere Verwendung von Cookies</h5>
@@ -165,9 +221,9 @@ ini_set('display_errors','On');
         Bitte beachten Sie, dass einige Teile der Plattform dann möglicherweise nicht mehr funktionieren.</p>
       <p>Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>
     </div>
-  </div><!-- Ende container cookies  -->
+  </div> Ende container cookies  
   <br><br>
-</div>
+</div> -->
 
 
 
@@ -242,24 +298,29 @@ body {
 }
 
  
-/* laufende Nummern */
-*{
-  font-family: sans-serif;
+/* laufende Nummern + Umfragedetails*/
+.counters {
+  display: flex;
+  justify-content: space-around;
+
 }
 
-.counter-container{
-  margin: 60px;
+.counter {
+  font-size: 80px;
+  margin: 20px;
   text-align: center;
+  }
+
+.umfrage p{
+  font-size: 50px;
+  text-align: center;
+  font-weight: 550;
 }
 
-.counter-container .number{
-  font-size: 100px;
-}
 
-
-.counter-container .label{
-  font-size: 52px;
-  margin-top: -30px;
+.infos_umfrage{
+  font-size: 30px;
+  font-weight: 800;
 }
 
 
@@ -303,7 +364,7 @@ body {
 
 /* Wellen */
 .wellen{
-  margin-top: -150px;
+  margin-top: -90px;
   margin-bottom: -500px;
 }
 
