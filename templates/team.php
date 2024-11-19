@@ -26,7 +26,7 @@ ini_set('display_errors','On');
     <div class="container d-flex align-items-center">
     <div class="flex-grow-1" style="margin-right: 20px;">
     <br>
-    <h1>Team</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Team</h1>
     <br>
         <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
         Wir sind wir!</p>

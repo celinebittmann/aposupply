@@ -26,7 +26,7 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1>Impressum</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Impressum</h1>
     <br>
 
 

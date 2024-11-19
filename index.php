@@ -25,7 +25,7 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
     <br>
-    <h1>Willkommen bei Apo-Supply!</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Willkommen bei Apo-Supply!</h1>
     <br>
 
 
@@ -150,7 +150,7 @@ ini_set('display_errors','On');
   <div class="col-12" style="text-align: center;">
     <h3 class="infos_umfrage">Weitere Infos zu unserer Umfrage finden Sie hier:</h3>
     <br><br>
-    <a href="templates/umfrage.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">weitere Informationen</a>
+    <a href="templates/umfrage.php" class="btn  umfrage_btn" tabindex="-1" role="button" aria-disabled="true">weitere Informationen</a>
 
   </div> 
  
@@ -321,6 +321,21 @@ body {
 .infos_umfrage{
   font-size: 30px;
   font-weight: 800;
+}
+
+.umfrage_btn{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  background-color: #00aaff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.umfrage_btn:hover{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  transform: scale(1.05);
+  letter-spacing: 1px;
 }
 
 

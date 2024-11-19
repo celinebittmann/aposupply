@@ -28,7 +28,7 @@ ini_set('display_errors','On');
     <div class="container">
     <div class="container d-flex align-items-center">
     <div class="flex-grow-1" style="margin-right: 20px;">
-    <h1>Nachhaltigkeit</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Nachhaltigkeit</h1>
     <br>
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
       "Nachhaltigkeit bedeutet, die Bedürfnisse der Gegenwart so zu befriedigen, dass die Möglichkeiten zukünftiger Generationen nicht eingeschränkt werden."

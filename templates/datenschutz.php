@@ -25,37 +25,10 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1>Datenschutzerklärung</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Datenschutzerklärung</h1>
     <br>
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
 <h5>Letzte Aktualisierung:</h5>

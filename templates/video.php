@@ -25,7 +25,7 @@ ini_set('display_errors','On');
 
     <br>
     <div class="container">
-    <h1>Erklärvideo</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Erklärvideo</h1>
     </div>
 
 

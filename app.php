@@ -27,7 +27,7 @@ $andi = $dbh->query($sql);
     <div class="container">
 
     <br>
-    <h1>Unsere App</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Unsere App</h1>
     <br>
 
 
