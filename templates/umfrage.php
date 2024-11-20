@@ -53,7 +53,7 @@ ini_set('display_errors','On');
   </div>
 </div> <!-- Ende row -->
 
-<br>
+<br><br><br>
 
 <!-- 1. Auswertung -->
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
@@ -86,6 +86,39 @@ ini_set('display_errors','On');
 <br><br>
 
 <!-- 2. Auswertung -->
+<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wo besorgen Sie nicht rezeptpflichtige Medikamente (z.B. Aspirin, Hustensaft,...)?"</h4>
+
+<div class="col-12 image-container" style="position: relative; text-align: center;">
+  <img class="auswertung" id="clickableImage" src="assets/img/apotheke_auswertung.png" width="700" height="400" style="border-radius: 30px;" alt="meist genannte Medikamente">
+  <p style="font-size: 14px; text-align: center; font-style: italic;">(Je größer der Begriff ist, desto häufiger wurde er genannt)</p>
+</div>
+
+<p style="text-align: center;">Man kann deutlich erkennen, dass die meisten Personen ihre Medikamente in der Apotheke besorgen. Aber auch die Website der Shop-Apotheke ist 
+  bei vielen essenziell.
+</p>
+
+<br><br>
+
+
+<!-- 3. Auswertung -->
+<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie oft nehmen Sie Medikamente ein?"</h4>
+
+<div class="col-12 image-container" style="position: relative; text-align: center;">
+  <img class="auswertung" id="clickableImage" src="assets/img/diagramm_auswertung.png" width="500" height="400" style="border-radius: 30px;" alt="Einnahmehäufigkeit der Medikamente">
+</div>
+
+<br>
+
+<p style="text-align: center;">Sehr viele der Befragten nehmen nur bei Bedarf ihre Medikamente ein, wie zum Beispiel wenn man mal Kopfweh bekommen hat oder einem schwindelig ist.
+  Circa ein Viertel müssen täglich Pharmazeutika einnehmen, wobei man da schon ziemlich durcheinanderkommen kann, wenn es mal mehr als 2 verschiedene Arzneimittel sind.
+  Dieses Problem gibt es bei Apo-Supply nicht mehr!
+</p>
+<br><br>
+
+
+
+
+<!-- 4. Auswertung -->
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
 
 <div class="progress-stacked">
@@ -108,9 +141,46 @@ ini_set('display_errors','On');
 
 <p style="font-size: 14px; text-align: justify; font-style: italic;">(Äußerst unzufrieden, Unzufrieden, Weder noch, Zufrieden, Äußerst zufrieden)</p>
 
+
 <p style="text-align: justify;">Wie man erkennen kann, hat die Mehrheit schon einen guten Überblick über Ihre Medikamente, doch wir wollen die Verwaltung noch einfacher machen!
   Unsere App soll leicht bedienbar sein, sodass auch die restlichen Personen, die sich damit vielleicht schwer tun, sie verweden können. 
 </p>
+
+<br><br>
+
+
+
+
+<!-- 5. Auswertung -->
+<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
+
+<div class="progress-stacked">
+  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
+    <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">12%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+    <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">4%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%;">
+    <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">37%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
+    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">24%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
+    <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">22%</div>
+  </div>
+</div>
+
+<p style="font-size: 14px; text-align: justify; font-style: italic;">(Äußerst unzufrieden, Unzufrieden, Weder noch, Zufrieden, Äußerst zufrieden)</p>
+
+
+<p style="text-align: justify;">Wie man erkennen kann, hat die Mehrheit schon einen guten Überblick über Ihre Medikamente, doch wir wollen die Verwaltung noch einfacher machen!
+  Unsere App soll leicht bedienbar sein, sodass auch die restlichen Personen, die sich damit vielleicht schwer tun, sie verweden können. 
+</p>
+
+<br><br>
+
 
 
 
@@ -180,8 +250,17 @@ body {
 }
 
 
+/* Bilder  */
+.auswertung{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
 
 
+.auswertung:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  margin-bottom: 8px;
+}
 
 
 
