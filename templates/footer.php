@@ -21,7 +21,7 @@
     <div class="row center">
 
       <div class="col-4">
-        <h5 class="ueberschrift_klein">Wichtige Links</h5>
+        <h5 class="ueberschrift_klein">Rechtliches</h5>
         <br>
         <p><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
         <p><a class="link_footer" href="templates/agb.php">AGB</a></p>

@@ -180,34 +180,49 @@ body {
 
 
 <style>
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-10deg); }
-    20% { transform: translate(-3px, 0px) rotate(10deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(10deg); }
-    50% { transform: translate(-1px, 2px) rotate(-10deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-10deg); }
-    80% { transform: translate(-1px, -1px) rotate(10deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    95% { transform: translate(1px, -2px) rotate(-10deg); }
-    100% { transform: translate(1px, -2px) rotate(0deg); }
-    /*schaut irgenwie abgehakt aus, ändern!*/
-  }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-  #clickableImage {
-    animation: shake 2s;
-    animation-iteration-count: 1;
-  }
-</style>
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-10deg); }
+      20% { transform: translate(-3px, 0px) rotate(10deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(10deg); }
+      50% { transform: translate(-1px, 2px) rotate(-10deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-10deg); }
+      80% { transform: translate(-1px, -1px) rotate(10deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(0deg); }
+    }
+
+    #clickableImage {
+      animation: shake 5s;
+      animation-delay: 3s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+  </style>
+
+
+
+
 
 <script>
   window.onload = function() {
-    document.getElementById("clickableImage").style.animation = "shake 2s";
+    setTimeout(function() {
+      document.getElementById("clickableImage").style.animation = "shake 5s";
+    }, 3000); // Verzögert Animation um 3 sec
   };
 </script>
 
 
 
+
 </html>
+
+

@@ -92,14 +92,19 @@ $andi = $dbh->query($sql);
       </div>
     </div>
     <br>
-    <div class="card-header" style="font-size: 16px; font-weight: 700; text-align: center; color: #555;">
-    <p>Hier geht es zu unserer App 
+    <div class="card-header" style="font-size: 16px; font-weight: 700; color: #555; display: flex; justify-content: center; align-items: center; height: 100px;">
+  <p style="margin: 0;"> 
+    <a href="test.php" style="text-decoration: none; color: inherit;">
+      Hier geht es zu unserer App 
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
-</svg></p>
-  </div> 
-   </div> 
+        <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+      </svg>
+    </a>
+  </p>
+</div>
+</div>
 </div> <!-- Ende Box -->
+
 
 
 <style>
@@ -177,33 +182,38 @@ $andi = $dbh->query($sql);
 <div class="container">
 <h3>Lizenzpakete</h3>
 <h5>Um Ihr Paket zu aktivieren, bekommen Sie nach der Registrierung einen Code an ihre E-Mail zugeschickt, welcher einmalig gilt.</h5>
-<h5>kursiv: Aktivierung muss auf der App erfolgen, diese Website dient nur zum Informationsaustausch!</h5>
+<h6 style="font-style: italic;">Aktivierung muss auf der App erfolgen, diese Website dient nur zum Informationsaustausch!</h6>
 <br>
-  <div class="row">
-    <!-- Card 1: Standard -->
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
-        <div class="card-body">
+<div class="row">
+  <!-- Card 1: Staneard -->
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem; height: 30rem; cursor: pointer; position: relative;">
+      <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
           <h5 class="card-title">Einzel-User</h5>
-          <p class="card-text">Dieses Abonnement ist ideal für Einzelnutzer & zum Kennenlernen der App.</p>
+          <br>
+          <p class="card-text">Dieses Abonnement ist ideal für Einzelnutzer und zum Kennenlernen der App "Apo-Supply".</p>
           <ul>
             <li>1 User</li>
             <li>Standard</li>
-            <li>Keine zusätzlichen Kosten</li>
+            <li>keine zusätzlichen Kosten</li>
             <li>bis zu 20 Medikamente verwalten</li>
           </ul>
           <p>Preis: € 0,00</p>
-          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
+        <a href="#" class="btn btn-info btn-rounded">Registrieren auf unserer App</a>
       </div>
     </div>
+  </div>
 
-    <!-- Card 2: Familienpackage -->
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem; height: 30rem; cursor: pointer">
-        <div class="card-body">
+  <!-- Card 2: Familienpackage -->
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem; height: 30rem; cursor: pointer; position: relative;">
+      <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
           <h5 class="card-title">Family Package</h5>
-          <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren Personen</p>
+          <br>
+          <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren Personen, um Ihre Medikamente zu verwalten.</p>
           <ul>
             <li>bis zu 5 User</li>
             <li>bester Support</li>
@@ -211,23 +221,23 @@ $andi = $dbh->query($sql);
             <li>bis zu 50 Medikamente verwalten</li>
           </ul>
           <p>Preis: €14,99/Monat</p>
-          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
+        <a href="#" class="btn btn-info btn-rounded">Registrieren auf unserer App</a>
       </div>
     </div>
+  </div>
 
-    <!-- Card 3: 3 Monate Gratis Angebot -->
-    <div class="col-md-4">
-   
-      <div class="card border-info" style="width: 18rem; height: 30rem; cursor: pointer border: 2px solid green;">
-      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-    Angebot
-    <span class="visually-hidden">unread messages</span>
-</span>
-        <div class="card-body">
+  <!-- Card 3: 3 Monate Gratis Angebot -->
+  <div class="col-md-4">
+    <div class="card border-info" style="width: 18rem; height: 30rem; cursor: pointer; position: relative;">
+    <span class="position-absolute badge rounded-pill bg-success schief-badge">
+      kurzfristiges Angebot
+    </span>
+      <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
           <h5 class="card-title text-info">Premium Package</h5>
           <h5 class="card-title text-info">3 Monate Gratis!</h5>
-          <p class="card-text">Genießen Sie 3 Monate kostenlose Nutzung mit allen Premium-Funktionen und unbegrenztem Zugang.</p>
+          <p class="card-text">3 Monate kostenlose Nutzung mit allen Premium-Funktionen und unbegrenztem Zugang.</p>
           <ul>
             <li>Unbegrenzte Benutzer</li>
             <li>24/7 Premium-Support</li>
@@ -235,8 +245,8 @@ $andi = $dbh->query($sql);
             <li>unendlich viele Medikamente verwalten</li>
           </ul>
           <p>Preis: €29,99/Monat nach den ersten 3 kostenlosen Monaten</p>
-          <a href="#" class="btn btn-info">Registrieren auf unserer App</a>
         </div>
+        <a href="#" class="btn btn-info btn-rounded">Registrieren auf unserer App</a>
       </div>
     </div>
   </div>
@@ -281,6 +291,20 @@ $andi = $dbh->query($sql);
     .bi-caret-right-fill:hover {
       transform: translateX(10px);
     }
+
+/*Lizenzpakete*/
+    /* Runde Ecken für Buttons */
+.btn-rounded {
+  border-radius: 20px;
+}
+
+/*Badge schief */
+.schief-badge {
+  transform: rotate(15deg); /* schräg */
+  right: -30px; /* Verschiebt*/
+  z-index: 1; /* immer sichtbar, nicht verdeckt wird*/
+}
+
   </style>
 
 
