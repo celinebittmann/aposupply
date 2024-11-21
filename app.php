@@ -194,7 +194,7 @@ $andi = $dbh->query($sql);
           <br>
           <p class="card-text">Dieses Abonnement ist ideal für Einzelnutzer und zum Kennenlernen der App "Apo-Supply".</p>
           <ul>
-            <li>1 User</li>
+            <li>1 Benutzer</li>
             <li>Standard</li>
             <li>keine zusätzlichen Kosten</li>
             <li>bis zu 20 Medikamente verwalten</li>
@@ -215,7 +215,7 @@ $andi = $dbh->query($sql);
           <br>
           <p class="card-text">Dieses Abonnement ist ideal für Haushalte mit mehreren Personen, um Ihre Medikamente zu verwalten.</p>
           <ul>
-            <li>bis zu 5 User</li>
+            <li>bis zu 5 Benutzers</li>
             <li>bester Support</li>
             <li>Medikament-Empfehlungen</li>
             <li>bis zu 50 Medikamente verwalten</li>
@@ -250,6 +250,7 @@ $andi = $dbh->query($sql);
       </div>
     </div>
   </div>
+</div>
 </div>
 
 

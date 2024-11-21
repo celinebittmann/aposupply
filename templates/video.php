@@ -35,13 +35,15 @@ ini_set('display_errors','On');
     </p>
     <p style="text-align: justify;">Das Video beinhaltet alle Tipps & Tricks zur Nutzung. Viel Spaß!
     </p>
+    <p style="text-align: justify;">Viel Spaß!
+    </p>
   </div>
 
   <div class="col-1">
   </div>
 
   <div class="col-3">
-    <img src="assets/img/erklären.png" width="auto" height="150" alt="Frau erklärt einem Mann etwas">
+    <img src="assets/img/erklären.png" width="auto" height="180" alt="Frau erklärt einem Mann etwas">
   </div>
 </div>
 
@@ -74,7 +76,7 @@ ini_set('display_errors','On');
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;">
     <video controls style="width: 100%; border-radius: 10px;">
-      <source src="assets/img/test.mp4" type="video/mp4">
+      <source src="assets/img/test2.mp4" type="video/mp4">
       Ihr Browser unterstützt dieses Video-Format nicht.
     </video>
     <p style="margin-top: 5px; font-style: italic; color: #555;">Video ist vergrößerbar</p>
