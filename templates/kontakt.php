@@ -180,19 +180,6 @@ ini_set('display_errors','On');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Hintergrundfarbe & -verlauf -->
   <style>
 body {
@@ -218,6 +205,14 @@ body {
 
 .card{
   border: #ffffff; 
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 2px 0 2px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease, opacity 1s ease, scale 1s ease;
+}
+
+.card:hover{
+  border: #ffffff; 
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 2px 0 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(0) scale(1.01);
 }
 
 .card-text{

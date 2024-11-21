@@ -33,12 +33,12 @@ ini_set('display_errors','On');
 
 <div class="row">
   <div class="col-8">
-    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Auswertung der Antworten</p>
+    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Auswertung einiger Antworten</p>
     <p style="text-align: justify;">Wir haben gemeinsam Mitte September damit begonnen, eine Umfrage zur Medikamentenverwaltung an unsere Bekannten weiterzuleiten, 
       um genügend Antworten zu erhalten. Mitte Oktober schlossen wir die Umfrage, um keine weiteren Änderungen mehr zu bekommen und keine Ergebnisse zu fälschen.
       An der Umfrage nahmen 49 verschiedene Personen teil, in den Altersgruppen von "unter 18", "18-30", "30-40", "40-50", "50-60" und "über 60", wobei die meisten
       Teilnehmer und Teilnehmerinnen aus der Altergruppe zwischen 18 und 30 stammen. 
-      Um nun ein geeignetes Programm zu zaubern, mussten wir die Daten unserer Befragten auswerten, und hier sind die Ergebnisse...
+      Um nun ein geeignetes Programm zu zaubern, mussten wir die Daten unserer Befragten auswerten, und hier sind einige Ergebnisse...
     </p>
   </div>
 
@@ -55,7 +55,9 @@ ini_set('display_errors','On');
 
 <br><br><br>
 
+
 <!-- 1. Auswertung -->
+ <div class="hintergrund">
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
 
 <div class="progress-stacked">
@@ -69,7 +71,7 @@ ini_set('display_errors','On');
     <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">37%</div>
   </div>
   <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
-    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">24%</div>
+    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">25%</div>
   </div>
   <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
     <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">22%</div>
@@ -83,9 +85,13 @@ ini_set('display_errors','On');
   Unsere App soll leicht bedienbar sein, sodass auch die restlichen Personen, die sich damit vielleicht schwer tun, sie verweden können. 
 </p>
 
+</div> <!-- ende hintergrund -->
+
 <br><br>
 
+
 <!-- 2. Auswertung -->
+<div class="hintergrund">
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wo besorgen Sie nicht rezeptpflichtige Medikamente (z.B. Aspirin, Hustensaft,...)?"</h4>
 
 <div class="col-12 image-container" style="position: relative; text-align: center;">
@@ -97,10 +103,13 @@ ini_set('display_errors','On');
   bei vielen essenziell.
 </p>
 
+</div> <!-- ende hintergrund -->
+
 <br><br>
 
 
 <!-- 3. Auswertung -->
+<div class="hintergrund">
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie oft nehmen Sie Medikamente ein?"</h4>
 
 <div class="col-12 image-container" style="position: relative; text-align: center;">
@@ -113,74 +122,71 @@ ini_set('display_errors','On');
   Circa ein Viertel müssen täglich Pharmazeutika einnehmen, wobei man da schon ziemlich durcheinanderkommen kann, wenn es mal mehr als 2 verschiedene Arzneimittel sind.
   Dieses Problem gibt es bei Apo-Supply nicht mehr!
 </p>
-<br><br>
 
+</div> <!-- ende hintergrund -->
+
+<br><br>
 
 
 
 <!-- 4. Auswertung -->
-<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
+<div class="hintergrund">
+<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Ich benutze eine digitale Verwaltung für meine Tabletten"</h4>
 
 <div class="progress-stacked">
-  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
-    <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">12%</div>
+  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
+    <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">92%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
-    <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">4%</div>
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+    <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">2%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%;">
-    <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">37%</div>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
-    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">24%</div>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
-    <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">22%</div>
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
+    <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
 </div>
 
-<p style="font-size: 14px; text-align: justify; font-style: italic;">(Äußerst unzufrieden, Unzufrieden, Weder noch, Zufrieden, Äußerst zufrieden)</p>
+<p style="font-size: 14px; text-align: justify; font-style: italic;">(Stimme überhaupt nicht zu, Stimme eher nicht zu, Weder noch)</p>
 
 
-<p style="text-align: justify;">Wie man erkennen kann, hat die Mehrheit schon einen guten Überblick über Ihre Medikamente, doch wir wollen die Verwaltung noch einfacher machen!
-  Unsere App soll leicht bedienbar sein, sodass auch die restlichen Personen, die sich damit vielleicht schwer tun, sie verweden können. 
+<p style="text-align: justify;">Die Mehrheit unserer Befragten stimmt überhaupt nicht zu, dass sie eine digitale Verwaltung benutzen. Das werden wir mit Apo-Supply ändern!
+  Denn unsere App wird genau dazu beitragen - eine digitale Verwaltung aller ihrer Medikamente.
 </p>
 
+</div> <!-- ende hintergrund -->
+
 <br><br>
-
-
 
 
 <!-- 5. Auswertung -->
-<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Wie zufrieden sind Sie mit der Verwaltung von Ihren Medikamenten?"</h4>
+<div class="hintergrund">
+<h4 style="font-weight: 700; letter-spacing: 0.5px;">"Eine Erinnerung für die Einnahme ist sinnvoll"</h4>
 
 <div class="progress-stacked">
-  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
-    <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">12%</div>
+  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+    <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">2%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
-    <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">4%</div>
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%;">
+    <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%;">
-    <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">37%</div>
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%;">
+    <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
-    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">24%</div>
+  <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+    <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">46%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
-    <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">22%</div>
+  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+    <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">40%</div>
   </div>
 </div>
 
 <p style="font-size: 14px; text-align: justify; font-style: italic;">(Äußerst unzufrieden, Unzufrieden, Weder noch, Zufrieden, Äußerst zufrieden)</p>
 
 
-<p style="text-align: justify;">Wie man erkennen kann, hat die Mehrheit schon einen guten Überblick über Ihre Medikamente, doch wir wollen die Verwaltung noch einfacher machen!
-  Unsere App soll leicht bedienbar sein, sodass auch die restlichen Personen, die sich damit vielleicht schwer tun, sie verweden können. 
+<p style="text-align: justify;">Wie man erkennen kann, finden die meisten eine Erinnerung für ihre Medikamenteneinnahme sehr sinnvoll - warum auch nicht? Es ist sehr vom Vorteil, erinnert zu werden,
+  sobald man seine Arzneimittel einnehmen muss.
 </p>
 
-<br><br>
-
+</div> <!-- ende hintergrund -->
 
 
 
@@ -256,17 +262,21 @@ body {
 }
 
 
-.auswertung:hover{
-  transform: scale(1.05);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
-  margin-bottom: 8px;
+/* "cards" */
+.hintergrund{
+  background-color: rgba(255,255,255,0.5);
+  padding: 15px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6), 1px 0 4px rgba(0, 0, 0, 0.6);
+  transition: transform 1s ease, opacity 1s ease, scale 1s ease;
+
 }
 
-
-
-
-
-
+.hintergrund:hover{
+  background-color: rgba(255,255,255,0.5);
+  padding: 15px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6), 1px 0 4px rgba(0, 0, 0, 0.6);
+  transform: translateY(0) scale(1.02);
+}
 
 
 

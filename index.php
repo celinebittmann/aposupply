@@ -191,64 +191,7 @@ ini_set('display_errors','On');
 
 
 
-
-
-
-
-
-
-
-
  </div> <!-- ende container -->
-
-
-<!-- Cookies -->
-<!-- <div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <div class="container">
-      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Unsere Verwendung von Cookies</h5>
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="container">
-    <div class="offcanvas-body small">
-      <p>Wir verwenden Cookies, um die Funktionalität unserer Plattform sicherzustellen und Ihre Erfahrung zu verbessern.</p>
-      <h4>Notwendige Cookies</h4>
-      <p>Diese Cookies sind unerlässlich für die grundlegenden Funktionen unserer Website, wie das Einloggen oder das Speichern Ihrer Datenschutzeinstellungen. 
-        Ohne sie kann die Website nicht richtig funktionieren.</p>
-      <h4>Einstellungen</h4>
-      <p>Sie können Ihren Browser so einstellen, dass er Cookies blockiert oder Sie darüber benachrichtigt. 
-        Bitte beachten Sie, dass einige Teile der Plattform dann möglicherweise nicht mehr funktionieren.</p>
-      <p>Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>
-    </div>
-  </div> Ende container cookies  
-  <br><br>
-</div> -->
-
-
-
-<!--  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
- <script> 
-  document.addEventListener("DOMContentLoaded", function() {
-    const offcanvasBottom = document.getElementById('offcanvasBottom');
-    const offcanvasInstance = new bootstrap.Offcanvas(offcanvasBottom);
-
-    // Überprüfen, ob der Offcanvas-Status in localStorage gespeichert ist
-    if (!localStorage.getItem('offcanvasDisplayed')) {
-      // Offcanvas anzeigen
-      offcanvasInstance.show();
-
-      // Event-Listener hinzufügen, um den Status zu speichern, wenn das Offcanvas geschlossen wird
-      offcanvasBottom.addEventListener('hidden.bs.offcanvas', function () {
-        localStorage.setItem('offcanvasDisplayed', 'true');
-      });
-    }
-  });
-</script> --> 
-
-
-
 
 
 
@@ -309,6 +252,7 @@ body {
   font-size: 80px;
   margin: 20px;
   text-align: center;
+  font-weight: 650;
   }
 
 .umfrage p{
