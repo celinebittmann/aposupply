@@ -41,8 +41,7 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
 </div>
 
   <br><br>
-
-<div class="container text-center">
+  <div class="container text-center">
   <div class="row">
     <div class="col position-relative">
       <div class="overlay">
@@ -51,7 +50,7 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
           GitHub - Celine Bittmann
         </a>
       </div>
-      <img src="assets/img/celi2.jpg" class="img-small animated-slide-in-left img-hover-zoom" alt="Bild von Celine">
+      <img src="assets/img/celi.jpg" class="img-small img-circle animated-slide-in-left img-hover-zoom" alt="Bild von Celine">
       <h3 style="margin-top: 15px;">Celine Bittmann</h3>
       <p>Aufgaben im Rahmen des Projekts "Apo-Supply": Scrum Master, Website, Datenbank, App-Fronted</p>
     </div>
@@ -62,7 +61,7 @@ Ein weiterer wichtiger Aspekt ist ihre Leidenschaft und Motivation für ihr Unte
           GitHub - Anja Brüstl
         </a>
       </div>
-      <img src="assets/img/celi1.jpg" class="img-small animated-slide-in-right img-hover-zoom" alt="Bild von Anja">
+      <img src="assets/img/anja.png" class="img-small img-circle animated-slide-in-right img-hover-zoom" alt="Bild von Anja">
       <h3 style="margin-top: 15px;">Anja Brüstl</h3>
       <p>Aufgaben im Rahmen des Projekts "Apo-Supply": Website, App-Backend, Werbevideo</p>
     </div>
@@ -101,6 +100,13 @@ body {
     }
 }
 
+.img-circle {
+  width: 350px; /* Anpassen an gewünschte Größe */
+  height: 350px;
+  border-radius: 50%; /* Macht das Bild rund */
+  object-fit: cover; /* Verhindert Verzerrung, indem das Bild zugeschnitten wird */
+  border: 2px solid #ccc; /* Optional: Rahmen hinzufügen */
+}
 
 
 .img-small {
