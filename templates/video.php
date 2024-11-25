@@ -33,7 +33,7 @@ ini_set('display_errors','On');
   <div class="col-7">
     <p style="text-align: justify;">Nehmen Sie sich kurz Zeit, um sich unser Video über die App "Apo-Supply" anzuschauen und das Konzept dahinter besser zu verstehen.
     </p>
-    <p style="text-align: justify;">Das Video beinhaltet alle Tipps & Tricks zur Nutzung. Viel Spaß!
+    <p style="text-align: justify;">Das Video beinhaltet alle Tipps & Tricks zur Nutzung.
     </p>
     <p style="text-align: justify;">Viel Spaß!
     </p>
@@ -76,7 +76,8 @@ ini_set('display_errors','On');
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;">
     <video controls style="width: 100%; border-radius: 10px;">
-      <source src="assets/img/test2.mp4" type="video/mp4">
+       <!-- JIER VIDEO EINFÜGEN -->
+      <source src="assets/img/" type="video/mp4">
       Ihr Browser unterstützt dieses Video-Format nicht.
     </video>
     <p style="margin-top: 5px; font-style: italic; color: #555;">Video ist vergrößerbar</p>
