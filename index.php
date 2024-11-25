@@ -273,6 +273,7 @@ body {
   background-color: #00aaff;
   font-weight: 700;
   letter-spacing: 0.5px;
+  transition: transform 1s ease, opacity 1s ease, scale 1s ease;
 }
 
 .umfrage_btn:hover{
@@ -280,6 +281,7 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.8);
   transform: scale(1.05);
   letter-spacing: 1px;
+  transform: translateY(0) scale(1.07);
 }
 
 

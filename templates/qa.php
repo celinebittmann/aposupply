@@ -98,7 +98,7 @@ ini_set('display_errors','On');
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">Mit der App können Sie Ihre Medikamente verwalten und jederzeit den aktuellen Stand ansehen. Sollte es einmal dazu kommen, dass eine Packung leer wird,
-        so können Sie immer über unsere Website oder in der Apotheke in Ihrer Nähe, die benötigten Medikamente nachkaufen.
+        so können Sie immer über unsere Website oder in der Apotheke in Ihrer Nähe die benötigten Medikamente nachkaufen.
       </div>
     </div>
   </div>
@@ -122,6 +122,9 @@ ini_set('display_errors','On');
       <div class="accordion-body">Besuchen Sie unsere <a href="templates/kontakt.php" class="link">Kontaktseite</a> für alle wichtigen Informationen. Nutzen Sie unser Formular, um uns direkt eine Nachricht zu senden!</div>
     </div>
   </div>
+
+
+<!--   
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
@@ -151,7 +154,9 @@ ini_set('display_errors','On');
     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">Antwort</div>
     </div>
-  </div>
+  </div> -->
+
+  
 </div>
 <br><br>
 

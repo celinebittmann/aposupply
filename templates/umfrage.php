@@ -35,7 +35,7 @@ ini_set('display_errors','On');
   <div class="col-8">
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Auswertung einiger Antworten</p>
     <p style="text-align: justify;">Wir haben gemeinsam Mitte September damit begonnen, eine Umfrage zur Medikamentenverwaltung an unsere Bekannten weiterzuleiten, 
-      um genügend Antworten zu erhalten. Mitte Oktober schlossen wir die Umfrage, um keine weiteren Änderungen mehr zu bekommen und keine Ergebnisse zu fälschen.
+      um genügend Antworten zu erhalten. Mitte Oktober schlossen wir die Umfrage, um keine weiteren Antworten mehr zu bekommen und somit keine Änderungen mehr vornehmenzumüssen.
       An der Umfrage nahmen 49 verschiedene Personen teil, in den Altersgruppen von "unter 18", "18-30", "30-40", "40-50", "50-60" und "über 60", wobei die meisten
       Teilnehmer und Teilnehmerinnen aus der Altergruppe zwischen 18 und 30 stammen. 
       Um nun ein geeignetes Programm zu zaubern, mussten wir die Daten unserer Befragten auswerten, und hier sind einige Ergebnisse...
@@ -230,29 +230,6 @@ body {
   text-decoration: underline;
   color: #00aaff;
   
-}
-
-/* Verzögerungseffekt */
-.accordion-body {
-  animation: sweep .7s ease-in-out;}
-
-@keyframes sweep {
-  0%    {opacity: 0; margin-left: -20px}
-  100%  {opacity: 1; margin-left: 0px}
-}
-
-
-.accordion-button{
-  background-color: rgba(0,170,255,0.1);
-  font-size: 12pt;
-  font-weight: 600;
-}
-
-.accordion-button:not(.collapsed){
-  background-color: rgba(0,170,255,0.3);
-  font-size: 12.5pt;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 
