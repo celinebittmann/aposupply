@@ -20,7 +20,7 @@ ini_set('display_errors','On');
 <br><br><br>
   <body>
     <?php
-     require __DIR__.'/../includes.php'; 
+    //  require __DIR__.'/../includes.php'; 
     require "navbar.php";
     ?>
     <div class="container">

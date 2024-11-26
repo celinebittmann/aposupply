@@ -3,7 +3,7 @@ error_reporting(-1);
 ini_set('display_errors','On'); 
 
 // session_start();
-require "functions/database.php";
+// require "functions/database.php";
 
 $sql = "SELECT * FROM produkte";
 $andi = $dbh->query($sql);
@@ -21,7 +21,7 @@ $andi = $dbh->query($sql);
   <br><br><br>
   <body>
     <?php
-    require "includes.php";
+
     require "templates/navbar.php";
     ?>
     <div class="container">

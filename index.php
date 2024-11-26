@@ -18,7 +18,6 @@ ini_set('display_errors','On');
   <br><br><br>
   <body>
     <?php
-    require(__DIR__ . '/includes.php');
     require "templates/navbar.php";
 
     
