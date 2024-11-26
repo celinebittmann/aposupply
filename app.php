@@ -5,8 +5,8 @@ ini_set('display_errors','On');
 // session_start();
 // require "functions/database.php";
 
-$sql = "SELECT * FROM produkte";
-$andi = $dbh->query($sql);
+// $sql = "SELECT * FROM produkte";
+// $andi = $dbh->query($sql);
 
 ?>
 <!doctype html>
