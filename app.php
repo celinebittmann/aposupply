@@ -2,11 +2,7 @@
 error_reporting(-1); 
 ini_set('display_errors','On'); 
 
-// session_start();
-// require "functions/database.php";
 
-$sql = "SELECT * FROM produkte";
-$andi = $dbh->query($sql);
 
 ?>
 <!doctype html>
