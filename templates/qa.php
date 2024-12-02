@@ -14,9 +14,9 @@ ini_set('display_errors','On');
     <title>Q&A
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" href="logo_richtig.png" type="image/x-icon">
+	  <link rel="icon" href="logo_richtig.png" type="image/x-icon">
     <link href="../functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
-    <base href="/aposupply/">
+    <base href="/web/">
 </head>
 <br><br><br>
   <body>
@@ -116,7 +116,7 @@ ini_set('display_errors','On');
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Wie kann ich Sie kontaktieren?
+        Wie kann ich euch kontaktieren?
       </button>
     </h2>
     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -124,18 +124,18 @@ ini_set('display_errors','On');
     </div>
   </div>
 
-
-<!--   
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-        Frage
+        Wie kann ich meine Medikamente in der App anlegen?
       </button>
     </h2>
     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Antwort</div>
+      <div class="accordion-body">Zuerst gehen Sie zu Ihrem "Apothekenschrank" in der App, diesen finden Sie im Seitenmenü. Danach haben Sie die Möglichkeit ... . Wenn Sie dies getan haben ... . Abschließend müssen Sie ... .</div>
     </div>
   </div>
+	
+<!--	
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
