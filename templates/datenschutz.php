@@ -26,7 +26,7 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Datenschutzerklärung</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px;">Datenschutzerklärung</h1>
     <br>
 
     
@@ -58,7 +58,7 @@ ini_set('display_errors','On');
       <br>
 <!-- Link so machen dass outlook aufgeht -->
 
-      <br><br><br><br>
+      <br><br>
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -80,70 +80,117 @@ body {
     background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
     background-size: 200% 200%;
     animation: gradientMove 12s linear infinite;
+    padding-top: 80px; /* Abstand für Navbar */
 }
 
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.container {
+    margin-top: 30px; /* Sicherstellen, dass der Container nicht von der Navbar überlappt wird */
 }
 
-h3{
-  font-weight: 550;
-  font-style: italic;
+h1 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 45px;
 }
 
-/* Unterstrichene Texte */
-.design:hover{
-  text-decoration:underline;
-
+h2.DAschrift {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-
-/* Links */
-.link{
-  text-decoration: none;
-  color: #00aaff;
-  
+h3 {
+    font-weight: 550;
+    font-style: italic;
 }
 
-.link:hover{
-  text-decoration: underline;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #000000;
-  
+.design:hover {
+    text-decoration: underline;
 }
 
+.link {
+    text-decoration: none;
+    color: #00aaff;
+}
 
+.link:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000000;
+}
 
 @keyframes example {
-  0%   {letter-spacing:1px;}
-  25%  {letter-spacing:1.3px;}
-  50%  {letter-spacing:1.6px;}
-  75%  {letter-spacing:2px;}
-  100% {letter-spacing:2.1px;}
+    0% {letter-spacing:1px;}
+    25% {letter-spacing:1.3px;}
+    50% {letter-spacing:1.6px;}
+    75% {letter-spacing:2px;}
+    100% {letter-spacing:2.1px;}
 }
 
-.DAschrift{
-font-style: italic; 
-letter-spacing: 1px; 
-font-weight: 700;
+.DAschrift {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-.DAschrift:hover{
-  position: relative;
-  animation-name: example;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-
-  letter-spacing: 2.1px;
+.DAschrift:hover {
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    letter-spacing: 2.1px;
 }
+
+/* Responsives Design */
+
+/* Auf Smartphones (bis 576px) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+    h2.DAschrift {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Auf Tablets und kleinere Laptops (577px bis 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 36px; /* Mittelgroße Schriftgröße für mittelgroße Bildschirme */
+    }
+    h2.DAschrift {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Auf größeren Bildschirmen (ab 993px) */
+@media (min-width: 993px) {
+    h1 {
+        font-size: 45px; /* Größere Schriftgröße für große Bildschirme */
+    }
+    h2.DAschrift {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
 
 </style>
