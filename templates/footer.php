@@ -16,35 +16,35 @@
 
 
 <footer>
-<div class="container">
+<div class="container_footer">
   <br><br>
     <div class="row center">
 
       <div class="col-4">
         <h5 class="ueberschrift_klein">Rechtliches</h5>
         <br>
-        <p><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
-        <p><a class="link_footer" href="templates/agb.php">AGB</a></p>
-        <p><a class="link_footer" href="templates/datenschutz.php">Datenschutz</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/impressum.php">Impressum</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/agb.php">AGB</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/datenschutz.php">Datenschutz</a></p>
       </div>
 
       <div class="col-4">
         <h4 class="ueberschrift">Apo-Supply</h4>
         <br>
-        <p>Edmund-Freibauer-Promenade 1</p>
-        <p>2132 Mistelbach</p>
-        <p>02572/2305-350</p>
-        <p>service@aposupply.digbizmistelbach.info</p>
+        <p class="p_footer">Edmund-Freibauer-Promenade 1</p>
+        <p class="p_footer">2132 Mistelbach</p>
+        <p class="p_footer">02572/2305-350</p>
+        <p class="p_footer">service@aposupply.digbizmistelbach.info</p>
         <br><br>
       </div>
 
       <div class="col-4">
         <h5 class="ueberschrift_klein">Weitere Links</h5>
         <br>
-        <p><a class="link_footer" href="templates/kontakt.php">Kontakt</a></p>
-        <p><a class="link_footer" href="templates/team.php">Über uns</a></p>
-        <p><a class="link_footer" href="templates/qa.php">Q&A</a></p>
-        <p><a class="link_footer" href="templates/app.php">App</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/kontakt.php">Kontakt</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/team.php">Über uns</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/qa.php">Q&A</a></p>
+        <p class="p_footer"><a class="link_footer" href="templates/app.php">App</a></p>
       </div>
 
    </div> <!-- Ende row -->
@@ -159,9 +159,38 @@ footer{
   background-color: black;
 }
 
+.p_footer{
+  font-size: 17px;
+}
+
+@media (max-width: 576px) {
+    .ueberschrift_klein {
+        font-size: 18px;
+    }
+    .p_footer {
+        font-size: 17px;
+    }
+}
 
 
+@media (min-width: 577px) and (max-width: 992px) {
+    .ueberschrift_klein {
+        font-size: 20px;
+    }
+    .p_footer {
+        font-size: 18px;
+    }
+}
 
+
+@media (min-width: 993px) {
+    .ueberschrift_klein {
+        font-size: 20px;
+    }
+    .p_footer {
+        font-size: 17px;
+    }
+}
 
 
 

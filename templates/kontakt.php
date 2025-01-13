@@ -70,7 +70,7 @@ ini_set('display_errors','On');
       <div class="row">
         <div class="col-sm-6 mb-3">
           <div class="card">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2640.080498525776!2d16.567565!3d48.570007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d23601a955245%3A0xeca4453950a6cafb!2sBundeshandelsakademie%20und%20Bundeshandelsschule!5e0!3m2!1sde!2sat!4v1730705553427!5m2!1sde!2sat" width="100%" height="538" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2640.080498525776!2d16.567565!3d48.570007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d23601a955245%3A0xeca4453950a6cafb!2sBundeshandelsakademie%20und%20Bundeshandelsschule!5e0!3m2!1sde!2sat!4v1730705553427!5m2!1sde!2sat" width="100%" height="510" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
 
@@ -121,7 +121,7 @@ ini_set('display_errors','On');
     }
 
     .container {
-    margin-top: 300px; /* Sicherstellen, dass der Container nicht von der Navbar überlappt wird */
+    margin-bottom: 100px; 
 }
 
     @keyframes gradientMove {
