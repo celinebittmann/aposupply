@@ -27,11 +27,41 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
     <br>
-    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Willkommen bei Apo-Supply!</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px;">Willkommen bei Apo-Supply!</h1>
     <br>
 
 
-<div class="row">
+
+    <div class="row align-items-center">
+    <!-- Textbereich -->
+    <div class="col-lg-6 col-md-12 col-12 mb-4 mb-lg-0">
+        <p class="fst-italic" style="letter-spacing: 1px; text-align: justify;">
+            Wir freuen uns, Sie auf unserer Seite begrüßen zu dürfen.
+        </p>
+        <p style="text-align: justify;">
+            Ihre Gesundheit und Ihr Wohlbefinden stehen bei uns an erster Stelle. Unsere Plattform stellt sicher, dass Sie stets Zugriff 
+            auf aktuelle und verlässliche Informationen haben. Wir bieten detaillierte Produktbeschreibungen, Anwendungsinformationen und Hinweise zur sicheren Verwendung.
+            Wir sind bestrebt, Ihnen eine benutzerfreundliche und informative Plattform zu bieten. Unser motiviertes Team arbeitet kontinuierlich daran, 
+            Ihnen die bestmöglichen Informationen zur Verfügung zu stellen und Ihre Fragen kompetent zu beantworten.
+        </p>
+        <br>
+        <p style="text-align: justify;">
+            Dank der vielen ehrlichen Antworten aus unserer Umfrage konnten wir eine erfolgreiche Website und App gestalten, die den Personen bei der 
+            Medikamentenverwaltung helfen soll. 
+        </p>
+    </div>
+    <div class="col-1"></div>
+
+    <!-- Bildbereich -->
+    <div class="col-md-2 col-md-4 col-6 text-center">
+        <img src="assets/img/startseite_frau.png" class="img-fluid rounded" alt="Frau mit Medikamenten">
+    </div>
+</div>
+
+
+
+
+<!-- <div class="row">
   <div class="col-6">
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Wir freuen uns, Sie auf unserer Seite begrüßen zu dürfen.</p>
     <p style="text-align: justify;">Ihre Gesundheit und Ihr Wohlbefinden stehen bei uns an erster Stelle. Unsere Plattform stellt sicher, dass Sie stets Zugriff 
@@ -51,7 +81,7 @@ ini_set('display_errors','On');
   <div class="col-4">
     <img src="assets/img/startseite_frau.png" width="400" height="400" alt="Frau mit Medikamenten">
   </div>
-</div>
+</div> -->
 
 </div> <!-- ende container -->
 
@@ -74,7 +104,37 @@ ini_set('display_errors','On');
 
 
 <!-- laufende nummer -->
-  <div class="counters">
+<!-- Counter Container -->
+<div class="container text-center my-6">
+    <div class="d-flex justify-content-around counter-container">
+        <!-- Counter 1 -->
+        <div class="counter-box p-4 mx-2">
+            <div class="counter" data-target="1">0</div>
+            <p>Umfrage</p>
+        </div>
+        
+        <!-- Counter 2 -->
+        <div class="counter-box p-4 mx-2">
+            <div class="counter" data-target="49">0</div>
+            <p>Befragte</p>
+        </div>
+
+        <!-- Counter 3 -->
+        <div class="counter-box p-4 mx-2">
+            <div class="counter" data-target="6">0</div>
+            <p>Altersgruppen</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- <div class="counters">
     <div class="counter" data-target="1">0</div>   
     <div class="counter" data-target="49">0</div>
     <div class="counter" data-target="6">0</div>
@@ -93,7 +153,7 @@ ini_set('display_errors','On');
     <div class="col-4">
       <p>Altersgruppen</p>
     </div> 
-  </div><!-- Ende row unfrage text -->
+  </div>Ende row unfrage text -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -219,9 +279,37 @@ ini_set('display_errors','On');
 
 
   
-  <!-- Hintergrundfarbe & -verlauf -->
-
+  
   <style>
+
+
+.counter-box {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    min-width: 220px;  /* Feste Breite, um Boxen gleich groß zu halten */
+    height: 200px;     /* Feste Höhe */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     body {
         margin: 0;
         padding: 0;
@@ -260,7 +348,6 @@ ini_set('display_errors','On');
   }
 
 .umfrage p{
-  font-size: 50px;
   text-align: center;
   font-weight: 550;
 }
@@ -325,22 +412,61 @@ ini_set('display_errors','On');
     transform: translateY(0);
 }
 
-
-
 /* Wellen */
 .wellen{
-  margin-top: -90px;
-  margin-bottom: -500px;
+  margin-top: -120px;
+  margin-bottom: -450px;
 }
 
 
 
-/* Cookies */
-.offcanvas-custom-height {
-      height: 100px; 
+@media (max-width: 576px) {
+    h1 {
+        font-size: 35px;
+      }
+    
+    p {
+        font-size: 17px;
+    }
+    .umfrage p {
+        font-size: 20px;
+    }
+    .counter-box {
+        min-height: 150px;
     }
 
-/* Eberhart fragen wie man es höher macht */
+    .counter {
+        font-size: 60px;
+    }
+}
+
+/* Auf Tablets und kleinere Laptops (577px bis 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 36px; 
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    .umfrage p {
+        font-size: 30px;
+    }
+}
+
+/* Auf größeren Bildschirmen (ab 993px) */
+@media (min-width: 993px) {
+    h1 {
+        font-size: 45px; 
+    }
+    
+    p {
+        font-size: 17px;
+    }
+    .umfrage p {
+        font-size: 50px;
+    }
+}
 
 
 </style>

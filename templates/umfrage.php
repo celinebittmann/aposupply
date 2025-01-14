@@ -27,31 +27,25 @@ ini_set('display_errors','On');
 
     <br>
     <h1 style="font-weight: 700; letter-spacing: 0.5px; ">Unsere Umfrage-Ergebnisse</h1>
-    <br>
+    <!-- <br> -->
 
-
-
-<div class="row">
-  <div class="col-8">
+    <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+  <div class="col-8" style="flex: 1 1 60%; min-width: 300px;">
     <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Auswertung einiger Antworten</p>
-    <p style="text-align: justify;">Wir haben gemeinsam Mitte September damit begonnen, eine Umfrage zur Medikamentenverwaltung an unsere Bekannten weiterzuleiten, 
-      um genügend Antworten zu erhalten. Mitte Oktober schlossen wir die Umfrage, um keine weiteren Antworten mehr zu bekommen und somit keine Änderungen mehr vornehmenzumüssen.
+    <p style="text-align: justify;">
+      Wir haben gemeinsam Mitte September damit begonnen, eine Umfrage zur Medikamentenverwaltung an unsere Bekannten weiterzuleiten, 
+      um genügend Antworten zu erhalten. Mitte Oktober schlossen wir die Umfrage, um keine weiteren Antworten mehr zu bekommen und somit keine Änderungen mehr vorzunehmen. 
       An der Umfrage nahmen 49 verschiedene Personen teil, in den Altersgruppen von "unter 18", "18-30", "30-40", "40-50", "50-60" und "über 60", wobei die meisten
       Teilnehmer und Teilnehmerinnen aus der Altergruppe zwischen 18 und 30 stammen. 
       Um nun ein geeignetes Programm zu zaubern, mussten wir die Daten unserer Befragten auswerten, und hier sind einige Ergebnisse...
     </p>
   </div>
 
-  <div class="col-1">
-    <!-- <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-    </div> -->
+  <div class="col-3 image-container" style="flex: 1 1 30%; min-width: 200px; position: relative;">
+    <img id="clickableImage" src="assets/img/umfrage.png" style="width: 100%; height: auto; border-radius: 10px; cursor: pointer;" alt="Frau mit Medikamenten">
   </div>
+</div>
 
-  <div class="col-3 image-container" style="position: relative;">
-    <img id="clickableImage" src="assets/img/umfrage.png" width="500" height="300" style="width: 300px; height: auto; border-radius: 10px; cursor: pointer;" alt="Frau mit Medikamenten">
-  </div>
-</div> <!-- Ende row -->
 
 <br><br><br>
 
@@ -64,7 +58,7 @@ ini_set('display_errors','On');
   <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
     <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">12%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
     <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">4%</div>
   </div>
   <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%;">
@@ -73,7 +67,7 @@ ini_set('display_errors','On');
   <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
     <div class="progress-bar" style="background-color: #00aaff; color: black; font-weight: 700; font-size: 17px;">25%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
+  <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
     <div class="progress-bar" style="background-color: #0062ff; color: black; font-weight: 700; font-size: 17px;">22%</div>
   </div>
 </div>
@@ -137,10 +131,10 @@ ini_set('display_errors','On');
   <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
     <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">92%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
     <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">2%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 11%;">
     <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
 </div>
@@ -162,13 +156,13 @@ ini_set('display_errors','On');
 <h4 style="font-weight: 700; letter-spacing: 0.5px;">"Eine Erinnerung für die Einnahme ist sinnvoll"</h4>
 
 <div class="progress-stacked">
-  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
     <div class="progress-bar" style="background-color: #ff6600; color: black; font-weight: 700; font-size: 17px;">2%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%;">
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 11%;">
     <div class="progress-bar" style="background-color: #ff8b3d; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
-  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%;">
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 11%;">
     <div class="progress-bar" style="background-color: #777777; color: black; font-weight: 700; font-size: 17px;">6%</div>
   </div>
   <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
