@@ -34,7 +34,7 @@
         <p class="p_footer">Edmund-Freibauer-Promenade 1</p>
         <p class="p_footer">2132 Mistelbach</p>
         <p class="p_footer">02572/2305-350</p>
-        <p class="p_footer">service@aposupply.digbizmistelbach.info</p>
+        <p class="p_footer_email">service@aposupply.digbizmistelbach.info</p>
         <br><br>
       </div>
 
@@ -62,7 +62,7 @@
       <p class="copyright"><br>© 2025 Apo-Supply. Alle Rechte vorbehalten.</p>
     </div>
   
-    </div>
+  </div>
 
 </footer>
 
@@ -76,9 +76,7 @@ footer{
 }
 
 .center{
-  text-align: center;
-  /* vertical-align: middle; */
-  
+  text-align: center;  
 }
 
 /* Links im Footer */
@@ -154,14 +152,10 @@ footer{
   font-size: 13px;
 }
 
-
 .copy{
   background-color: black;
 }
 
-.p_footer{
-  font-size: 17px;
-}
 
 @media (max-width: 576px) {
     .ueberschrift_klein {
@@ -169,6 +163,9 @@ footer{
     }
     .p_footer {
         font-size: 17px;
+    }
+    .p_footer_email{
+        font-size: 14px;
     }
 }
 
@@ -180,6 +177,9 @@ footer{
     .p_footer {
         font-size: 18px;
     }
+    .p_footer_email{
+        font-size: 17px;
+    }
 }
 
 
@@ -188,6 +188,9 @@ footer{
         font-size: 20px;
     }
     .p_footer {
+        font-size: 17px;
+    }
+    .p_footer_email{
         font-size: 17px;
     }
 }

@@ -18,20 +18,19 @@ ini_set('display_errors','On');
     <link href="../functions/mystyle.css"rel="stylesheet">
     <base href="/aposupply/">
 </head>
-<br><br><br>
   <body>
     <?php
     //  require __DIR__.'/../includes.php'; 
     require "navbar.php";
     ?>
-    <div class="container">
+    <div class="container mt-5">
 
     <br>
     <h1 style="font-weight: 700; letter-spacing: 0.5px;">Impressum</h1>
     <br>
 
-
-<h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
+  
+      <h2 class="DAschrift">Diplomarbeit: Apo-Supply</h2>
 <h3>Erstellt von:</h3>
     <p class="design">Celine Bittmann</p>
     <p class="design">Anja Brüstl</p>
@@ -44,7 +43,8 @@ ini_set('display_errors','On');
       Die Ausarbeitung dient lediglich der Vertiefung des Fachwissens und der akademischen Weiterentwicklung der Verfasserinnen.</p> 
     <br>
 
-    <h3>Rechtliche Hinweise:</h3>
+
+<h3>Rechtliche Hinweise:</h3>
       <h4 style="font-style: italic; letter-spacing: 1px; text-align: justify; font-weight: 550;">Inhaltlich verantwortlich:</h4>
         <h6 class="design">Celine Bittmann
         <br>Millenniumsstraße 40 , 2170 Poysdorf</h6>
@@ -62,6 +62,9 @@ ini_set('display_errors','On');
       <br>
 
       <br><br>
+
+
+
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -83,17 +86,7 @@ body {
     background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
     background-size: 200% 200%;
     animation: gradientMove 12s linear infinite;
-    padding-top: 10px; /* Abstand für Navbar */
-}
-
-.container {
-    margin-top: 30px; /* Sicherstellen, dass der Container nicht von der Navbar überlappt wird */
-}
-
-h1 {
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    font-size: 45px;
+    padding-top: 30px; /* Abstand für Navbar */
 }
 
 h2.DAschrift {
@@ -146,11 +139,9 @@ h3 {
 }
 
 /* Responsives Design */
-
-/* Auf Smartphones (bis 576px) */
 @media (max-width: 576px) {
     h1 {
-        font-size: 28px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        font-size: 35px; 
     }
     h2.DAschrift {
         font-size: 22px;
@@ -163,10 +154,9 @@ h3 {
     }
 }
 
-/* Auf Tablets und kleinere Laptops (577px bis 992px) */
 @media (min-width: 577px) and (max-width: 992px) {
     h1 {
-        font-size: 36px; /* Mittelgroße Schriftgröße für mittelgroße Bildschirme */
+        font-size: 36px; 
     }
     h2.DAschrift {
         font-size: 26px;
@@ -179,10 +169,9 @@ h3 {
     }
 }
 
-/* Auf größeren Bildschirmen (ab 993px) */
 @media (min-width: 993px) {
     h1 {
-        font-size: 45px; /* Größere Schriftgröße für große Bildschirme */
+        font-size: 45px;
     }
     h2.DAschrift {
         font-size: 28px;
@@ -194,6 +183,5 @@ h3 {
         font-size: 18px;
     }
 }
-
 
 </style>

@@ -26,7 +26,7 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Unsere Umfrage-Ergebnisse</h1>
+    <h1 style="font-weight: 700; letter-spacing: 0.5px; ">Unsere Umfrage-Ergebnisse</h1>
     <br>
 
 
@@ -236,6 +236,8 @@ body {
 /* Bilder  */
 .auswertung{
   box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -257,7 +259,52 @@ body {
 
 
 
+@media (max-width: 576px) {
+    h1 {
+        font-size: 36px;
+      }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .auswertung {
+      width: 100%;
+    }
+}
 
+/* Auf Tablets und kleinere Laptops (577px bis 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 36px; 
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .auswertung {
+      width: 70%;
+    }
+}
+
+/* Auf größeren Bildschirmen (ab 993px) */
+@media (min-width: 993px) {
+    h1 {
+        font-size: 45px; 
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .auswertung {
+      width: 45%;
+    }
+}
 
 
 </style>

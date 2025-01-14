@@ -39,10 +39,7 @@ ini_set('display_errors','On');
       }
  
       .video-container {
-          position: absolute;
-          top: 50%; 
-          left: 50%; 
-          transform: translate(-50%, -50%);
+          margin: 50px auto;
           width: 90%; 
           max-width: 600px; 
           background-color: white; 
@@ -102,6 +99,15 @@ ini_set('display_errors','On');
 </div>
 </div>
  
+<div class="video-container">
+<video controls>
+<!-- JIER VIDEO EINFÜGEN -->
+<source src="assets/img/" type="video/mp4">
+      Ihr Browser unterstützt dieses Video-Format nicht.
+</video>
+<p style="margin-top: 5px; font-style: italic; color: #555;">Video ist vergrößerbar</p>
+</div>
+ 
 </div> <!-- ende container -->
  
  
@@ -114,15 +120,6 @@ ini_set('display_errors','On');
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 <path fill="rgba(0,170,255,0.3)" fill-opacity="1" d="M0,160L40,162.7C80,165,160,170,240,160C320,150,400,120,480,115C560,110,640,130,720,135C800,140,880,130,960,135C1040,140,1120,155,1200,160C1280,165,1360,165,1400,165L1440,165L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" transform="scale(1, -1) translate(0, -320)"></path>
 </svg>
- 
-  <div class="video-container">
-<video controls>
-<!-- JIER VIDEO EINFÜGEN -->
-<source src="assets/img/" type="video/mp4">
-      Ihr Browser unterstützt dieses Video-Format nicht.
-</video>
-<p style="margin-top: 5px; font-style: italic; color: #555;">Video ist vergrößerbar</p>
-</div>
 </div>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

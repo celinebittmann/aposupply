@@ -22,7 +22,7 @@ ini_set('display_errors','On');
     
     <br><br>
     <div class="container mt-5">
-      <h1 class="fw-bold" style="font-size: 45px; letter-spacing: 0.5px;">Kontaktiere uns!</h1>
+      <h1 class="fw-bold" style="letter-spacing: 0.5px;">Kontaktiere uns!</h1>
       
       <div class="row my-4">
         <!-- Adresse -->
@@ -56,7 +56,7 @@ ini_set('display_errors','On');
         <div class="col-sm-3 mb-3">
           <div class="card">
             <div class="card-body text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="46" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
               </svg>
               <h5 class="card-title mt-3">E-Mail</h5>
@@ -131,16 +131,33 @@ ini_set('display_errors','On');
     }
 
     .card {
-      box-shadow: 0 0 15px rgba(0,0,0,.2);
-      border-radius: 15px;
+      border: #ffffff; 
+      box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 2px 0 2px rgba(0, 0, 0, 0.2);
+      transition: transform 1s ease, opacity 1s ease, scale 1s ease;
+    }
+
+    .card:hover{
+      border: #ffffff; 
+      box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 2px 0 2px rgba(0, 0, 0, 0.2);
+      transform: translateY(0) scale(1.01);
+    }
+
+    .senden{
+      background-color: #00AAFF;
+      border: none;
+      border-radius: 1px;
     }
 
     @media (max-width: 576px) {
     h1 {
-        font-size: 28px; /* Kleinere Schriftgröße für kleinere Bildschirme */
-    }
+        font-size: 35px;
+      }
     h5 {
         font-size: 20px;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: 17px;
     }
     p {
         font-size: 17px;
@@ -150,10 +167,14 @@ ini_set('display_errors','On');
 /* Auf Tablets und kleinere Laptops (577px bis 992px) */
 @media (min-width: 577px) and (max-width: 992px) {
     h1 {
-        font-size: 36px; /* Mittelgroße Schriftgröße für mittelgroße Bildschirme */
+        font-size: 36px; 
     }
     h5 {
         font-size: 20px;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: 17px;
     }
     p {
         font-size: 16px;
@@ -163,15 +184,25 @@ ini_set('display_errors','On');
 /* Auf größeren Bildschirmen (ab 993px) */
 @media (min-width: 993px) {
     h1 {
-        font-size: 45px; /* Größere Schriftgröße für große Bildschirme */
+        font-size: 45px; 
     }
     h5 {
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: 15px;
     }
     p {
-        font-size: 14.5px;
+        font-size: 17px;
     }
 }
   </style>
 
 </html>
+
+
+
+
+
+

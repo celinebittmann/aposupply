@@ -23,7 +23,7 @@ ini_set('display_errors','On');
     //  require __DIR__.'/../includes.php'; 
     require "navbar.php";
     ?>
-    <div class="container">
+    <div class="container mt-5">
 
     <br>
     <h1 style="font-weight: 700; letter-spacing: 0.5px;">Datenschutzerklärung</h1>
@@ -80,17 +80,7 @@ body {
     background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
     background-size: 200% 200%;
     animation: gradientMove 12s linear infinite;
-    padding-top: 80px; /* Abstand für Navbar */
-}
-
-.container {
-    margin-top: 30px; /* Sicherstellen, dass der Container nicht von der Navbar überlappt wird */
-}
-
-h1 {
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    font-size: 45px;
+    padding-top: 30px; /* Abstand für Navbar */
 }
 
 h2.DAschrift {
@@ -143,11 +133,9 @@ h3 {
 }
 
 /* Responsives Design */
-
-/* Auf Smartphones (bis 576px) */
 @media (max-width: 576px) {
     h1 {
-        font-size: 28px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        font-size: 35px; 
     }
     h2.DAschrift {
         font-size: 22px;
@@ -160,10 +148,9 @@ h3 {
     }
 }
 
-/* Auf Tablets und kleinere Laptops (577px bis 992px) */
 @media (min-width: 577px) and (max-width: 992px) {
     h1 {
-        font-size: 36px; /* Mittelgroße Schriftgröße für mittelgroße Bildschirme */
+        font-size: 36px; 
     }
     h2.DAschrift {
         font-size: 26px;
@@ -176,10 +163,9 @@ h3 {
     }
 }
 
-/* Auf größeren Bildschirmen (ab 993px) */
 @media (min-width: 993px) {
     h1 {
-        font-size: 45px; /* Größere Schriftgröße für große Bildschirme */
+        font-size: 45px;
     }
     h2.DAschrift {
         font-size: 28px;
@@ -191,6 +177,5 @@ h3 {
         font-size: 18px;
     }
 }
-
 
 </style>
