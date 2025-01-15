@@ -16,7 +16,7 @@ ini_set('display_errors','On');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	  <link rel="icon" href="logo_richtig.png" type="image/x-icon">
     <link href="../functions/mystyle.css?v=1.0" rel="stylesheet" type="text/css" >
-    <base href="/web/">
+    <base href="/aposupply/">
 </head>
 <br><br><br>
   <body>
@@ -27,30 +27,31 @@ ini_set('display_errors','On');
     <div class="container">
 
     <br>
-    <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Q&A</h1>
+    <h1 style="margin-bottom: -10px; font-weight: 700; letter-spacing: 0.5px;">Q&A</h1>
     <br>
 
 
+    <div class="container py-1">
+    <div class="row align-items-center">
+        <!-- Textbereich -->
+        <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+            <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">
+                Ihre Fragen, unsere Antworten – hier entlang!
+            </p>
+            <p style="text-align: justify;">
+                Wir haben für Sie die Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien zusammengestellt. Wenn Sie darüber hinaus noch weitere Fragen haben, zögern Sie bitte nicht, uns direkt zu kontaktieren.
+            </p>
+        </div>
 
-<div class="row">
-  <div class="col-7">
-    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Ihre Fragen, unsere Antworten - hier entlang!</p>
-    <p>Wir haben für Sie die Antworten auf die häufigsten Fragen zu unseren Dienstleistungen und Richtlinien zusammengestellt. Wenn Sie darüber hinaus noch weitere Fragen haben, zögern Sie bitte nicht, uns direkt zu kontaktieren.</p>
-  </div>
-
-  <div class="col-1">
-  </div>
-
-  <div class="col-3 image-container" style="position: relative;">
-    <img id="clickableImage" src="assets/img/qa_bild.png" width="300" height="200" style="width: 300px; height: auto; border-radius: 10px; cursor: pointer;" alt="Frau mit Medikamenten">
-  </div>
-
-
-  
-
+        <!-- Bildbereich -->
+        <div class="col-12 col-lg-5 text-center">
+            <img id="clickableImage" src="assets/img/qa_bild.png" 
+                 class="img-fluid rounded" 
+                 style="max-width: 300px; cursor: pointer;" 
+                 alt="Frau mit Medikamenten">
+        </div>
+    </div>
 </div>
-
-
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -78,8 +79,7 @@ ini_set('display_errors','On');
     </div>
   </div>
   
-
-
+  <span style="display: block; height: 5px;"></span>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -91,6 +91,9 @@ ini_set('display_errors','On');
       <div class="accordion-body">Die App ist nur am Mobilgerät verfügbar! Eine genauere Anleitung finden Sie <a class="link" href="app.php">hier!</a></div> 
     </div>
   </div>
+
+  <span style="display: block; height: 5px;"></span>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -103,6 +106,9 @@ ini_set('display_errors','On');
       </div>
     </div>
   </div>
+
+  <span style="display: block; height: 5px;"></span>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -113,6 +119,9 @@ ini_set('display_errors','On');
       <div class="accordion-body">Beim Registrieren muss man Vorname, Nachname, E-Mail, Passwort, PLZ, Ort und Straße eingeben.</div>
     </div>
   </div>
+
+  <span style="display: block; height: 5px;"></span>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
@@ -123,6 +132,8 @@ ini_set('display_errors','On');
       <div class="accordion-body">Besuchen Sie unsere <a href="templates/kontakt.php" class="link">Kontaktseite</a> für alle wichtigen Informationen. Nutzen Sie unser Formular, um uns direkt eine Nachricht zu senden!</div>
     </div>
   </div>
+
+  <span style="display: block; height: 5px;"></span>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -232,7 +243,42 @@ body {
   letter-spacing: 1px;
 }
 
+@media (max-width: 576px) {
+    h1 {
+        font-size: 35px; 
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
 
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 36px; 
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 993px) {
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
 
 
 

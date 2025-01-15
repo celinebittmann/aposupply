@@ -54,8 +54,8 @@ ini_set('display_errors','On');
       <br>
 
     <h3>Kontakt:</h3>
-      <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="#">service@aposupply.digbizmistelbach.info</a></p>
-      <br>
+    <p>Zögern Sie bitte nicht, uns bei aufgekommenen Fragen zu kontaktieren unter: <a class="link" href="mailto:service@aposupply.digbizmistelbach.info">service@aposupply.digbizmistelbach.info</a></p>
+    <br>
 <!-- Link so machen dass outlook aufgeht -->
 
       <br><br>

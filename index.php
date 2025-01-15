@@ -23,14 +23,11 @@ ini_set('display_errors','On');
     <?php
     require "templates/navbar.php";
 
-    
     ?>
     <div class="container">
     <br>
     <h1 style="font-weight: 700; letter-spacing: 0.5px;">Willkommen bei Apo-Supply!</h1>
     <br>
-
-
 
     <div class="row align-items-center">
     <!-- Textbereich -->
@@ -54,34 +51,10 @@ ini_set('display_errors','On');
 
     <!-- Bildbereich -->
     <div class="col-md-2 col-md-4 col-6 text-center">
-        <img src="assets/img/startseite_frau.png" class="img-fluid rounded" alt="Frau mit Medikamenten">
+        <img class="medi" src="assets/img/startseite_frau.png" class="img-fluid rounded" alt="Frau mit Medikamenten">
     </div>
 </div>
 
-
-
-
-<!-- <div class="row">
-  <div class="col-6">
-    <p style="font-style: italic; letter-spacing: 1px; text-align: justify;">Wir freuen uns, Sie auf unserer Seite begrüßen zu dürfen.</p>
-    <p style="text-align: justify;">Ihre Gesundheit und Ihr Wohlbefinden stehen bei uns an erster Stelle. Unsere Plattform stellt sicher, dass Sie stets Zugriff 
-      auf aktuelle und verlässliche Informationen haben. Wir bieten detaillierte Produktbeschreibungen, Anwendungsinformationen und Hinweise zur sicheren Verwendung.
-      Wir sind bestrebt, Ihnen eine benutzerfreundliche und informative Plattform zu bieten. Unser motiviertes Team arbeitet kontinuierlich daran, 
-      Ihnen die bestmöglichen Informationen zur Verfügung zu stellen und Ihre Fragen kompetent zu beantworten.
-    </p>
-    <br>
-    <p style="text-align: justify;">Dank der vielen ehrlichen Antworten unsere Umfrage, konnten wir eine erfolgreiche Website und App gestalten, die den Personen bei der 
-      Medikamentenverwaltung helfen soll. 
-    </p>
-  </div>
-
-  <div class="col-1">
-  </div>
-
-  <div class="col-4">
-    <img src="assets/img/startseite_frau.png" width="400" height="400" alt="Frau mit Medikamenten">
-  </div>
-</div> -->
 
 </div> <!-- ende container -->
 
@@ -97,14 +70,11 @@ ini_set('display_errors','On');
 
 </div>
 
-
-
 <div class="container1">
 <br>
 
 
 <!-- laufende nummer -->
-<!-- Counter Container -->
 <div class="container text-center my-6">
     <div class="d-flex justify-content-around counter-container">
         <!-- Counter 1 -->
@@ -127,33 +97,6 @@ ini_set('display_errors','On');
     </div>
 </div>
 
-
-
-
-
-
-
-
-  <!-- <div class="counters">
-    <div class="counter" data-target="1">0</div>   
-    <div class="counter" data-target="49">0</div>
-    <div class="counter" data-target="6">0</div>
-  </div>
-
-
-  <div class="row umfrage">   
-    <div class="col-4">
-      <p>Umfrage</p>
-    </div>  
-
-    <div class="col-4">
-      <p>Befragte</p>
-    </div> 
-
-    <div class="col-4">
-      <p>Altersgruppen</p>
-    </div> 
-  </div>Ende row unfrage text -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -199,11 +142,6 @@ ini_set('display_errors','On');
         });
     </script>
 
-
-
-
-
-
 <br><br>
 
 
@@ -219,50 +157,54 @@ ini_set('display_errors','On');
 </div>
 
 
-<br><br><br><br>
+<br><br>
 
 
 <!-- Infobox -->
-<div class="card" style="background-color: #fff;">
-  <div class="card-header" style="font-size: 40px; font-weight: 700; text-align: center;">
-    Ihre Vorteile
-  </div>
-  <div class="card-body">
-    <div class="row">
-    <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Mobilität</h4><p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer und überall dabei zu haben.</p></button>
+<div class="container py-5">
+    <div class="info card mx-auto" style="max-width: 900px; background-color: #fff;">
+      <div class="card-header" style="font-size: 40px; font-weight: 700; text-align: center;">
+        Ihre Vorteile
       </div>
-      
-      <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Erinnerungen</h4><p class="text_card">Sie erhalten immer Benachrichtigungen, sobald Sie ein Medikament zu sich nehmen müssen.</p></button>
-      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <button class="btn title w-100 d-flex flex-column justify-content-center align-items-center text-center" style="height: 100%;">
+              <h4 class="ueberschrift_card">Mobilität</h4>
+              <p class="text_card">Downloaden Sie unsere App auf Ihr Handy, um Ihren Medikamentenbestand immer und überall dabei zu haben.</p>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <button class="btn title w-100 d-flex flex-column justify-content-center align-items-center text-center" style="height: 100%;">
+              <h4 class="ueberschrift_card">Erinnerungen</h4>
+              <p class="text_card">Sie erhalten immer Benachrichtigungen, sobald Sie ein Medikament zu sich nehmen müssen.</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <button class="btn title w-100 d-flex flex-column justify-content-center align-items-center text-center" style="height: 100%;">
+              <h4 class="ueberschrift_card">Nachhaltigkeit</h4>
+              <p class="text_card">Da Sie mit unserer App Ihren Datenstand online haben, werden übermäßige Käufe vermieden.</p>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <button class="btn title w-100 d-flex flex-column justify-content-center align-items-center text-center" style="height: 100%;">
+              <h4 class="ueberschrift_card">Zeitersparnis</h4>
+              <p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechtzeitig wieder etwas nachzukaufen!</p>
+            </button>
+          </div>
+        </div>
+      </div> 
     </div>
-
-    <br>
-
-    <div class="row">
-    <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Nachhaltigkeit</h4><p class="text_card">Da Sie mit unserer App Ihren Datenstand online haben, werden übermaßige Käufe vermieden.</p></button>
-      </div>
-      <div class="col-6">
-        <button class="btn title"><h4 class="ueberschrift_card">Zeitersparnis</h4><p class="text_card">Sobald Sie ein Medikament beinahe aufgebraucht haben, bekommen Sie eine Benachrichtigung, um rechzeitig wieder etwas nachzukaufen!</p></button>
-      </div>
-    </div>
-  </div> 
- </div> <!-- ende row -->
-
-
+</div>
 
  </div> <!-- ende container -->
 
-
-
-
-
-
-
-
-<br><br><br><br><br>
+<br><br><br>
 
 
 
@@ -271,31 +213,25 @@ ini_set('display_errors','On');
   </body>
 
 
-
   <?php
     include "templates/footer.php";
   ?>
-
-
-
-  
   
   <style>
 
 .counter-container {
     display: flex;
-    justify-content: space-around; /* Gleichmäßige horizontale Verteilung */
-    flex-wrap: nowrap;             /* Kein Umbruch */
+    justify-content: space-around; 
+    flex-wrap: nowrap;  
     padding: 10px;
 }
-
 
 .counter-box {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    min-width: 220px;  /* Feste Breite, um Boxen gleich groß zu halten */
-    height: 200px;     /* Feste Höhe */
+    min-width: 220px;  
+    height: 200px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,14 +243,14 @@ ini_set('display_errors','On');
 }
 
 
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
-        background-size: 200% 200%;
-        animation: gradientMove 12s linear infinite;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #e6f9ff, #d7f8fe, #6ae8fe, #e6f9ff, #d7f8fe);
+    background-size: 200% 200%;
+    animation: gradientMove 12s linear infinite;
+}
 
 
 @keyframes gradientMove {
@@ -389,8 +325,6 @@ ini_set('display_errors','On');
 .title{
   background-color: rgba(0,170,255,0.2);
   height: 110px; width: 620px;
-
-  
 }
 
 .title:hover{
@@ -398,11 +332,13 @@ ini_set('display_errors','On');
 
 }
 
-.card {
+.info {
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
   transform: translateY(20%);
   transition: transform 1s ease-in;
+  height: auto;
 }
+
 
 .card.visible {
     opacity: 1;
@@ -435,11 +371,11 @@ ini_set('display_errors','On');
         font-size: 40px;
     }
     .counter-box {
-        width: 100%;  /* Volle Breite auf kleineren Bildschirmen */
+        width: 100%;  
         min-width: auto;
     }
     .container1 {
-    padding-top: 210px;  /* Großer Abstand zum oberen Rand */
+    padding-top: 210px;  
     }
     .wellen{
       margin-top: 10px;
@@ -447,46 +383,56 @@ ini_set('display_errors','On');
     .infos_umfrage{
       padding-top: -30px;
     }
+    .medi{
+      width: 150%;
+      justify: space-around;
+    }
 }
 
-/* Auf Tablets und kleinere Laptops (577px bis 992px) */
 @media (min-width: 577px) and (max-width: 992px) {
     h1 {
         font-size: 36px; 
     }
     
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
     .umfrage p {
         font-size: 30px;
     }
     .container1 {
-      padding-top: 135px;  /* Großer Abstand zum oberen Rand */
+      padding-top: 135px;  
     }
     .wellen{
       margin-top: 10px;
     }
+    .medi{
+      width: 180%;
+      justify: space-around;
+      margin-bottom: -60px;
+    }
 }
 
-/* Auf größeren Bildschirmen (ab 993px) */
 @media (min-width: 993px) {
     h1 {
         font-size: 45px; 
     }
     
     p {
-        font-size: 17px;
+        font-size: 18px;
     }
     .umfrage p {
         font-size: 50px;
     }
     .counter-box {
         flex: 1;
-        margin: 0 10px; /* Gleichmäßiger Abstand zwischen den Boxen */
+        margin: 0 10px; 
     }
     .infos_umfrage{
       padding-top: 120px;
+    }
+    .medi{
+      width: 100%;
     }
 }
 
