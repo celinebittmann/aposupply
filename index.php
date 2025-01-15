@@ -99,7 +99,7 @@ ini_set('display_errors','On');
 
 
 
-<div class="container">
+<div class="container1">
 <br>
 
 
@@ -204,7 +204,7 @@ ini_set('display_errors','On');
 
 
 
-<br><br><br><br><br><br><br>
+<br><br>
 
 
 <!-- weitere Details zur Umfrage -->
@@ -282,6 +282,13 @@ ini_set('display_errors','On');
   
   <style>
 
+.counter-container {
+    display: flex;
+    justify-content: space-around; /* Gleichmäßige horizontale Verteilung */
+    flex-wrap: nowrap;             /* Kein Umbruch */
+    padding: 10px;
+}
+
 
 .counter-box {
     text-align: center;
@@ -295,19 +302,9 @@ ini_set('display_errors','On');
     transition: transform 0.3s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.counter-box:hover {
+    transform: scale(1.07);
+}
 
 
     body {
@@ -419,7 +416,6 @@ ini_set('display_errors','On');
 }
 
 
-
 @media (max-width: 576px) {
     h1 {
         font-size: 35px;
@@ -436,7 +432,20 @@ ini_set('display_errors','On');
     }
 
     .counter {
-        font-size: 60px;
+        font-size: 40px;
+    }
+    .counter-box {
+        width: 100%;  /* Volle Breite auf kleineren Bildschirmen */
+        min-width: auto;
+    }
+    .container1 {
+    padding-top: 210px;  /* Großer Abstand zum oberen Rand */
+    }
+    .wellen{
+      margin-top: 10px;
+    }
+    .infos_umfrage{
+      padding-top: -30px;
     }
 }
 
@@ -452,6 +461,12 @@ ini_set('display_errors','On');
     .umfrage p {
         font-size: 30px;
     }
+    .container1 {
+      padding-top: 135px;  /* Großer Abstand zum oberen Rand */
+    }
+    .wellen{
+      margin-top: 10px;
+    }
 }
 
 /* Auf größeren Bildschirmen (ab 993px) */
@@ -465,6 +480,13 @@ ini_set('display_errors','On');
     }
     .umfrage p {
         font-size: 50px;
+    }
+    .counter-box {
+        flex: 1;
+        margin: 0 10px; /* Gleichmäßiger Abstand zwischen den Boxen */
+    }
+    .infos_umfrage{
+      padding-top: 120px;
     }
 }
 
