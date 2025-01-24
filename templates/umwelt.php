@@ -51,7 +51,7 @@ ini_set('display_errors','On');
     <div class="container">
   <div class="row align-items-center">
     <div class="col-md-3">
-      <div class="card" id="clickableCard" style="width: 21rem; height: 33rem; cursor: pointer;">
+      <div class="card" id="clickableCard" style="width: 21rem; height: 30rem; cursor: pointer;">
         <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
         <div class="card-body">
           <h4>Ohne Apo-Supply</h4>
@@ -70,7 +70,7 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" id="clickableCard2" style="width: 21rem; height: 33rem; cursor: pointer;">
+      <div class="card" id="clickableCard2" style="width: 21rem; height: 30rem; cursor: pointer;">
         <img src="assets/img/logoapo.png" class="card-img-top" alt="Logo Apo-Supply">
         <div class="card-body">
         <h4>Unsere App</h4>
@@ -92,7 +92,7 @@ ini_set('display_errors','On');
     </div>
 
     <div class="col-md-3">
-      <div class="card" id="clickableCard3" style="width: 21rem; height: 33rem; cursor: pointer;">
+      <div class="card" id="clickableCard3" style="width: 21rem; height: 30rem; cursor: pointer;">
       <img src="assets/img/bild_app.png" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
         <h4>Mit Apo-Supply</h4>

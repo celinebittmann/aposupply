@@ -160,19 +160,19 @@ ini_set('display_errors','On');
     </div>
   </div>
 
-<!--  
+ 
 <span style="display: block; height: 5px;"></span>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-        Frage
+        Was ist der Unterschied zwischen Anzahl und Stück?
       </button>
     </h2>
     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Antwort</div>
+      <div class="accordion-body">Bei der Anzahl handelt es sich um die Packungsanzahl. Mit Stück sind die einzelnen Medikamente gemeint, also wie viele in einer Packung sind.</div>
     </div>
-  </div> -->
+  </div>
 
   
 </div>
