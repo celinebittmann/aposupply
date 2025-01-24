@@ -1,5 +1,5 @@
 <!-- <div class="container"> -->
-<nav class="navbar navbar-expand-lg navbar bg-white fixed-top solid black border-body" data-bs-theme="black" style="border-bottom: 2.5px solid black;"> <!-- Linie unten -->
+<nav class="navbar navbar-expand-lg navbar bg-white fixed-top solid black border-body" data-bs-theme="black" style="border-bottom: 2px solid grey;"> <!-- Linie unten -->
   <div class="container-fluid">
     <a class="navbar-brand offset-1" href="index.php"><img src="assets/img/logoapo.png" height="50" width="auto"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,4 +41,30 @@
 
 
 
+<style>
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #000; /* Textfarbe */
+}
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1.4px; /* Dicke der Linie */
+  background-color: #00aaff; /* Farbe der Linie */
+  transition: all 0.5s ease; /* Dauer und Animationseffekt */
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Linie wird über die ganze Breite gezogen */
+  left: 0; /* Startet am linken Rand */
+  transform: translateX(0); /* Zentriert */
+
+}
+
+  </style>

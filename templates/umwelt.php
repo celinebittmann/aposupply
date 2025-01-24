@@ -54,8 +54,8 @@ ini_set('display_errors','On');
       <div class="card" id="clickableCard" style="width: 21rem; height: 33rem; cursor: pointer;">
         <img src="assets/img/aposchrank1.jpg" class="card-img-top" alt="Bild überfüllter Apothekenschrank">
         <div class="card-body">
-          <h5>Ohne Apo-Supply</h5>
-          <p class="card-text">
+          <h4>Ohne Apo-Supply</h4>
+          <p class="card-text" style="text-align: justify;">
             Viele Haushalte verfügen über einen sogenannten „Apothekenschrank“. Häufig ist dieser jedoch überfüllt, 
             da Medikamente doppelt vorhanden sind oder nach Ablauf ihres Verfalldatums schlichtweg vergessen werden und weiterhin darin verbleiben.</p>
         </div>
@@ -73,11 +73,11 @@ ini_set('display_errors','On');
       <div class="card" id="clickableCard2" style="width: 21rem; height: 33rem; cursor: pointer;">
         <img src="assets/img/logoapo.png" class="card-img-top" alt="Logo Apo-Supply">
         <div class="card-body">
-        <h5>Unsere App</h5>
-          <p class="card-text">
+        <h4>Unsere App</h4>
+          <p class="card-text" style="text-align: justify;">
      Die App „Apo-Supply“ kann ganz einfach und kostenfrei in Ihrem App Store bzw. Play Store installiert werden.
-     Für weitere Details besuchen Sie die <a href="app.php" style="color: darkblue; font-weight: bold;">
-     Infoseite der App</a> oder laden Sie sie direkt <a href="test.php" style="color: darkblue; font-weight: bold;">hier</a> herunter.
+     Für weitere Details besuchen Sie die <a href="app.php" style="color: #00aaff; font-weight: bold;">
+     Infoseite der App</a> oder laden Sie sie direkt <a href="test.php" style="color: #00aaff; font-weight: bold;">hier</a> herunter.
       </p>
 
         </div>
@@ -95,8 +95,8 @@ ini_set('display_errors','On');
       <div class="card" id="clickableCard3" style="width: 21rem; height: 33rem; cursor: pointer;">
       <img src="assets/img/bild_app.png" class="card-img-top" alt="Screenshot App">
         <div class="card-body">
-        <h5>Mit Apo-Supply</h5>
-          <p class="card-text">
+        <h4>Mit Apo-Supply</h4>
+          <p class="card-text" style="text-align: justify;">
             Unsere App bietet Ihnen einen umfassenden Überblick über Ihre Medikamente und benachrichtigt Sie automatisch, wenn der Vorrat zur Neige geht 
           und hilft Ihnen beim Nachbestellen</p>
         </div>

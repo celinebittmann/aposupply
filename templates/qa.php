@@ -70,7 +70,8 @@ ini_set('display_errors','On');
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
           <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
         </svg>
-          <a class="nav-link link icon-link-hover" href="app.php">Hier geht's zur App! 
+        <br>
+          <a class="link icon-link-hover" href="app.php">Hier geht's zur App! 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
             </svg>
@@ -102,7 +103,7 @@ ini_set('display_errors','On');
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">Mit der App können Sie Ihre Medikamente verwalten und jederzeit den aktuellen Stand ansehen. Sollte es einmal dazu kommen, dass eine Packung leer wird,
-        so können Sie immer über unsere Website oder in der Apotheke in Ihrer Nähe die benötigten Medikamente nachkaufen.
+        so können Sie immer über unsere App oder in der Apotheke in Ihrer Nähe die benötigten Medikamente nachkaufen.
       </div>
     </div>
   </div>
@@ -146,17 +147,22 @@ ini_set('display_errors','On');
     </div>
   </div>
 	
-<!--	
+  <span style="display: block; height: 5px;"></span>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-        Frage
+        Warum funktioniert meine PLZ nicht, wenn ich sie unter "Nachbestellen" suche?
       </button>
     </h2>
     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Antwort</div>
+      <div class="accordion-body">Da wir erst klein anfangen, haben wir noch nicht alle Bundesländer integriert. Außer Niederösterreich (Weinviertel) und Wien war für uns noch nichts relevant. Ein weiteres Problem könnte sein, dass sie die angegebene Info nicht gesehen haben, in welcher darin steht, dass sie die am nähest gelegene Stadt eingeben müssen, da man nicht jede einzelne PLZ suchen kann.</div>
     </div>
   </div>
+
+<!--  
+<span style="display: block; height: 5px;"></span>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
