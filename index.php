@@ -80,19 +80,19 @@ ini_set('display_errors','On');
         <!-- Counter 1 -->
         <div class="counter-box p-4 mx-2">
             <div class="counter" data-target="1">0</div>
-            <p>Umfrage</p>
+            <p class="countP">Umfrage</p>
         </div>
         
         <!-- Counter 2 -->
         <div class="counter-box p-4 mx-2">
             <div class="counter" data-target="49">0</div>
-            <p>Befragte</p>
+            <p class="countP">Befragte</p>
         </div>
 
         <!-- Counter 3 -->
         <div class="counter-box p-4 mx-2">
             <div class="counter" data-target="6">0</div>
-            <p>Altersgruppen</p>
+            <p class="countP">Altersgruppen</p>
         </div>
     </div>
 </div>
@@ -390,6 +390,9 @@ body {
       width: 150%;
       justify: space-around;
     }
+    .countP{
+      font-size: 16px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -414,6 +417,9 @@ body {
       justify: space-around;
       margin-bottom: -60px;
     }
+    .countP{
+      font-size: 24px;
+    }
 }
 
 @media (min-width: 993px) {
@@ -436,6 +442,9 @@ body {
     }
     .medi{
       width: 100%;
+    }
+    .countP{
+      font-size: 30px;
     }
 }
 

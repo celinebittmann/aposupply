@@ -158,8 +158,11 @@ footer{
 
 
 @media (max-width: 576px) {
+    .ueberschrift {
+        font-size: 22px;
+    }  
     .ueberschrift_klein {
-        font-size: 18px;
+        font-size: 19px;
     }
     .p_footer {
         font-size: 17px;
@@ -171,6 +174,9 @@ footer{
 
 
 @media (min-width: 577px) and (max-width: 992px) {
+    .ueberschrift {
+        font-size: 23px;
+    }  
     .ueberschrift_klein {
         font-size: 20px;
     }
@@ -184,14 +190,17 @@ footer{
 
 
 @media (min-width: 993px) {
+    .ueberschrift {
+        font-size: 25px;
+      }    
     .ueberschrift_klein {
-        font-size: 20px;
+        font-size: 22px;
     }
     .p_footer {
-        font-size: 17px;
+        font-size: 18px;
     }
     .p_footer_email{
-        font-size: 17px;
+        font-size: 18px;
     }
 }
 

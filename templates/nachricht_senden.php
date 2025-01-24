@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="../logo_richtig.png" type="image/x-icon">
     <link href="../functions/mystyle.css"rel="stylesheet">
-    <base href="/web/">
+    <base href="/aposupply/">
 </head>
 <br><br><br>
   <body>
@@ -46,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require "navbar.php";
     ?>
     <div class="container">
+<br>
 
     <h1 style="font-weight: 700; letter-spacing: 0.5px; font-size: 45px;">Danke für Ihr Feedback! &#129321; </h1>
     <br>
@@ -64,6 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		
 	</body>
+  
 </html>
 
   
@@ -121,4 +123,42 @@ body {
   100%  {opacity: 1; margin-left: 0px}
 }
 	  
+@media (max-width: 576px) {
+    h1 {
+        font-size: 35px; 
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 36px; 
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 993px) {
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+
   </style>
