@@ -26,8 +26,51 @@ ini_set('display_errors','On');
     ?>
     <div class="container">
     <br>
-    <h1 style="font-weight: 700; letter-spacing: 0.5px;">Willkommen bei Apo-Supply!</h1>
+    <h1 id="typing-text" style="font-weight: 700; letter-spacing: 0.5px;"></h1>
     <br>
+
+<script>
+const text = "Willkommen bei Apo-Supply!";
+const speed = 100; // Schreibgeschwindigkeit (ms)
+const pause = 1000; // Wartezeit am Ende des Textes (ms)
+let index = 2; // Beginne mit den letzten 2 Buchstaben sichtbar
+let isDeleting = false;
+const keepText = 2; // Wie viele Buchstaben am Ende bleiben sollen
+
+function typeText() {
+    const h1 = document.getElementById("typing-text");
+
+    // Text wird zuerst mit den letzten 2 Buchstaben angezeigt
+    h1.textContent = text.slice(0, index);
+
+    // Wenn nicht gelöscht wird, füge Text hinzu
+    if (!isDeleting) {
+        index++;
+    } else {
+        // Wenn gelöscht wird, entferne Text (aber lasse 'keepText' Buchstaben übrig)
+        index--;
+    }
+
+    // Wenn der gesamte Text geschrieben ist, lösche ihn nach einer kurzen Pause
+    if (index > text.length) {
+        isDeleting = true;
+        setTimeout(typeText, pause); // Kurze Pause nach dem Schreiben
+    } else if (index <= keepText) {
+        // Wenn das Löschen der letzten Buchstaben beendet ist, starte sofort wieder mit Schreiben
+        isDeleting = false;
+        setTimeout(typeText, speed); // Sofort wieder schreiben, keine Pause nach dem Löschen
+    } else {
+        // Setze die Schreibgeschwindigkeit für den nächsten Buchstaben
+        setTimeout(typeText, isDeleting ? speed / 2 : speed);
+    }
+}
+
+// Starte die Animation, sobald die Seite geladen ist
+document.addEventListener("DOMContentLoaded", typeText);
+
+</script>
+
+
 
     <div class="row align-items-center">
     <!-- Textbereich -->
@@ -424,7 +467,7 @@ body {
 
 @media (min-width: 993px) {
     h1 {
-        font-size: 45px; 
+        font-size: 50px; 
     }
     
     p {
